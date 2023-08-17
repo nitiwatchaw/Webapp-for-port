@@ -25,7 +25,7 @@
             <div class="row ">
                 <div class="col-12 nav-bar-wrap">
                     <div class="row align-items-center ">
-                        <div class="col-12  left-side col-lg-6 col-xl-3">
+                        <div class="col-12  left-side col-lg-6 col-xl-2">
                             <!-- menu btn -->
                             <button class="btn-menu" onclick="OpenMenuSide() "><i class="fa-solid fa-bars"></i></button>
                             <!-- logo -->
@@ -223,7 +223,7 @@
 
                         </div>
 
-                        <div class="col-12 right-side  col-lg-6 pt-4 pb-4 col-xl-9">
+                        <div class="col-12 right-side  col-lg-6 pt-4 pb-4 col-xl-10">
 
                             <div class="wrapProfile-link ">
 
@@ -648,7 +648,7 @@
         <div class="container-fluid">
             <div class="row">
 
-                <!-- side-bar for mini-->
+                <!-- side-bar for tablet-->
                 <div class="col-12 menu-cover-mini">
 
                     <!-- content -->
@@ -698,6 +698,7 @@
                                         </div>
                                     </a>
                                     <ul class="sub-menu hide sub-menu-mini" id="sub">
+                                        <li class="text-side-mini"> <a href="#">TEST</a></li>
                                         <li class="text-side-mini"> <a href="#">User list</a></li>
                                         <li class="text-side-mini"><a href="#">User groups</a></li>
                                         <li class="text-side-mini"><a href="#">User roles</a></li>
@@ -800,15 +801,15 @@
                 </div>
 
                 <!-- content all section -->
-                <div class="col-12 content-all-section bg-gray">
-                    <div class="row">
+                <div class="col-12  content-all-section bg-gray">
+                    <div class="row ">
                         <!-- Dashboard Page  -->
                         <div class="col-12 Dashboard-page ">
-                            <div class="row">
-                                <div class="col">
+                            <div class="row ">
+                                <div class="col ">
                                     <div class="row change-position">
                                         <!-- center Section -->
-                                        <div class="col-12 bg-gray all-section col-xl-8">
+                                        <div class="col-12 bg-gray all-section col-xl-8 col-xxl-9">
                                             <!-- alert -->
                                             <div class="row ">
                                                 <div class="col-12">
@@ -1140,8 +1141,8 @@
                                                     <!-- calenda month -->
                                                     <div class="row mt-3">
                                                         <div class="col-12 calenda-section ">
-                                                            <!-- title calenda -->
                                                             <div class="row">
+                                                                       <!-- title calenda -->
                                                                 <div class="col-12">
                                                                     <div class="calenda-header">
                                                                         <button>Today</button>
@@ -1207,6 +1208,7 @@
                                                                         <tbody class="table-body">
                                                                             <tr>
                                                                                 <td class="border-none">
+                                                                                    <!-- week1 -->
                                                                                     <div class="cover">
                                                                                         <table
                                                                                             class="table table-bordered table-under">
@@ -1237,22 +1239,22 @@
                                                                                             class="table table-bordered content">
                                                                                             <thead>
                                                                                                 <tr>
-                                                                                                    <td>26</td>
-                                                                                                    <td>27</td>
-                                                                                                    <td>28</td>
-                                                                                                    <td>29</td>
-                                                                                                    <td>30</td>
+                                                                                                    <td class="notCurrentMonth">26</td>
+                                                                                                    <td class="notCurrentMonth">27</td>
+                                                                                                    <td class="notCurrentMonth" >28</td>
+                                                                                                    <td class="notCurrentMonth">29</td>
+                                                                                                    <td class="notCurrentMonth">30</td>
                                                                                                     <td>1</td>
                                                                                                     <td>2</td>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td></td>
-                                                                                                    <td></td>
-                                                                                                    <td></td>
-                                                                                                    <td></td>
-                                                                                                    <td></td>
+                                                                                                    <td class="notCurrentMonth"></td>
+                                                                                                    <td class="notCurrentMonth"></td>
+                                                                                                    <td class="notCurrentMonth"></td>
+                                                                                                    <td class="notCurrentMonth"></td>
+                                                                                                    <td class="notCurrentMonth"></td>
                                                                                                     <td></td>
                                                                                                     <td></td>
                                                                                                 </tr>
@@ -1260,6 +1262,7 @@
                                                                                         </table>
 
                                                                                     </div>
+                                                                                       <!-- week2 -->
                                                                                     <div class="cover">
                                                                                         <table
                                                                                             class="table table-bordered table-under">
@@ -1327,6 +1330,7 @@
                                                                                         </table>
 
                                                                                     </div>
+                                                                                       <!-- week13-->
                                                                                     <div class="cover">
                                                                                         <table
                                                                                             class="table table-bordered table-under">
@@ -1375,7 +1379,8 @@
                                                                                             class="table table-bordered content">
                                                                                             <thead>
                                                                                                 <tr>
-                                                                                                    <td class="today">10
+                                                                                                    <td > 
+                                                                                                         <div class="todayCalenda"> 10</div>
                                                                                                     </td>
                                                                                                     <td>11</td>
                                                                                                     <td>12</td>
@@ -1405,10 +1410,10 @@
                                                                                                         <button
                                                                                                             class="event green-pin event-title-conference"
                                                                                                             onclick="eventShow()">
-                                                                                                            <i
-                                                                                                                class="fa-solid fa-circle dot "></i>
+                                                                                                           
                                                                                                             <p
-                                                                                                                class="">
+                                                                                                                class="">  <i
+                                                                                                                class="fa-solid fa-circle dot "></i>
                                                                                                                 Conference
                                                                                                             </p>
                                                                                                         </button>
@@ -1459,6 +1464,7 @@
                                                                                         </table>
 
                                                                                     </div>
+                                                                                       <!-- week4 -->
                                                                                     <div class="cover">
                                                                                         <table
                                                                                             class="table table-bordered table-under">
@@ -1512,6 +1518,7 @@
                                                                                         </table>
 
                                                                                     </div>
+                                                                                       <!-- week5 -->
                                                                                     <div class="cover">
                                                                                         <table
                                                                                             class="table table-bordered table-under">
@@ -1574,6 +1581,7 @@
                                                                                         </table>
 
                                                                                     </div>
+                                                                                       <!-- week6 -->
                                                                                     <div class="cover">
                                                                                         <table
                                                                                             class="table table-bordered table-under">
@@ -1605,23 +1613,23 @@
                                                                                             <thead>
                                                                                                 <tr>
                                                                                                     <td>31</td>
-                                                                                                    <td>1</td>
-                                                                                                    <td>2</td>
-                                                                                                    <td>3</td>
-                                                                                                    <td>4</td>
-                                                                                                    <td>5</td>
-                                                                                                    <td>6</td>
+                                                                                                    <td class="notCurrentMonth" >1</td>
+                                                                                                    <td class="notCurrentMonth">2</td>
+                                                                                                    <td class="notCurrentMonth">3</td>
+                                                                                                    <td class="notCurrentMonth">4</td>
+                                                                                                    <td class="notCurrentMonth">5</td>
+                                                                                                    <td class="notCurrentMonth">6</td>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td></td>
-                                                                                                    <td></td>
-                                                                                                    <td></td>
-                                                                                                    <td></td>
-                                                                                                    <td></td>
-                                                                                                    <td></td>
-                                                                                                    <td></td>
+                                                                                                    <td class="notCurrentMonth"></td>
+                                                                                                    <td class="notCurrentMonth"></td>
+                                                                                                    <td class="notCurrentMonth"></td>
+                                                                                                    <td class="notCurrentMonth"></td>
+                                                                                                    <td class="notCurrentMonth"></td>
+                                                                                                    <td class="notCurrentMonth"></td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -1641,7 +1649,7 @@
                                                         <div class="col-12 box-scroll-bar">
                                                             <div class="row forWrap row-gap-4">
                                                                 <!-- purple -->
-                                                                <div class="col-6 col-md-4 col-lg-3 col-xl-4">
+                                                                <div class="col-6 col-md-4 col-lg-3 col-xl-4 col-xxl-3">
                                                                     <div class="cardCover">
                                                                         <div class="content">
                                                                             <a href="#" class="wrap-title ">
@@ -1689,7 +1697,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <!-- blue -->
-                                                                <div class="col-6 col-md-4 col-lg-3 col-xl-4">
+                                                                <div class="col-6 col-md-4 col-lg-3 col-xl-4 col-xxl-3">
                                                                     <div class="cardCover">
                                                                         <div class="content">
                                                                             <a href="#" class="wrap-title ">
@@ -1736,7 +1744,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <!-- green -->
-                                                                <div class="col-6 col-md-4 col-lg-3 col-xl-4">
+                                                                <div class="col-6 col-md-4 col-lg-3 col-xl-4 col-xxl-3">
                                                                     <div class="cardCover">
                                                                         <div class="content">
                                                                             <a href="#" class="wrap-title ">
@@ -1784,7 +1792,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <!-- pink -->
-                                                                <div class="col-6 col-md-4 col-lg-3 col-xl-4">
+                                                                <div class="col-6 col-md-4 col-lg-3 col-xl-4 col-xxl-3">
                                                                     <div class="cardCover">
                                                                         <div class="content">
                                                                             <a href="#" class="wrap-title ">
@@ -1832,7 +1840,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <!-- gray -->
-                                                                <div class="col-6 col-md-4 col-lg-3 col-xl-4">
+                                                                <div class="col-6 col-md-4 col-lg-3 col-xl-4 col-xxl-3">
                                                                     <div class="cardCover">
                                                                         <div class="content">
                                                                             <a href="#" class="wrap-title ">
@@ -2010,7 +2018,7 @@
                                         </div>
 
                                         <!-- right-side Section-->
-                                        <div class="col-12 col-xl-4 rigt-side-section">
+                                        <div class="col-12 col-xl-4 col-xxl-3 rigt-side-section">
                                             <!-- collape  -->
                                             <div class="row ">
                                                 <div class="col collape-right-side" onclick="openrightSide()">
@@ -2783,7 +2791,7 @@
             </div>
         </div>
 
-        <!--  !todo Modal calenda -->
+        <!--   Modal calenda -->
         <div class="event-modal-popup fade">
             <div class="cover">
                 <p class="fs-4 event-title"> </p>

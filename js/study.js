@@ -167,6 +167,12 @@ const contentSection = document.querySelector('.content-all-section')
 
 function OpenMenuSidefromSidemini() {
 
+
+
+
+
+
+
     for (let i = 0; i < titlesidebarmini.length; i++) {
         titlesidebarmini[i].classList.toggle('show');
     }
@@ -184,37 +190,11 @@ function OpenMenuSidefromSidemini() {
     for (let i = 0; i < textMenuMini.length; i++) {
         textMenuMini[i].classList.toggle('text-side-mini-show');
     }
+
     document.onclick = function clickOutsidemini (e){
-        if (!menuMini.contains(e.target) && !btnMini.contains(e.target)) {
-        
-            btnSideOpen.classList.remove("hide")
-            btnSideClose.classList.add("hide")
-            e.preventDefault(); // protect scroll up after click
 
 
-            for (let i = 0; i < btnSubmenuMini.length; i++) {
-                btnSubmenuMini[i].classList.remove('show');
-            }
-
-
-            btnOpen.classList.remove('cannotClick')
-            btnMini.classList.remove('btn-mini-Left')
-            for (let i = 0; i < iconMenuMini.length; i++) {
-                iconMenuMini[i].classList.remove('side-menu-list-space-between');
-            }
-            for (let i = 0; i < textMenuMini.length; i++) {
-                textMenuMini[i].classList.remove('text-side-mini-show');
-            }
-            for (let i = 0; i < titlesidebarmini.length; i++) {
-                titlesidebarmini[i].classList.remove('show');
-            }
-
-            menuMini.classList.remove('menu-cover-mini-width-extend')
-        
-
-        }
-
-        else if (menuMini.contains(e.target) && !OpensubMenuMini.contains(e.target) && !btnMini.contains(e.target) && !switchColorMini.contains(e.target)) {
+        if (menuMini.contains(e.target) && !OpensubMenuMini.contains(e.target) && !btnMini.contains(e.target) && !switchColorMini.contains(e.target)) {
             subMenuMini.classList.remove('show');
             linkToOpenMini.style.backgroundColor = "unset"
             OpensubMenuMini.style.backgroundColor = "unset";
@@ -238,8 +218,13 @@ function OpenMenuSidefromSidemini() {
         
     }
 
+
    
 }
+
+
+
+
 
 //open submenu-mini
 const btnSideMini = document.querySelector('.btn-menu-side')
@@ -524,7 +509,6 @@ eventMore.addEventListener('click', function more() {
 
 //close event popup
 function closeEventPopup() {
-
     eventPopup.classList.remove('show')
     modalEvent.style.display = "none"
     document.body.removeChild(modalEvent);
@@ -550,14 +534,25 @@ function slider() {
                 slidesPerView: 5,
 
             },
-            // when window width is <= 499px
             764: {
                 slidesPerView: 7,
 
             },
-            // when window width is <= 999px
+         
             999: {
                 slidesPerView: 9,
+
+            },
+            1200: {
+                slidesPerView: 7,
+
+            },
+            1400: {
+                slidesPerView: 9,
+
+            },
+            1600: {
+                slidesPerView: 11,
 
             },
 
