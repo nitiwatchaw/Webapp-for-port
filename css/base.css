@@ -291,9 +291,11 @@ li {
     gap: 10px;
 
 }
-.for-desktop{
+
+.for-desktop {
     display: none !important;
 }
+
 .wrapProfile-collape {
     display: none;
     gap: 10px;
@@ -445,7 +447,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+    align-items: center;
 }
 
 .wrap-search-setting form {
@@ -622,10 +624,12 @@ li {
     flex-direction: column;
     gap: 2px;
 }
-.content-all-section-movement{
+
+.content-all-section-movement {
     padding: auto;
     transition-duration: .3s;
 }
+
 .detail-profile h5 {
     font-size: 18px;
     margin: 0px;
@@ -953,7 +957,7 @@ li {
 
 .menu-cover-mini {
     display: none;
-    width: 92px;
+    width: 85px;
     background-color: #032c7b;
     position: fixed;
     padding: 0px !important;
@@ -1079,9 +1083,11 @@ li {
     height: calc(100vh - 91px);
 
 }
-.side-content::-webkit-scrollbar{
+
+.side-content::-webkit-scrollbar {
     display: none;
 }
+
 .topic {
     display: flex;
     justify-content: center;
@@ -1378,7 +1384,7 @@ side-menu-list li a:focus .wrap p {
 
 .btn-alertAdjust p {
     position: absolute;
-    top: 43%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -1444,9 +1450,7 @@ nav {
     line-height: 25px;
 }
 
-.bg-gray {
-    background-color: #f4f7fb;
-}
+
 
 .Overview-title h2,
 .General-number h2,
@@ -1459,7 +1463,7 @@ nav {
 
 .Overview-bg {
     padding: 20px 10px;
-    background-color: #dde9f7;
+    background-color: #edf5ff;
     position: relative;
     margin-bottom: 20px;
 }
@@ -1522,7 +1526,7 @@ nav {
     box-shadow: #0092e3 0px 1px 14px -2px;
 }
 
-.swiper {
+.swiper ,.swiper-2{
     width: 100%;
     height: unset;
 }
@@ -1838,6 +1842,7 @@ nav {
 
 .forWrap {
     flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .disableScroll {
@@ -2144,7 +2149,7 @@ nav {
 }
 
 .DocsType-card-cover {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 2px 4px 20px -5px;
     width: 100%;
     background-color: white;
     border-radius: 13px;
@@ -2403,6 +2408,7 @@ nav {
     border-radius: 8px;
     display: flex;
     align-items: center;
+    gap: 8px;
     padding: 10px 10px;
     box-shadow: rgb(79, 126, 238) 2px 4px 20px 2px, rgb(79, 126, 238) 0px 18px 36px -18px;
     background: rgb(79, 126, 238);
@@ -2553,12 +2559,13 @@ nav {
     align-items: center;
     height: 20px;
     border-radius: 4px;
-    padding: 0px 6px;
     top: 18%;
     right: 4%;
     transform: translate(-50%, -50%);
 }
-
+.box-top .option-cover a{
+    padding: 0px 6px;
+}
 .box-top .option-cover:hover {
     border: 1px solid #a9bcd0;
 }
@@ -2729,7 +2736,7 @@ nav {
 }
 
 #modal-create .modal-body .box-template {
-    border-radius: 8px;
+    border-radius: 20px;
     width: 300px;
     height: 265px;
     border: 2px solid #dce4f4;
@@ -2810,7 +2817,9 @@ nav {
     transform: translate(-50%, -83%);
     background-image: unset;
 }
-
+#modal-delete .modalbtn-close-adjust:focus{
+    box-shadow: unset;
+}
 #modal-create .modalbtn-close-adjust i,
 #modal-delete .modalbtn-close-adjust i {
     font-size: 18px;
@@ -3082,7 +3091,7 @@ td {
 
 
 
-.notCurrentMonth{
+.notCurrentMonth {
     color: #cbccd4 !important;
     background-color: #eef0f5 !important;
 }
@@ -3125,7 +3134,7 @@ table .cover {
 }
 
 .bg-gray {
-    background-color: #eef0f5 !important;
+    background-color: #f6f9ff !important;
 }
 
 .table-head td {
@@ -3205,13 +3214,13 @@ table .cover {
 }
 
 .todayCalenda {
-width: 25px;
-height: 25px;
-background-color: #3874ff;
-border-radius: 50%;
-position: relative;
-color: white;
-text-align: center;
+    width: 25px;
+    height: 25px;
+    background-color: #3874ff;
+    border-radius: 50%;
+    position: relative;
+    color: white;
+    text-align: center;
 }
 
 .modal-event {
@@ -3457,9 +3466,11 @@ text-align: center;
         transition-duration: 0.2s;
 
     }
-    .scroll-bar-right-side::-webkit-scrollbar{
+
+    .scroll-bar-right-side::-webkit-scrollbar {
         display: none;
     }
+
     .displayFlex {
         display: flex;
     }
@@ -3687,7 +3698,7 @@ text-align: center;
     }
 
     .Dashboard-page {
-        margin-top: 78px;
+        margin-top: 68px;
     }
 
     .wrap-btn-swift {
@@ -3709,10 +3720,11 @@ text-align: center;
         left: 28px;
     }
 
-  
-    .alert-content{
+
+    .alert-content {
         justify-content: flex-start;
     }
+
     .wrapper-alert {
         width: 100%;
     }
@@ -3728,7 +3740,7 @@ text-align: center;
     }
 
     .wrap-search-btn {
-        width: 50%;
+        width: unset;
     }
 
     .nav-bar-wrap {
@@ -3741,7 +3753,7 @@ text-align: center;
         height: 80px;
         background-color: #f8f8f9;
         padding: 0px 25px !important;
-      
+
     }
 
     .left-side {
@@ -3757,7 +3769,7 @@ text-align: center;
     }
 
     .menu-cover-mini-width-extend {
-       
+
         width: calc(100% - 83.5%);
     }
 
@@ -3784,42 +3796,604 @@ text-align: center;
     .DocsType-cover,
     .RecentAction-cover {
         background-color: white;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+
     .event p {
         font-size: 16px;
     }
+
     .Dashboard-page {
         margin-top: 65px;
     }
-    .RecentAction-card{
+
+    .RecentAction-card {
         flex-direction: row;
     }
+
     .logo {
-        width: 125px;
+        width: 120px;
     }
-    h1{
-        font-size: 20px;
+
+    .switch-btn {
+        width: 22px;
+        height: 22px;
     }
-    h2{
-        font-size: 19px;
+
+    .switch-btn img {
+        width: 15px;
     }
-    .title-mounth{
+
+    .circle-cover,
+    .circle-cover-collape {
+        width: 42px;
+        height: 42px;
+    }
+
+    .wrapLink-circle-cover,
+    .wrapLink-circle-cover-collape {
+        width: 42px;
+        height: 42px;
+    }
+
+    .wrapLink-circle-cover i {
+        font-size: 14px;
+    }
+
+    .wrapLink-circle-cover .notice {
+        width: 16px;
+        height: 16px;
+        right: 0px;
+        top: -7px;
+    }
+
+    .wrapLink-circle-cover:nth-child(2) .notice {
+        width: 8px;
+        height: 8px;
+        top: -1px;
+    }
+
+    #switchDropdown .dropdown-menu li .text-cover>p:last-child {
+        font-size: 12px;
+    }
+
+    #switchDropdown .dropdown-menu li .text-cover p:first-child {
         font-size: 15px;
     }
-    .Overview-bg ul a{
+
+    #switchDropdown .dropdown-menu .list-dropdown-last p:first-child {
+        font-size: 12px;
+    }
+
+    #mail {
+        height: 42px;
+    }
+
+    #switchDropdown .dropdown-menu {
+        width: 211px !important;
+    }
+
+    #switchDropdown .dropdown-menu {
+        right: -159px !important;
+    }
+
+    #profile-img .dropdown-menu a,
+    #profile-img-2 .dropdown-menu a {
+        font-size: 13px;
+    }
+
+    .wrapLink-circle-cover .notice p {
+        font-size: 10px;
+        line-height: 21px;
+    }
+
+    .circle-cover img,
+    .circle-cover-collape img {
+        width: 34px;
+    }
+
+    .detail-profile h5 {
+        font-size: 13px;
+    }
+
+    .detail-profile p {
+        font-size: 13px;
+    }
+
+    .line-wrap .line:first-child {
+        width: 16px;
+    }
+
+    .line-wrap .line:last-child {
+        width: 10px;
+    }
+
+    .detail-profile .wrap {
+        gap: 5px;
+    }
+
+    .wrap-search-setting form {
+        width: unset;
+    }
+
+    #mail .profile-name {
+        font-size: 14px;
+    }
+
+    #mail .main-img-cover {
+        width: 50px;
+        height: 50px;
+    }
+
+    #mail .main-img-cover img {
+        width: 42px;
+    }
+
+    #mail li .text-wrapLink-span p {
+        font-size: 11px;
+    }
+
+    #mail li .dropdown-item {
+        padding: 12px 24px;
+    }
+
+    #mail li .dropdown-item>p {
+        font-size: 14px;
+    }
+
+    .create-btn {
+        height: 37px;
+    }
+
+    .wrap-search-setting form input {
+        padding: 7px 11px 7px 40px;
+        border-radius: 9px;
+    }
+
+    .wrap-search-setting form i {
+        font-size: 13px;
+    }
+
+    .wrap-search-setting form input::placeholder {
+        font-size: 13px;
+    }
+
+    .square-cover {
+        width: 40px;
+        height: 40px;
+        border-radius: 9px;
+    }
+
+    .square-cover i {
+        font-size: 13px;
+    }
+
+    #mail .dropdown-menu {
+        top: 53px !important;
+    }
+
+    #setting .dropdown-menu {
+        top: 53px !important;
+    }
+
+    #setting .dropdown-menu p {
+        font-size: 14px;
+    }
+
+    #setting .dropdown-menu i {
+        font-size: 11px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .title-mounth {
+        font-size: 15px;
+    }
+
+    .Overview-bg ul a {
         font-size: 14px;
         padding: 5px 19px;
     }
-    .Overview-bg ul{
+
+    .Overview-bg ul {
         height: 35px;
         padding: 0px 3px;
         width: 310px;
     }
+
+    #modal-create .modal-title,
+    #modal-delete .modal-title {
+        font-size: 15px !important;
+    }
+
+    #modal-create .modalbtn-close-adjust i,
+    #modal-delete .modalbtn-close-adjust i {
+        font-size: 11px !important;
+        color: #16315a;
+    }
+
+    #modal-create .modal-body .box-template img {
+        width: 100px;
+    }
+
+    #modal-create .modal-body .box-template .text-wrap>p {
+
+        font-size: 15px;
+    }
+
+    #modal-create .modal-body .box-template {
+        width: 260px;
+        height: 240px;
+    }
+
+    .box-template .text-wrap .cover-text {
+        font-size: 10px;
+    }
+
+    #modal-create .modal-dialog {
+        max-width: unset;
+        width: 77%;
+    }
+
+    #modal-create .modal-body {
+        column-gap: 30px;
+    }
+
+    #modal-create .modal-footer button,
+    #modal-delete .modal-footer button {
+        font-size: 13px;
+    }
+
+    .btn-menu-side {
+        background-color: #032c7b;
+        width: 24px;
+        height: 24px;
+    }
+
+    .menu-cover .head-title i,
+    .menu-cover-mini .head-title i {
+        font-size: 10px;
+        height: unset;
+    }
+
+    .menu-cover-mini .cover-title {
+        left: 13px;
+    }
+
+    .menu-cover-mini .cover-title h4 {
+        font-size: 12px;
+        padding: 4px;
+        width: 88px;
+    }
+
+    .side-content i {
+        font-size: 15px;
+    }
+
+    .side-menu-list .Dashboard-btn .wrap p {
+        font-size: 12px;
+    }
+
+    .side-menu-list li .wrap {
+        gap: 10px;
+    }
+
+    .side-menu-list .Dashboard-btn .cover-icon i {
+        font-size: 10px;
+    }
+
+    .side-menu-list li .wrap i {
+        font-size: 14px;
+    }
+
+    .side-menu-list li .wrap p {
+        font-size: 13px;
+    }
+
+    .side-menu-list li .cover-icon i,
+    .side-menu-list li .cover-icon-2 i {
+        font-size: 13px;
+    }
+
+    .side-menu-list li .sub-menu a {
+        font-size: 13px;
+    }
+
+    .side-menu-list li .sub-menu li:first-child {
+        padding-top: 10px;
+    }
+
+    .side-menu-list li .sub-menu li:last-child {
+        padding-bottom: 10px;
+    }
+
+    .side-menu-list li .sub-menu li {
+        padding: 0px 43px;
+    }
+
+    .side-menu-list ul .Dashboard-btn a {
+        padding: 13px 15px;
+        border-radius: 10px;
+    }
+
+    .side-menu-list li {
+        border-radius: 10px;
+    }
+
+    .side-menu-list li a {
+        padding: 13px 15px;
+        border-radius: 10px;
+    }
+
+    .footer-menu a {
+        gap: 10px;
+    }
+
+    .footer-menu a i,
+    .footer-menu a p {
+        font-size: 10px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    .toggle-switch {
+        width: 90px;
+    }
+
+    .switch-label {
+        height: 24px;
+        border: 1px solid #548bcf;
+    }
+
+    .slider::before {
+        height: 16px;
+        width: 16px;
+        top: 3px;
+        box-shadow: inset 6px -4px 0px 0px #d8dbe0
+    }
+
+    .btn-bill {
+        font-size: 12px;
+    }
+
+    .wrapper-alert .cover-text {
+        font-size: 13px;
+    }
+
+    .btn-alertAdjust {
+        width: 10px;
+        height: 10px;
+    }
+
+    .btn-alertAdjust p {
+        font-size: 10px;
+    }
+
+    .breadcrumb li a {
+        font-size: 13px;
+    }
+
+    .breadcrumb .active,
+    .breadcrumb .active i {
+        font-size: 13px;
+    }
+
+    .Overview-bg {
+        padding: 4px 10px 4px 20px
+    }
+
+    .swiper-wrapper {
+        height: 85px;
+    }
+
+    .wrap-slider {
+        padding-right: 70px;
+    }
+
+    .box {
+        width: 65px;
+        height: 70px;
+    }
+
+    .box p:first-child {
+        font-size: 13px;
+    }
+
+    .box p:last-child {
+        font-size: 16px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 42px;
+        height: 32px;
+
+    }
+
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+        width: 42px;
+        height: 32px;
+    }
+
+    .wrap-btn-swift i {
+        font-size: 10px;
+    }
+
+    .cardCover {
+        width: 167px;
+    }
+
+    .cardCover .wrap-title p {
+        font-size: 15px;
+    }
+
+    .borderDoc .icon-cover {
+        width: 50px;
+        height: 50px;
+    }
+
+    .borderDoc .icon-cover i {
+        font-size: 15px;
+    }
+
+    .borderDoc .text-wrap p:last-child {
+        font-size: 12px;
+    }
+
+    .total-cover .total-box .wrap p,
+    .total-cover .total-box .wrap i {
+        font-size: 12px;
+    }
+
+    .total-cover .total-box .wrap {
+        justify-content: flex-start;
+    }
+
+    .total-cover .total-box>p {
+        text-align: left;
+        font-size: 14px !important;
+    }
+
+    .borderDoc .text-wrap p:first-child {
+        font-size: 22px;
+    }
+
+    .total-cover .total-box {
+        gap: 0px;
+    }
+
+    .General-number-cover .cover-detail .text-wrap p:first-child {
+        font-size: 14px;
+    }
+
+    .General-number-cover .cover-detail .text-wrap p:last-child {
+        font-size: 16px !important;
+    }
+
+    .DocsType-cover .wrpa-title .wrap-text p,
+    .RecentAction-cover .wrpa-title .wrap-text p {
+        font-size: 14px
+    }
+
+    #DocsType button p,
+    #RecentAction button p {
+        font-size: 13px;
+    }
+
+    #DocsType button i,
+    #RecentAction button i {
+        font-size: 10px;
+    }
+
+    .DocsType-card-cover .cover-detail .text-wrap p:last-child {
+        font-size: 13px;
+    }
+
+    .DocsType-card-cover .cover a .wrap p {
+        font-size: 13px;
+    }
+
+    .DocsType-card-cover .cover a>p {
+        line-height: 21px;
+    }
+
+    .DocsType-card-cover .cover a .wrap i {
+        font-size: 10px;
+    }
+
+    .RecentAction-card .box-img .img-cover {
+        width: 43px;
+        height: 43px;
+    }
+
+    .RecentAction-card .box-img .img-cover img {
+        width: 37px;
+        top: 58%;
+    }
+
+    .RecentAction-card .wrap-section .text-wrap .title {
+        font-size: 14px;
+    }
+
+    .RecentAction-card .wrap-section .text-wrap .detail-wrap p:first-child,
+    .RecentAction-card .wrap-section .text-wrap .detail-wrap p:last-child {
+        font-size: 14px !important;
+    }
+    .RecentAction-card .dot-wrap p{
+        font-size: 10px;
+    }
+    .RecentAction-card .box-img{
+        padding: 4px;
+    }
+    .RecentAction-button-cover .btn-recent{
+        font-size: 14px;
+    }
+    .RecentAction-card .wrap-section {
+        gap: 13px;
+    }
+    .AllCompany-btn-wrap .join-com i {
+        font-size: 13px;
+    }
+    .AllCompany-btn-wrap .join-com p{
+        font-size: 14px;
+    }
+    .AllCompany-btn-wrap .create-com i{
+        font-size: 13px;
+    }
+    .AllCompany-btn-wrap .create-com p{
+        font-size: 14px;
+    }
+    .box-top .tag-star ,.box-top .tag-admin  ,.box-top .tag-user{
+        height: 30px;
+        width: 75px;
+    }
+    .box-top .tag-star i, .box-top .tag-admin i , .box-top .tag-user i{
+        font-size: 10px;
+    }
+    .box-top .tag-star p, .box-top .tag-admin p, .box-top .tag-user p{
+        font-size: 14px;
+    }
+    .box-company{
+        width: 300px;
+    }
+    .box-top .option-cover i{
+        font-size: 12px;
+    }
+    #company-dropdown .dropdown-menu p{
+        font-size: 14px;
+    }
+    #modal-delete .warning-text{
+        font-size: 14px;
+    }
+    #modal-delete form{
+        width: 100%;
+    }
+    #modal-delete .approve{
+        font-size: 14px;
+    }
+    #modal-delete .btn-wrap i{
+        font-size: 10px;
+    }
+    #modal-delete .btn-wrap p{
+        font-size: 11px;
+    }
 }
-@media (min-width: 1600px){
-    .content-all-section-movement{
+
+@media (min-width: 1600px) {
+    .content-all-section-movement {
         padding-left: 17% !important;
     }
+
     .cardCover {
         max-width: 233px;
     }

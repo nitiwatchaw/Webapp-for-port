@@ -164,13 +164,11 @@ const iconMenuMini = document.querySelectorAll('.icon-menu-mini')
 const textMenuMini = document.querySelectorAll('.text-side-mini')
 const menuMini = document.querySelector('.menu-cover-mini')
 const contentSection = document.querySelector('.content-all-section')
-
+const myswiper = document.querySelector('.swiper-initialized')
 function OpenMenuSidefromSidemini() {
 
 
-
-
-
+ 
 
 
     for (let i = 0; i < titlesidebarmini.length; i++) {
@@ -192,14 +190,10 @@ function OpenMenuSidefromSidemini() {
     }
 
     document.onclick = function clickOutsidemini (e){
-
-
         if (menuMini.contains(e.target) && !OpensubMenuMini.contains(e.target) && !btnMini.contains(e.target) && !switchColorMini.contains(e.target)) {
             subMenuMini.classList.remove('show');
             linkToOpenMini.style.backgroundColor = "unset"
             OpensubMenuMini.style.backgroundColor = "unset";
-
-
             for (let i = 0; i < btnMenuClose.length; i++) {
                 btnMenuClose[i].classList.add("hide");
             }
@@ -212,18 +206,67 @@ function OpenMenuSidefromSidemini() {
         else if (!OpensubMenu.contains(e.target) && menuMini.contains(e.target)) {
             submenu.classList.add("hide"); //click outside
             submenu.classList.remove("show")
-
-
         }
         
+        function mobilesize(x) {
+            if (x.matches) { // If media query matches
+                document.onclick = function (e) {
+                    if (!menuMini.contains(e.target)) {
+                        for (let i = 0; i < titlesidebarmini.length; i++) {
+                            titlesidebarmini[i].classList.remove('show');
+                        }
+                        e.preventDefault(); // protect scroll up after click
+            
+                        btnMini.classList.remove('btn-mini-Left')
+                        btnOpen.classList.remove('cannotClick')
+                        menuMini.classList.remove('menu-cover-mini-width-extend')
+                        for (let i = 0; i < btnSubmenuMini.length; i++) {
+                            btnSubmenuMini[i].classList.remove('show');
+                        }
+            
+                        for (let i = 0; i < textMenuMini.length; i++) {
+                            textMenuMini[i].classList.remove('text-side-mini-show');
+                        }
+                        for (let i = 0; i < iconMenuMini.length; i++) {
+                            iconMenuMini[i].classList.remove('side-menu-list-space-between');
+                        }
+            
+            
+                        btnSideOpen.classList.remove("hide")
+                        btnSideClose.classList.add("hide")
+            
+                    }
+                    if (menuMini.contains(e.target) && !OpensubMenuMini.contains(e.target) && !btnMini.contains(e.target) && !switchColorMini.contains(e.target)) {
+                        subMenuMini.classList.remove('show');
+                        linkToOpenMini.style.backgroundColor = "unset"
+                        OpensubMenuMini.style.backgroundColor = "unset";
+                     
+            
+                        for (let i = 0; i < btnMenuClose.length; i++) {
+                            btnMenuClose[i].classList.add("hide");
+                        }
+                        for (let i = 0; i < btnMenuOpen.length; i++) {
+                            btnMenuOpen[i].classList.remove('hide');
+                        }
+            
+                    }
+                }
+                return;
+            }
+             else {
+               return;
+            }
+          }
+          
+          var x = window.matchMedia("(max-width: 1600px)")
+          mobilesize(x) // Call listener function at run time
+          x.addListener(mobilesize) // Attach listener function on state changes
+     
+    
     }
-
 
    
 }
-
-
-
 
 
 //open submenu-mini
@@ -232,6 +275,8 @@ const subMenuMini = document.querySelector('.sub-menu-mini')
 const OpensubMenuMini = document.querySelector('.multiple-mini')
 const linkToOpenMini = document.querySelector('.link-open-submenu-mini')
 const switchColorMini = document.querySelector('.switchColorTablet')
+
+
 
 function openSubmenuMini() {
 
@@ -284,7 +329,6 @@ function openSubmenuMini() {
 
         }
     }
-
     function mobilesize(x) {
         if (x.matches) { // If media query matches
             document.onclick = function (e) {
@@ -396,14 +440,12 @@ function openSubmenuMini() {
         }
       }
       
-      var x = window.matchMedia("(max-width: 1400px)")
+      var x = window.matchMedia("(max-width: 1600px)")
       mobilesize(x) // Call listener function at run time
       x.addListener(mobilesize) // Attach listener function on state changes
   
 
 }
-
-
 
 
 
@@ -520,7 +562,6 @@ function closeEventPopup() {
 
 
 
-
 function slider() {
     new Swiper('.swiper', {
         slidesPerView: 4,
@@ -534,6 +575,10 @@ function slider() {
                 slidesPerView: 5,
 
             },
+            650: {
+                slidesPerView: 6,
+
+            },
             764: {
                 slidesPerView: 7,
 
@@ -544,15 +589,27 @@ function slider() {
 
             },
             1200: {
-                slidesPerView: 7,
-
-            },
-            1400: {
                 slidesPerView: 9,
 
             },
-            1600: {
+            1400: {
+                slidesPerView: 10,
+
+            },
+            1500: {
                 slidesPerView: 11,
+
+            },
+            1600: {
+                slidesPerView: 12,
+
+            },
+            1700: {
+                slidesPerView: 13,
+
+            },
+            1900: {
+                slidesPerView: 15,
 
             },
 
@@ -562,21 +619,102 @@ function slider() {
 slider() // Call listener function at run time
 
 
+const modalCreate = document.getElementById('modal-create')
+const modalDelete = document.getElementById('modal-delete')
+const modalEventContent = document.querySelector('.event-modal-popup-content') 
+function changeSlide(){
+    
+ 
+    if(menuMini.classList.contains('menu-cover-mini-width-extend')){
+        modalCreate.style.marginLeft = "11.5%"
+        modalDelete.style.marginLeft = "11.5%"
+        modalEventContent.style.left = "56%"
+        new Swiper('.swiper', {
+            slidesPerView: 4,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+              
+                550: {
+                    slidesPerView: 5,
+    
+                },
+                650: {
+                    slidesPerView: 6,
+    
+                },
+                764: {
+                    slidesPerView: 7,
+    
+                },
+             
+                999: {
+                    slidesPerView: 9,
+    
+                },
+                1200: {
+                    slidesPerView: 9,
+    
+                },
+                1400: {
+                    slidesPerView: 10,
+    
+                },
+                1500: {
+                    slidesPerView: 11,
+    
+                },
+                1700: {
+                    slidesPerView: 12,
+    
+                },
+                1900: {
+                    slidesPerView: 13,
+    
+                },
+    
+            }
+        });
+    }
+    else{
+        slider()
+        modalCreate.style.marginLeft = "112px"
+        modalDelete.style.marginLeft = "112px"
+        modalEventContent.style.left = "50%"
+    }
+  
+    
+}
+
 
 //text minimize
+const textMinimize = document.querySelectorAll(".minimize-text")
+
 function changename() {
-    const textMinimize = document.querySelectorAll(".minimize-text")
+   
+   
     if (!nameminimize.matches) { // If media query matches
         for (let i = 0; i < textMinimize.length; i++) {
             textMinimize[i].innerHTML = "+";
         }
+        return;
     }
     else {
+        for (let i = 0; i < textMinimize.length; i++) {
+            textMinimize[i].innerHTML = textMinimize[i].id;
+        }
         return;
     }
 
+  
+    
 }
 
 var nameminimize = window.matchMedia("(min-width: 500px)")
 nameminimize.addListener(changename) // Attach listener function on state changes
-changename()
+
+
+
+
