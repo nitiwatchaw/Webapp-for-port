@@ -509,13 +509,13 @@
 
                 </div>
                 <!-- content -->
-                <div class="side-content">
+                <div class="side-content side-content-mobile">
                     <!-- menu head -->
                     <div class="head-title">
                         <div class="cover-title">
                             <h4>Main menu</h4>
                         </div>
-                        <button onclick="CloseMenuSide()" class="btn-menu-side">
+                        <button onclick="CloseMenuSide()" class="btn-menu-side-mobile">
                             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                         </button>
                         <div class="line"></div>
@@ -524,7 +524,7 @@
                     <div class="side-menu-list">
                         <ul>
                             <li class="Dashboard-btn">
-                                <a href="#">
+                                <a href="#" onclick="GotoPageDashboard()" class="navLink">
                                     <div class="wrap">
                                         <i class="fa-solid fa-gauge-high"></i>
                                         <p>Dashboard</p>
@@ -535,7 +535,7 @@
                                 </a>
                             </li>
                             <li class="multiple">
-                                <a href="#" class="link-open-submenu" onclick="openSubmenu()">
+                                <a href="#" class="link-open-submenu navLink-user" onclick="openSubmenu()" >
                                     <div class="wrap">
                                         <i class="fa-regular fa-user"></i>
                                         <p>User</p>
@@ -552,24 +552,24 @@
                                     </div>
                                 </a>
                                 <ul class="sub-menu hide" id="sub">
-                                    <li> <a href="#">User list</a></li>
-                                    <li><a href="#">User groups</a></li>
-                                    <li><a href="#">User roles</a></li>
-                                    <li><a href="#">Invite users</a></li>
-                                    <li><a href="#">Add new users </a></li>
+                                    <li> <a href="#" class="navLinkSub">User list</a></li>
+                                    <li><a href="#" class="navLinkSub">User groups</a></li>
+                                    <li><a href="#" class="navLinkSub">User roles</a></li>
+                                    <li><a href="#" class="navLinkSub">Invite users</a></li>
+                                    <li><a href="#" class="navLinkSub">Add new users </a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" onclick="GotoPageBrowse()" class="navLink">
                                     <div class="wrap">
                                         <i class="fa-regular fa-file-lines"></i>
-                                        <p>Documents</p>
+                                        <p >Documents</p>
                                     </div>
 
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="navLink">
                                     <div class="wrap">
                                         <i class="fa-regular fa-file-powerpoint"></i>
                                         <p>Templates</p>
@@ -578,7 +578,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="navLink">
                                     <div class="wrap">
                                         <i class="fa-solid fa-file-export"></i>
                                         <p>Roles</p>
@@ -587,7 +587,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="navLink">
                                     <div class="wrap">
                                         <i class="fa-solid fa-folder-tree"></i>
                                         <p>Groups</p>
@@ -595,7 +595,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="navLink">
                                     <div class="wrap">
                                         <i class="fa-solid fa-circle-play"></i>
                                         <p>Media</p>
@@ -603,7 +603,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="navLink">
                                     <div class="wrap">
                                         <i class="fa-solid fa-user-tie"></i>
                                         <p>Clients</p>
@@ -615,7 +615,6 @@
                     </div>
 
                     <!-- menu-footer -->
-
                     <ul class="footer-menu">
                         <div class="bg-ul">
                             <li>
@@ -669,7 +668,7 @@
                         <div class="side-menu-list">
                             <ul>
                                 <li class="Dashboard-btn">
-                                    <a href="#" class="icon-menu-mini">
+                                    <a href="#" class="icon-menu-mini navLink" onclick="GotoPageDashboard() ">
                                         <div class="wrap">
                                             <i class="fa-solid fa-gauge-high"></i>
                                             <p class="text-side-mini">Dashboard</p>
@@ -680,7 +679,7 @@
                                     </a>
                                 </li>
                                 <li class="multiple multiple-mini">
-                                    <a href="#" class="link-open-submenu link-open-submenu-mini icon-menu-mini"
+                                    <a href="#" class="link-open-submenu link-open-submenu-mini icon-menu-mini navLink-user"
                                         onclick="openSubmenuMini()">
                                         <div class="wrap">
                                             <i class="fa-regular fa-user"></i>
@@ -697,26 +696,26 @@
 
                                         </div>
                                     </a>
-                                    <ul class="sub-menu hide sub-menu-mini" id="sub">
-                                        <li class="text-side-mini"> <a href="#">TEST</a></li>
-                                        <li class="text-side-mini"> <a href="#">User list</a></li>
-                                        <li class="text-side-mini"><a href="#">User groups</a></li>
-                                        <li class="text-side-mini"><a href="#">User roles</a></li>
-                                        <li class="text-side-mini"><a href="#">Invite users</a></li>
-                                        <li class="text-side-mini"><a href="#">Add new users </a></li>
+                                    <ul class="sub-menu hide sub-menu-mini " id="sub">
+                                        <li class="text-side-mini "> <a href="#" class="navLinkSub">TEST</a></li>
+                                        <li class="text-side-mini"> <a href="#" class="navLinkSub">User list</a></li>
+                                        <li class="text-side-mini "><a href="#" class="navLinkSub">User groups</a></li>
+                                        <li class="text-side-mini "><a href="#" class="navLinkSub">User roles</a></li>
+                                        <li class="text-side-mini "><a href="#" class="navLinkSub">Invite users</a></li>
+                                        <li class="text-side-mini "><a href="#" class="navLinkSub">Add new users </a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#" class="icon-menu-mini">
+                                    <a href="#" class="icon-menu-mini navLink" onclick="GotoPageBrowse()">
                                         <div class="wrap">
                                             <i class="fa-regular fa-file-lines"></i>
-                                            <p class="text-side-mini">Documents</p>
+                                            <p class="text-side-mini" >Documents</p>
                                         </div>
 
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="icon-menu-mini">
+                                    <a href="#" class="icon-menu-mini navLink" >
                                         <div class="wrap">
                                             <i class="fa-regular fa-file-powerpoint"></i>
                                             <p class="text-side-mini">Templates</p>
@@ -725,7 +724,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="icon-menu-mini">
+                                    <a href="#" class="icon-menu-mini navLink">
                                         <div class="wrap">
                                             <i class="fa-solid fa-file-export"></i>
                                             <p class="text-side-mini">Roles</p>
@@ -734,7 +733,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="icon-menu-mini">
+                                    <a href="#" class="icon-menu-mini navLink">
                                         <div class="wrap">
                                             <i class="fa-solid fa-folder-tree"></i>
                                             <p class="text-side-mini">Groups</p>
@@ -742,7 +741,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="icon-menu-mini">
+                                    <a href="#" class="icon-menu-mini navLink">
                                         <div class="wrap">
                                             <i class="fa-solid fa-circle-play"></i>
                                             <p class="text-side-mini">Media</p>
@@ -750,7 +749,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="icon-menu-mini">
+                                    <a href="#" class="icon-menu-mini navLink">
                                         <div class="wrap">
                                             <i class="fa-solid fa-user-tie"></i>
                                             <p class="text-side-mini">Clients</p>
