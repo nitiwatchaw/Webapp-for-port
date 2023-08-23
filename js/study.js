@@ -32,6 +32,8 @@ function toOpen() {
 
 //btn-close menu-sidebar
 function CloseMenuSide() {
+
+    btnOpen.classList.remove('cannotClick')
     document.querySelector('.menu-cover').style.left = "-600px";
     setTimeout(function () {
         document.querySelector('.menu-cover').style.display = "none";
@@ -148,7 +150,7 @@ function OpenMenuSidefromSidemini() {
     linkToOpenMini.classList.toggle('border-bottom-0')
     
 
-    
+
     document.onclick = function clickOutsidemini() {
         function mobilesize(x) {
             if (x.matches) { // If media query matches
@@ -172,7 +174,7 @@ function OpenMenuSidefromSidemini() {
                         for (let i = 0; i < iconMenuMini.length; i++) {
                             iconMenuMini[i].classList.remove('side-menu-list-space-between');
                         }
-
+                        contentSection.classList.remove('content-all-section-movement')
                         linkToOpenMini.classList.toggle('border-bottom-0')
                         btnSideOpen.classList.remove("hide")
                         btnSideClose.classList.add("hide")
@@ -327,7 +329,7 @@ function openrightSide() {
     btnSideRightOpen.classList.toggle('hide')
     btnSideRightClose.classList.toggle('hide')
     setTimeout(function () {
-        rightSideContent.classList.toggle('transform2')
+        rightSideContent.classList.toggle('reset-transform')
     }, 10)
 
 }
@@ -487,65 +489,71 @@ const modalEventContent = document.querySelector('.event-modal-popup-content')
 function changeSlide() {
 
 
-    if (menuMini.classList.contains('menu-cover-mini-width-extend')) {
-        modalCreate.style.marginLeft = "11.5%"
-        modalDelete.style.marginLeft = "11.5%"
-        modalEventContent.style.left = "56%"
-        new Swiper('.swiper', {
-            slidesPerView: 4,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
+    const mediaQuery = window.matchMedia('(min-width: 1599px)')
 
-                550: {
-                    slidesPerView: 5,
+    if(mediaQuery.matches){
 
+        if (menuMini.classList.contains('menu-cover-mini-width-extend') ) {
+            modalCreate.style.marginLeft = "11.5%"
+            modalDelete.style.marginLeft = "11.5%"
+            modalEventContent.style.left = "56%"
+            new Swiper('.swiper', {
+                slidesPerView: 4,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
-                650: {
-                    slidesPerView: 6,
-
-                },
-                764: {
-                    slidesPerView: 7,
-
-                },
-
-                999: {
-                    slidesPerView: 9,
-
-                },
-                1200: {
-                    slidesPerView: 9,
-
-                },
-                1400: {
-                    slidesPerView: 10,
-
-                },
-                1500: {
-                    slidesPerView: 11,
-
-                },
-                1700: {
-                    slidesPerView: 12,
-
-                },
-                1900: {
-                    slidesPerView: 13,
-
-                },
-
-            }
-        });
+                breakpoints: {
+    
+                    550: {
+                        slidesPerView: 5,
+    
+                    },
+                    650: {
+                        slidesPerView: 6,
+    
+                    },
+                    764: {
+                        slidesPerView: 7,
+    
+                    },
+    
+                    999: {
+                        slidesPerView: 9,
+    
+                    },
+                    1200: {
+                        slidesPerView: 9,
+    
+                    },
+                    1400: {
+                        slidesPerView: 10,
+    
+                    },
+                    1500: {
+                        slidesPerView: 11,
+    
+                    },
+                    1700: {
+                        slidesPerView: 12,
+    
+                    },
+                    1900: {
+                        slidesPerView: 13,
+    
+                    },
+    
+                }
+            });
+        }
+        else {
+            slider()
+            modalCreate.style.marginLeft = "95px"
+            modalDelete.style.marginLeft = "95px"
+            modalEventContent.style.left = "50%"
+        }
     }
-    else {
-        slider()
-        modalCreate.style.marginLeft = "112px"
-        modalDelete.style.marginLeft = "112px"
-        modalEventContent.style.left = "50%"
-    }
+
 
 
 }
@@ -617,8 +625,10 @@ navlinkEls.forEach((navlinkEl) => {
 navLinkUser.forEach((navLinkUser) => {
     navLinkUser.addEventListener('click', () => {
         document.querySelector('.active-link')?.classList.remove('active-link');
+        
+    
         navLinkUser.classList.toggle('active-link-user');
-
+     
         
         if (navLinkUser.classList.contains('active-link-user')) {
             subMenuMini.classList.add('show');
@@ -641,4 +651,20 @@ navlinkElsSub.forEach(navlinkElsub => {
         navlinkElsub.classList.add('active-link-sub');
     });
 })
+
+
+function checkAll(x){
+    var chekboxM = document.querySelector('.colorChange-Mobile')
+    var chekboxT = document.querySelector('.colorChange-Tablet')
+
+    if(x.checked == true){
+        chekboxM.checked = true;
+        chekboxT.checked = true;
+    }
+    else{
+        chekboxM.checked = false;
+        chekboxT.checked = false;   
+    }
+}
+
 

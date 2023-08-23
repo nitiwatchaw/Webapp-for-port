@@ -498,7 +498,7 @@
                             <!-- change colour btn -->
                             <div class="toggle-switch switchColorMobile">
                                 <label class="switch-label">
-                                    <input type="checkbox" class="checkbox colorChange-Mobile" >
+                                    <input type="checkbox" class="checkbox colorChange-Mobile" onchange='checkAll(this);' >
                                     <span class="slider"></span>
                                 </label>
                             </div>
@@ -535,7 +535,7 @@
                                 </a>
                             </li>
                             <li class="multiple">
-                                <a href="#javascript:void(0)" class="link-open-submenu navLink-user" onclick="openSubmenu()" >
+                                <a href="#javascript:void(0)" class="link-open-submenu navLink-user " onclick="openSubmenu()" >
                                     <div class="wrap">
                                         <i class="fa-regular fa-user"></i>
                                         <p>User</p>
@@ -791,7 +791,7 @@
                         <!-- change colour btn -->
                         <div class="toggle-switch switchColorTablet">
                             <label class="switch-label">
-                                <input type="checkbox" class="checkbox colorChange-Tablet" >
+                                <input type="checkbox" class="checkbox colorChange-Tablet " onchange='checkAll(this);'>
                                 <span class="slider"></span>
                             </label>
                         </div>
@@ -1168,7 +1168,7 @@
                                                                         <!-- todo t head -->
                                                                         <thead class="table-title">
                                                                             <tr>
-                                                                                <td class="border-none">
+                                                                                <td class="border border-0">
                                                                                     <div class="cover">
                                                                                         <table
                                                                                             class="table table-head bg-head">
@@ -1206,7 +1206,7 @@
                                                                         <!-- todo t body -->
                                                                         <tbody class="table-body">
                                                                             <tr>
-                                                                                <td class="border-none">
+                                                                                <td class="border border-0">
                                                                                     <!-- week1 -->
                                                                                     <div class="cover">
                                                                                         <table
