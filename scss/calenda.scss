@@ -1,0 +1,194 @@
+.calenda-section {
+    display: none;
+    position: relative;
+
+    .calenda-header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;
+        border-top: 1px solid $dropdownBorderColor;
+        border-bottom: 1px solid $dropdownBorderColor;
+        padding: 25px 0px;
+        > button {
+            width: 123px;
+            height: 55px;
+            font-size: 20px;
+            color: $blue;
+            border-radius: 12px;
+            border: 1px solid $dropdownBorderColor;
+        }
+        .calenda-title-wrap {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            align-items: center;
+            i {
+                color: $black;
+            }
+        }
+        .wrap-select-btn {
+            display: flex;
+            align-items: center;
+        }
+        .mounth {
+            border: 1px solid $dropdownBorderColor;
+            width: 123px;
+            height: 55px;
+            border-radius: 12px 0px 0px 12px;
+            font-size: 20px;
+        }
+        .week {
+            border: 1px solid $dropdownBorderColor;
+            width: 123px;
+            height: 55px;
+            border-radius: 0px 12px 12px 0px;
+            font-size: 20px;
+        }
+        .active,
+        .mounth:hover,
+        .week:hover {
+            background-color: $grayLight;
+        }
+    }
+
+    table {
+        margin: 0px;
+        .table > :not(caption) > * > * {
+            background-color: unset !important;
+        }
+        tr {
+            height: 30px;
+        }
+
+        td {
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            border-top: 0px !important;
+            border-bottom: 0px !important;
+            border-left: 0.5px solid $white;
+            border-right: 0.5px solid $white;
+        }
+        td:first-child,
+        td:last-child {
+            border: 0px;
+        }
+        .table {
+            margin: 0px;
+            table-layout: fixed;
+            border: 0px;
+            --bs-table-bg: none;
+            thead {
+                tr {
+                    height: 40px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .table-title {
+            .bg-head {
+                background-color: $grayLight;
+            }
+
+            .table-head {
+                thead {
+                    height: 60px;
+                    width: 100%;
+                }
+            }
+        }
+        .table-body {
+            border: 0px !important;
+            tr {
+                border: 0px !important;
+            }
+
+            .cover {
+                position: relative;
+                width: 100%;
+                border-top: 0.5px solid $white !important;
+                background-color: $grayCalenda;
+
+                td:first-child,
+                td:last-child {
+                    border: 0px;
+                }
+                td {
+                    border-left: 0.5px solid $white;
+                    border-right: 0.5px solid $white;
+                }
+
+                .table-under {
+                    position: relative;
+                    top: 0px;
+                }
+
+                .content {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: unset;
+                    z-index: 4;
+                    --bs-table-bg: none;
+                    .notCurrentMonth {
+                        color: $grayCalendaDisableText !important;
+                        background-color: $grayCalendaDisableBg !important;
+                    }
+                    thead {
+                        td:last-child,
+                        td:first-child {
+                            color: $orange;
+                        }
+                    }
+                    .event-more {
+                        color: $gray;
+                        background-color: $grayCalenda;
+                    }
+                    .event {
+                        position: relative;
+                        width: 100%;
+                        border: 1px solid $borderGray;
+                        background-color: $white;
+                        border-radius: 5px;
+                        font-size: 13px;
+                        height: 25px;
+                        text-align: left;
+                        padding: 0px 3px;
+                        justify-content: center;
+                        text-overflow: ellipsis;
+                        word-wrap: break-word;
+                        overflow: hidden;
+                        display: flex;
+                        p {
+                            max-width: 86%;
+                            line-height: 24px;
+                        }
+                        i {
+                            margin-right: 3px;
+                            align-self: center;
+                        }
+                    }
+                    .todayCalenda {
+                        width: 25px;
+                        height: 25px;
+                        background-color: $blue;
+                        border-radius: 50%;
+                        position: relative;
+                        color: $white;
+                        text-align: center;
+                    }
+                }
+            }
+            .cover:first-child {
+                border-top: 0px !important;
+            }
+            .cover:last-child {
+                td {
+                    border-bottom: 0px;
+                }
+            }
+        }
+    }
+}

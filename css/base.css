@@ -1375,8 +1375,7 @@ li {
     box-shadow: #e2ebf6 1px 1px 6px 1px, #e2ebf6 0px 18px 36px -18px;
 }
 
-.wrapLink-circle-cover,
-.wrapLink-circle-cover-collape {
+.wrapLink-circle-cover {
     border: 2px solid #cbd9e8;
     border-radius: 50%;
     width: 50px;
@@ -1774,7 +1773,7 @@ li {
 
 .side-menu-list ul li {
     margin-bottom: 6px;
-        border-radius: 10px;
+    border-radius: 10px;
 }
 
 .side-menu-list .Dashboard-btn:first-child {
@@ -2035,11 +2034,10 @@ li {
 
 .wrapper-alert .cover-text {
     width: 88%;
-}
-
-.Dashboard-page .alert-adjust .cover-text {
     font-size: 18px;
 }
+
+
 
 .Dashboard-page .alert-adjust .cover-text .getUnderline {
     text-decoration: revert;
@@ -2192,8 +2190,7 @@ li {
     box-shadow: #0092e3 0px 1px 14px -2px;
 }
 
-.swiper,
-.swiper-2 {
+.swiper {
     width: 100%;
     height: unset;
 }
@@ -2328,15 +2325,13 @@ li {
     height: 100%;
     padding-top: 25px;
     padding-bottom: 25px;
-
-}
-
-.forWrap {
     display: flex;
     gap: 20px;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 40px 20px;
+    border-radius: 10px;
+
 }
 
 .cardCover {
@@ -2548,7 +2543,6 @@ li {
 .General-number-cover i {
     color: #c7d5e7;
 }
-
 
 
 
@@ -3084,9 +3078,6 @@ li {
 
 
 
-
-
-
 .calenda-header {
     display: flex;
     align-items: center;
@@ -3167,7 +3158,7 @@ table {
     margin: 0px;
     table-layout: fixed;
     border: 0px;
-    --bs-table-bg: none
+    --bs-table-bg: none;
 }
 
 .table-head thead {
@@ -3888,8 +3879,7 @@ table .cover {
         height: 42px;
     }
 
-    .wrapLink-circle-cover,
-    .wrapLink-circle-cover-collape {
+    .wrapLink-circle-cover {
         width: 42px;
         height: 42px;
     }

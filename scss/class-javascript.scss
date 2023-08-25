@@ -1,0 +1,51 @@
+/*  ! use for javascript */
+.hide {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.none {
+    display: none !important;
+}
+
+.disableScroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.cannotClick {
+    pointer-events: none;
+}
+
+.btn-mini-Left {
+    margin-left: auto;
+    border-radius: 5px 0px 0px 5px !important;
+}
+
+.transform {
+    transform: translate(0px, 273px) !important;
+}
+
+.reset-transform {
+    transform: $tranformReset !important;
+}
+
+.content-all-section-movement {
+    padding: auto;
+    transition-duration: 0.3s;
+}
+
+.menu-cover-mini-width-extend {
+    width: 280px !important;
+}
+
+.topic-tablet {
+    display: none !important;
+}
+
+.for-desktop {
+    display: none !important;
+}

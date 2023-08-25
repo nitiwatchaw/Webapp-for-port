@@ -1,0 +1,213 @@
+$tranformReset: translate(0px, 0px);
+$font-bold: Ubuntu-bold;
+
+$colorRadient: linear-gradient(
+    20deg,
+    rgba(37, 87, 196, 1) 0%,
+    rgba(47, 89, 201, 1) 14%,
+    rgba(55, 91, 205, 1) 38%,
+    rgba(70, 94, 212, 1) 52%,
+    rgba(83, 98, 218, 1) 68%,
+    rgba(87, 103, 219, 1) 100%
+);
+$dotShadow:
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+$boxShadow:
+    rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+$dropdownMenuShadow:
+    rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+$white: #fff;
+$black: #000;
+$blue: #0092e3;
+$blueBg:#b2ceff;
+$blueLight:#edf5ff;
+$blueDark: #233a67;
+$blueHover: #0270ac;
+$purple: #5252c0;
+$green: #12b785;
+$greenLight: #6dc0b3;
+$pink: #f4548c;
+$pinkLight: #ffebf3;
+$orange:#d68025;
+$gray: #92a6c6;
+$grayLight: #e2ebf6;
+$grayBlue: #ebf2ff;
+$grayDark: #617c9c;
+$grayCalenda:#e3e6ed;
+$grayCalendaDisableText:#cbccd4;
+$grayCalendaDisableBg:#eef0f5;
+$backgroundGray: #f6f9ff;
+
+$DocType-pink: #f5f4ff;
+$DocType-blue: #ebf4fb;
+$DocType-green: #edf8f6;
+
+$greenButton: #63d4d4;
+$greenButtonHover: #51abab;
+
+$grenPin: #25b003;
+
+$dropdownBorderColor: #cbd9e8;
+$dropdownBackgroundColorBLue: #0f2c7c;
+
+$switchDropdownLiHover: #0b2455;
+
+$modalColorGray: #9eb1cd;
+$modal-backdrop: #8db3fc;
+
+$pink-btn: #f55995;
+$blue-btn: #1148b1;
+$shadow-btn: -1px 5px 20px 0px;
+
+$borderGray: #dce4f4;
+$Darkblue: #021133;
+
+:root:has(.colorChange-Mobile:checked),
+:root:has(.colorChange-Tablet:checked) {
+    --backgroundSidebar: white;
+    --lineSidebar: #99afc9;
+    --iconOpen_CLoseSidebar: black;
+    --textSidebar: black;
+    --textSubmenuSidebar: black;
+    --textfooter: #a2b7cf;
+    --iconSidebar: #a2b7cf;
+    --borderMultiple: #99afc9;
+    --borderUserSidebar: #99afc9;
+    --backgroundFooterSidebar: #f7faff;
+    --backgroundiconSubmenu: #f4f7fc;
+
+    --backgroundSidebarHover: transparent;
+    --textSidebarHover: #4090fc;
+    --textSubmenuHover: #4090fc;
+    --textSubmenuBeforeHover: #0193e3;
+
+    --backgroundSidebarFocus: transparent;
+    --backgroundSubmenuSidebarFocus: transparent;
+
+    --backgroundMainSidebarFocus: transparent;
+    --textSidebarFocus: #4090fc;
+    --textUserActive: #4090fc;
+    --backgroundiconSubmenuFocus: transparent;
+}
+:root {
+    --backgroundSidebar: #032c7b;
+    --lineSidebar: #4064a8;
+    --iconOpen_CLoseSidebar: white;
+    --textSidebar: #90abdf;
+    --textSubmenuSidebar: #7092d2;
+    --textfooter: #90abdf;
+    --iconSidebar: #6e9bf2;
+    --borderMultiple: #032c7b;
+    --borderUserSidebar: #012260;
+    --backgroundFooterSidebar: #173686;
+    --backgroundiconSubmenu: #082c7c;
+
+    --backgroundSidebarHover: #022567;
+    --textSidebarHover: white;
+    --textSubmenuHover: white;
+    --textSubmenuBeforeHover: #0193e3;
+
+    --backgroundSidebarFocus: #022567;
+    --backgroundSubmenuSidebarFocus: #022567;
+
+    --backgroundMainSidebarFocus: #012260;
+    --textSidebarFocus: white;
+    --textUserActive: white;
+    --backgroundiconSubmenuFocus: #082c7c;
+
+    /* switch toggle */
+    --switchBackground: #042c7c;
+
+    /* breadcrumb color */
+    --breadcrumbcolor: #93a5bc;
+    --breadcrumbcolor_Active: #215cbd;
+}
+
+/*  ? color */
+.blue {
+    color: $blue;
+    background-color: $blue;
+    box-shadow: $dotShadow;
+}
+
+.purple {
+    color: $purple;
+    background-color: $purple;
+    box-shadow: $dotShadow;
+}
+
+.green {
+    color: $green;
+    background-color: $green;
+    box-shadow: $dotShadow;
+}
+
+.pink {
+    color: $pink;
+    background-color: $pink;
+    box-shadow: $dotShadow;
+}
+
+.gray {
+    color: $gray;
+    background-color: $gray;
+    box-shadow: $dotShadow;
+}
+
+.DocType-pink {
+    background-color: $DocType-pink !important;
+}
+
+.DocType-blue {
+    background-color: $DocType-blue !important;
+}
+
+.DocType-green {
+    background-color: $DocType-green !important;
+}
+
+.green-completed {
+    color: $greenButton;
+}
+
+.btn-green {
+    background-color: $greenButton;
+}
+
+.btn-green:hover {
+    background-color: $greenButtonHover;
+}
+
+.btn-blue {
+    background-color: $blue;
+}
+
+.btn-blue:hover {
+    background-color: $blueHover;
+}
+
+.bg-white {
+    background-color: $white;
+    border-radius: 13px;
+}
+
+.bg-gray {
+    background-color: $backgroundGray !important;
+}
+
+.green-pin {
+    color: $grenPin;
+}
+
+.blue-pin {
+    color: $blue;
+}
+
+.text-gray {
+    color: $gray;
+}

@@ -1,0 +1,107 @@
+
+
+.day-section {
+    display: none;
+    position: relative;
+}
+
+// slider
+.swiper {
+    width: 100%;
+    height: unset;
+    .swiper-wrapper {
+        height: 90px;
+        align-items: center;
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .box {
+                margin: 7px;
+                width: 85px;
+                height: 77px;
+                max-height: unset;
+                align-self: center;
+                border: 2px solid $dropdownBorderColor;
+                border-radius: 10px;
+                text-align: center;
+                background: $white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p:first-child {
+                    font-size: 16px;
+                    color: $grayDark;
+                }
+                p:last-child {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+            .box:hover,
+            .box.active {
+                height: 85px;
+                border: 2px solid $blue;
+            }
+        }
+    }
+}
+// button slider
+.wrap-btn-swift {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: relative;
+        background-color: $grayLight;
+        border-radius: 7px;
+        width: 47px;
+        height: 40px;
+        border: 2px solid $dropdownBorderColor;
+        position: relative;
+        right: unset;
+        left: unset;
+        top: unset;
+        bottom: unset;
+        margin: unset;
+        box-shadow: $boxShadow;
+        i {
+            position: absolute;
+            color: $black;
+            margin: 0px;
+            font-size: 18px;
+            @include AbsoluteCenter;
+        }
+    }
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        background-color: $white;
+        border-radius: 7px;
+        border: 2px solid $blue;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after,
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        content: "";
+        font-family: unset;
+    }
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+        background-color: $grayLight;
+        border-radius: 7px;
+        width: 47px;
+        height: 40px;
+        border: 1px solid $gray;
+        position: relative;
+        right: unset;
+        left: unset;
+        top: unset;
+        bottom: unset;
+    }
+}

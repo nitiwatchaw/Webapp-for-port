@@ -468,7 +468,7 @@ function slider() {
 
             },
             1200: {
-                slidesPerView: 9,
+                slidesPerView: 8,
 
             },
             1400: {

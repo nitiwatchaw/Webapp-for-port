@@ -1,0 +1,282 @@
+/* * Modal */
+#modal-create {
+    .modal-dialog {
+        position: absolute;
+        width: 95%;
+        @include AbsoluteCenter;
+        border-radius: 20px;
+        margin: 0;
+        border: 0px;
+        .modal-content {
+            background-color: $grayBlue;
+            padding: 13px;
+            border-radius: 20px;
+            border: 0px;
+            .modal-header {
+                justify-content: center;
+                position: relative;
+                border: 0px;
+                .modal-title {
+                    font-size: 17px !important;
+                    font-family: $font-bold;
+                }
+                .btn-close {
+                    padding: 0px;
+                    margin: 0px;
+                }
+                .modalbtn-close-adjust {
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    left: 94%;
+                    transform: translate(-50%, -83%);
+                    background-image: unset;
+                    i {
+                        font-size: 18px;
+                        color: $modalColorGray;
+                    }
+                }
+                .modalbtn-close-adjust:focus {
+                    box-shadow: unset;
+                }
+            }
+            .modal-body {
+                background-color: $white;
+                border-radius: 13px;
+                margin: 10px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                row-gap: 20px;
+                overflow: auto;
+                height: 300px;
+                .box-template {
+                    border-radius: 20px;
+                    width: 300px;
+                    height: 265px;
+                    border: 2px solid $borderGray;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    .img-cover {
+                        height: 55%;
+                        position: relative;
+                        width: 100%;
+                        img {
+                            width: 130px;
+                            @include AbsoluteCenter();
+                        }
+                    }
+                    .text-wrap {
+                        height: 45%;
+                        width: 100%;
+                        justify-content: center;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        > p {
+                            font-family: $font-bold;
+                            font-size: 20px;
+                        }
+                        .cover-text {
+                            background-color: $grayLight;
+                            border-radius: 8px;
+                            width: 60%;
+                            align-self: center;
+                            padding: 5px;
+                            color: $grayDark;
+                        }
+                    }
+                }
+                .box-template:hover {
+                    border: 2px solid $blue;
+                }
+            }
+            .modal-footer {
+                justify-content: center;
+                padding: 0px;
+                border: 0px;
+                button {
+                    font-family: $font-bold;
+                    color: $grayDark;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+#modal-delete {
+    .modal-dialog {
+        width: 95%;
+        border-radius: 20px;
+        margin: 0;
+        border: 0px;
+        @include AbsoluteCenter();
+        .modal-content {
+            background-color: $grayBlue;
+            padding: 13px;
+            border-radius: 20px;
+            border: 0px;
+            .modal-header {
+                justify-content: center;
+                position: relative;
+                border: 0px solid;
+                .modal-title {
+                    font-size: 17px !important;
+                    font-family: $font-bold;
+                    span {
+                        text-decoration: underline;
+                    }
+                }
+                .btn-close {
+                    padding: 0px;
+                    margin: 0px;
+                }
+                .modalbtn-close-adjust {
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    left: 94%;
+                    transform: translate(-50%, -83%);
+                    background-image: unset;
+                    i {
+                        font-size: 18px;
+                        color: $modalColorGray;
+                    }
+                }
+                .modalbtn-close-adjust:focus {
+                    box-shadow: unset;
+                }
+            }
+
+            .modal-body {
+                background-color: $white;
+                border-radius: 13px;
+                margin: 10px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                .warning-text {
+                    padding: 22px;
+                    background-color: $pinkLight;
+                    font-size: 18px;
+                    border-radius: 13px;
+                    font-family: $font-bold;
+                    margin-bottom: 20px;
+                }
+                form {
+                    display: flex;
+                    align-items: center;
+                    .approve {
+                        text-decoration: underline;
+                        font-family: $font-bold;
+                        font-size: 18px;
+                    }
+                }
+                input {
+                    margin-right: 10px;
+                }
+                input[type="checkbox"] {
+                    font: inherit;
+                    color: currentColor;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 60px;
+                    transform: translateY(-0.075em);
+                }
+                .btn-wrap {
+                    display: flex;
+                    margin: 30px 0px 10px 0px;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 13px 13px;
+                        gap: 6px;
+                        border-radius: 8px;
+                    }
+                    .export-btn {
+                        background-color: $blue-btn;
+                        box-shadow: $blue-btn $shadow-btn;
+                    }
+                    .delete-btn {
+                        background-color: $pink-btn;
+                        box-shadow: $pink-btn $shadow-btn;
+                    }
+                    i {
+                        color: $white;
+                        font-size: 16px;
+                        opacity: 0.8;
+                    }
+                    p {
+                        color: $white;
+                        font-size: 16px;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+            .modal-footer {
+                justify-content: center;
+                padding: 0px;
+                border: 0px;
+                button {
+                    font-family: $font-bold;
+                    color: $grayDark;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.modal-backdrop {
+    background-color: $modal-backdrop;
+    opacity: 0.9 !important;
+    z-index: 50 !important;
+}
+
+.modal-event {
+    position: fixed;
+    background-color: $black;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 55;
+    padding-left: 112px;
+}
+.event-modal-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    z-index: 300;
+    .cover {
+        background-color: $white;
+        border-radius: 13px;
+        padding: 20px;
+        display: none;
+        @include AbsoluteCenter();
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        font-family: $font-bold;
+        button {
+            background-color: $blue;
+            color: $white;
+            border-radius: 13px;
+            height: 40px;
+            width: 100px;
+        }
+    }
+}
