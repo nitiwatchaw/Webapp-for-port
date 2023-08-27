@@ -1,6 +1,15 @@
+//media breakpoint
+$breakpoint-tablet: 768px;
+$breakpoint-large: 992px;
+$breapoint-extralarge: 1200px;
+$breapoint-superExtralarge: 1600px;
+
+//other variable
 $tranformReset: translate(0px, 0px);
 $font-bold: Ubuntu-bold;
 
+
+//color variable
 $colorRadient: linear-gradient(
     20deg,
     rgba(37, 87, 196, 1) 0%,
@@ -10,12 +19,31 @@ $colorRadient: linear-gradient(
     rgba(83, 98, 218, 1) 68%,
     rgba(87, 103, 219, 1) 100%
 );
+
+$colorRadient2:
+    linear-gradient(
+            180deg,
+            rgba(79, 126, 238, 1) 0%,
+            rgba(66, 127, 236, 1) 36%,
+            rgba(56, 128, 234, 1) 58%,
+            rgba(49, 128, 232, 1) 79%,
+            rgba(30, 130, 229, 1) 99%
+        )
+        rgb(79, 126, 238) 2px 4px 20px 2px,
+    rgb(79, 126, 238) 0px 18px 36px -18px,
+    rgb(79, 126, 238);
+
+$boxShadowRadient:
+    rgb(79, 126, 238) 2px 4px 20px 2px,
+    rgb(79, 126, 238) 0px 18px 36px -18px;
+
+$colorRadientBg: rgb(79, 126, 238);
 $dotShadow:
     rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
 $boxShadow:
-    rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.15) 0px 1px 6px 0px,
     rgba(0, 0, 0, 0.05) 0px 5px 10px;
 $dropdownMenuShadow:
     rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
@@ -24,8 +52,8 @@ $dropdownMenuShadow:
 $white: #fff;
 $black: #000;
 $blue: #0092e3;
-$blueBg:#b2ceff;
-$blueLight:#edf5ff;
+$blueBg: #b2ceff;
+$blueLight: #edf5ff;
 $blueDark: #233a67;
 $blueHover: #0270ac;
 $purple: #5252c0;
@@ -33,14 +61,17 @@ $green: #12b785;
 $greenLight: #6dc0b3;
 $pink: #f4548c;
 $pinkLight: #ffebf3;
-$orange:#d68025;
+$orange: #d68025;
+$yellow: #ffce04;
+$blueSea: #bbe3fa;
 $gray: #92a6c6;
 $grayLight: #e2ebf6;
 $grayBlue: #ebf2ff;
 $grayDark: #617c9c;
-$grayCalenda:#e3e6ed;
-$grayCalendaDisableText:#cbccd4;
-$grayCalendaDisableBg:#eef0f5;
+$grayCalenda: #e3e6ed;
+$grayCalendaDisableText: #cbccd4;
+$grayCalendaDisableBg: #eef0f5;
+$grayBackgroundTItlaCalenda: #fafcff;
 $backgroundGray: #f6f9ff;
 
 $DocType-pink: #f5f4ff;
@@ -128,7 +159,7 @@ $Darkblue: #021133;
     --breadcrumbcolor_Active: #215cbd;
 }
 
-/*  ? color */
+// color class
 .blue {
     color: $blue;
     background-color: $blue;

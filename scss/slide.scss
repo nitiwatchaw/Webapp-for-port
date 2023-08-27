@@ -1,52 +1,60 @@
-
-
 .day-section {
     display: none;
     position: relative;
 }
-
 // slider
-.swiper {
-    width: 100%;
-    height: unset;
-    .swiper-wrapper {
-        height: 90px;
-        align-items: center;
-        .swiper-slide {
-            display: flex;
+.wrap-slider {
+    @media (min-width: $breakpoint-large) {
+        padding-right: 85px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: unset;
+        .swiper-wrapper {
+            height: 90px;
             align-items: center;
-            justify-content: center;
-            .box {
-                margin: 7px;
-                width: 85px;
-                height: 77px;
-                max-height: unset;
-                align-self: center;
-                border: 2px solid $dropdownBorderColor;
-                border-radius: 10px;
-                text-align: center;
-                background: $white;
+            .swiper-slide {
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
                 align-items: center;
-                p:first-child {
-                    font-size: 16px;
-                    color: $grayDark;
+                justify-content: center;
+                .box {
+                    margin: 7px;
+                    width: 85px;
+                    height: 77px;
+                    max-height: unset;
+                    align-self: center;
+                    border: 2px solid $dropdownBorderColor;
+                    border-radius: 10px;
+                    text-align: center;
+                    background: $white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    p:first-child {
+                        font-size: 16px;
+                        color: $grayDark;
+                    }
+                    p:last-child {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
                 }
-                p:last-child {
-                    font-size: 20px;
-                    font-weight: bold;
+                .box:hover,
+                .box.active {
+                    height: 85px;
+                    border: 2px solid $blue;
                 }
             }
-            .box:hover,
-            .box.active {
-                height: 85px;
-                border: 2px solid $blue;
+            @media (min-width: $breakpoint-tablet) {
+                height: 120px;
+                align-items: center;
             }
         }
     }
 }
+
 // button slider
 .wrap-btn-swift {
     display: flex;
@@ -58,7 +66,7 @@
     .swiper-button-next,
     .swiper-button-prev {
         position: relative;
-        background-color: $grayLight;
+        background-color: $white;
         border-radius: 7px;
         width: 47px;
         height: 40px;
@@ -103,5 +111,14 @@
         left: unset;
         top: unset;
         bottom: unset;
+    }
+    @media (min-width:$breakpoint-large) {
+        position: absolute;
+        gap: 7px;
+        margin: 0px;
+        flex-direction: column-reverse;
+        top: 50%;
+        right: 0px;
+        transform: translate(-50%, -50%);
     }
 }

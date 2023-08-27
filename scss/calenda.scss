@@ -10,6 +10,7 @@
         row-gap: 20px;
         border-top: 1px solid $dropdownBorderColor;
         border-bottom: 1px solid $dropdownBorderColor;
+        background-color: $grayBackgroundTItlaCalenda;
         padding: 25px 0px;
         > button {
             width: 123px;
@@ -27,6 +28,9 @@
             i {
                 color: $black;
             }
+            @media (min-width:$breakpoint-tablet) {
+                gap: 25px;
+            }
         }
         .wrap-select-btn {
             display: flex;
@@ -38,6 +42,10 @@
             height: 55px;
             border-radius: 12px 0px 0px 12px;
             font-size: 20px;
+            @media (min-width:$breakpoint-tablet) {
+                width: 100px;
+                height: 45px;
+            }
         }
         .week {
             border: 1px solid $dropdownBorderColor;
@@ -45,11 +53,20 @@
             height: 55px;
             border-radius: 0px 12px 12px 0px;
             font-size: 20px;
+            @media (min-width:$breakpoint-tablet) {
+                width: 100px;
+                height: 45px;
+            }
         }
         .active,
         .mounth:hover,
         .week:hover {
             background-color: $grayLight;
+        }
+        @media (min-width: $breakpoint-tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
         }
     }
 
@@ -168,6 +185,11 @@
                         i {
                             margin-right: 3px;
                             align-self: center;
+                        }
+
+                        @media (min-width: $breakpoint-tablet) {
+                            justify-content: flex-start;
+                            padding: 0px 10px;
                         }
                     }
                     .todayCalenda {

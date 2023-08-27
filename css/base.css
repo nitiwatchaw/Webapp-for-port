@@ -1660,7 +1660,6 @@ li {
 }
 
 
-
 .menu-cover .line {
     width: 100%;
     border-top: 1px dashed var(--lineSidebar);
@@ -3076,8 +3075,6 @@ li {
 }
 
 
-
-
 .calenda-header {
     display: flex;
     align-items: center;
@@ -3316,7 +3313,7 @@ table .cover {
     display: none;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .side-content-mobile {
         display: none;
     }
@@ -3328,10 +3325,6 @@ table .cover {
 
     .event-modal-popup {
         width: calc(100% - 112px);
-    }
-
-    .calenda-padding-adjust {
-        padding-left: 112px;
     }
 
     .Dashboard-page {
@@ -3594,7 +3587,6 @@ table .cover {
 
     .side-content i {
         font-size: 17px;
-
     }
 
     .side-menu-list li a {

@@ -50,7 +50,6 @@
   --breadcrumbcolor: #93a5bc;
   --breadcrumbcolor_Active: #215cbd; }
 
-/*  ? color */
 .blue {
   color: #0092e3;
   background-color: #0092e3;
@@ -121,6 +120,11 @@ body {
   position: relative;
   scroll-behavior: smooth; }
 
+@media (min-width: 768px) {
+  .content-all-section {
+    padding-left: 98px;
+    transition-duration: 0.3s; } }
+
 .Dashboard-page {
   margin-top: 72px;
   padding-top: 15px; }
@@ -138,30 +142,13 @@ body {
         font-size: 18px;
         color: #617c9c;
         padding-left: 5px; }
-    .Dashboard-page .Overview-bg ul {
-      margin: 0px;
-      border-radius: 35px;
-      background-color: #edf5ff;
-      border: 1px solid #cbd9e8;
-      gap: 2px;
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
-      height: 25px; }
-      .Dashboard-page .Overview-bg ul li {
-        align-self: center; }
-        .Dashboard-page .Overview-bg ul li a {
-          font-size: 16px;
-          padding: 4px 11px;
-          vertical-align: middle;
-          color: #617c9c;
-          font-family: Ubuntu-bold; }
-        .Dashboard-page .Overview-bg ul li a:hover,
-        .Dashboard-page .Overview-bg ul li .active {
-          background-color: #0092e3;
-          color: #fff;
-          border-radius: 35px;
-          box-shadow: #0092e3 0px 1px 14px -2px; }
+        @media (min-width: 768px) {
+          .Dashboard-page .Overview-bg .wrap .title-mounth {
+            font-size: 24px; } }
+    @media (min-width: 768px) {
+      .Dashboard-page .Overview-bg {
+        border-radius: 35px;
+        padding: 8px 10px 8px 20px; } }
   .Dashboard-page .box-scroll-bar {
     background-color: #b2ceff;
     overflow: auto;
@@ -178,7 +165,7 @@ body {
       position: relative; }
       .Dashboard-page .box-scroll-bar .cardCover .content {
         background-color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 6px 0px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
         border-radius: 18px;
         padding: 16px;
         position: relative;
@@ -202,7 +189,7 @@ body {
             gap: 10px; }
             .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text i {
               border-radius: 50%;
-              box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px; }
+              box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 6px 0px, rgba(0, 0, 0, 0.05) 0px 5px 10px; }
             .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text p {
               font-family: Ubuntu-bold;
               color: #233a67; }
@@ -254,13 +241,13 @@ body {
               display: flex;
               align-items: center;
               gap: 6px;
-              border-bottom: 1px solid #f4f4fc; }
+              border-bottom: 1px solid #dce4f4; }
               .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap p,
               .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap i {
-                color: #8a9eb7; }
+                color: #92a6c6; }
             .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box > p {
               font-size: 16px;
-              color: #4b678a;
+              color: #617c9c;
               font-family: Ubuntu-bold; }
       .Dashboard-page .box-scroll-bar .cardCover .cardCover-clone {
         position: absolute;
@@ -274,10 +261,10 @@ body {
     align-items: center;
     gap: 10px; }
     .Dashboard-page .General-number i {
-      color: #a0b2cb; }
+      color: #92a6c6; }
   .Dashboard-page .General-number-cover {
     width: 100%;
-    background-color: white;
+    background-color: #fff;
     border-radius: 13px;
     display: flex;
     align-items: center;
@@ -289,14 +276,14 @@ body {
       width: 80%;
       gap: 17px; }
       .Dashboard-page .General-number-cover .cover-detail .cover-icon {
-        border: 1px solid #e4ecfc;
+        border: 1px solid #dce4f4;
         border-radius: 7px;
         width: 46px;
         height: 46px;
-        background-color: white;
+        background-color: #fff;
         position: relative; }
         .Dashboard-page .General-number-cover .cover-detail .cover-icon i {
-          color: #3d5a7f;
+          color: #617c9c;
           font-size: 16px;
           position: absolute;
           position: absolute;
@@ -309,7 +296,7 @@ body {
         flex-direction: column; }
         .Dashboard-page .General-number-cover .cover-detail .text-wrap p:first-child {
           font-size: 18px;
-          color: #3d5a7f;
+          color: #617c9c;
           align-self: flex-start;
           font-family: Ubuntu-bold; }
         .Dashboard-page .General-number-cover .cover-detail .text-wrap p:last-child {
@@ -317,7 +304,17 @@ body {
           align-self: flex-start;
           font-family: Ubuntu-bold; }
     .Dashboard-page .General-number-cover i {
-      color: #c7d5e7; }
+      color: #92a6c6; }
+  @media (min-width: 768px) {
+    .Dashboard-page .scroll-bar-right-side {
+      height: 400px;
+      overflow: auto;
+      display: none;
+      border: 3px solid #dce4f4;
+      transform: translate(0px, -500px);
+      transition-duration: 0.2s; } }
+  .Dashboard-page .scroll-bar-right-side::-webkit-scrollbar {
+    display: none; }
   .Dashboard-page .DocsType-cover {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -333,76 +330,10 @@ body {
         gap: 5px; }
         .Dashboard-page .DocsType-cover .wrpa-title .wrap-text p {
           font-size: 18px;
-          color: #a3b6c9; }
-    .Dashboard-page .DocsType-cover .DocsType-card-cover {
-      box-shadow: rgba(100, 100, 111, 0.2) 2px 4px 20px -5px;
-      width: 100%;
-      background-color: white;
-      border-radius: 13px;
-      display: flex;
-      align-items: center;
-      padding: 14px 20px;
-      justify-content: space-between;
-      margin: 0px 0px 20px 0px; }
-      .Dashboard-page .DocsType-cover .DocsType-card-cover .cover-detail {
-        display: flex;
-        align-items: center;
-        width: 80%;
-        gap: 17px; }
-        .Dashboard-page .DocsType-cover .DocsType-card-cover .cover-detail .text-wrap {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start; }
-          .Dashboard-page .DocsType-cover .DocsType-card-cover .cover-detail .text-wrap p:first-child {
-            font-family: Ubuntu-bold;
-            text-align: left; }
-          .Dashboard-page .DocsType-cover .DocsType-card-cover .cover-detail .text-wrap p:last-child {
-            text-align: left;
-            font-size: 16px;
-            color: #8a9eb7; }
-      .Dashboard-page .DocsType-cover .DocsType-card-cover .cover-icon {
-        border: 1px solid #e4ecfc;
-        border-radius: 7px;
-        width: 46px;
-        height: 46px;
-        background-color: white;
-        position: relative; }
-        .Dashboard-page .DocsType-cover .DocsType-card-cover .cover-icon i {
-          color: #3d5a7f;
-          font-size: 16px;
-          position: absolute;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%) !important; }
-      .Dashboard-page .DocsType-cover .DocsType-card-cover > .cover {
-        width: 80px;
-        height: 54px;
-        border: 1px dashed #8a9eb7;
-        border-radius: 13px;
-        position: relative; }
-        .Dashboard-page .DocsType-cover .DocsType-card-cover > .cover a {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); }
-          .Dashboard-page .DocsType-cover .DocsType-card-cover > .cover a > p {
-            font-size: 20px;
-            color: black;
-            font-family: Ubuntu-bold; }
-          .Dashboard-page .DocsType-cover .DocsType-card-cover > .cover a .wrap {
-            display: flex;
-            align-items: center;
-            gap: 3px; }
-            .Dashboard-page .DocsType-cover .DocsType-card-cover > .cover a .wrap i {
-              color: #8a9eb7; }
-            .Dashboard-page .DocsType-cover .DocsType-card-cover > .cover a .wrap p {
-              color: #8a9eb7;
-              font-size: 16px;
-              font-family: Ubuntu-bold; }
+          color: #92a6c6; }
+    @media (min-width: 768px) {
+      .Dashboard-page .DocsType-cover {
+        background-color: #eef0f5; } }
   .Dashboard-page .RecentAction-cover {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -414,16 +345,16 @@ body {
       align-items: center; }
       .Dashboard-page .RecentAction-cover .wrpa-title .wrap-tex p {
         font-size: 18px;
-        color: #a3b6c9; }
+        color: #92a6c6; }
     .Dashboard-page .RecentAction-cover .RecentAction-button-cover {
       display: flex;
       padding: 17px 14px;
       flex-direction: column;
       border-color: #d8e4f4;
       border-radius: 14px;
-      border: 1px solid #d8e4f4;
+      border: 1px solid #dce4f4;
       width: 100%;
-      background-color: white; }
+      background-color: #fff; }
       .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card {
         display: flex;
         align-items: center;
@@ -435,12 +366,12 @@ body {
           align-items: center;
           gap: 20px; }
           .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img {
-            background-color: #f1f4f9;
+            background-color: #e2ebf6;
             border-radius: 13px;
             padding: 5px; }
             .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover {
               border-radius: 50%;
-              background-color: white;
+              background-color: #fff;
               width: 50px;
               height: 50px;
               position: relative;
@@ -464,21 +395,21 @@ body {
             .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:first-child,
             .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:last-child {
               font-size: 18px;
-              color: #92a2ba; }
+              color: #92a6c6; }
             .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .by,
             .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .price {
-              color: #3d5a7f;
+              color: #617c9c;
               font-weight: bold; }
         .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap {
           display: flex;
           align-items: center;
           gap: 6px;
-          background-color: white;
+          background-color: #fff;
           align-self: baseline;
           margin-top: 3px; }
           .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap .dot {
             border-radius: 50%;
-            border: 2px solid #dcecfc; }
+            border: 2px solid #dce4f4; }
           .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap p {
             background-color: unset !important;
             box-shadow: unset;
@@ -495,12 +426,12 @@ body {
           align-items: center;
           gap: 20px; }
           .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img {
-            background-color: #f1f4f9;
+            background-color: #e2ebf6;
             border-radius: 13px;
             padding: 5px; }
             .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover {
               border-radius: 50%;
-              background-color: white;
+              background-color: #fff;
               width: 50px;
               height: 50px;
               position: relative;
@@ -524,87 +455,203 @@ body {
             .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:first-child,
             .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:last-child {
               font-size: 18px;
-              color: #92a2ba; }
+              color: #92a6c6; }
             .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .by,
             .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .price {
-              color: #3d5a7f;
+              color: #617c9c;
               font-weight: bold; }
         .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap {
           display: flex;
           align-items: center;
           gap: 6px;
-          background-color: white;
+          background-color: #fff;
           align-self: baseline;
           margin-top: 3px; }
           .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap .dot {
             border-radius: 50%;
-            border: 2px solid #dcecfc; }
+            border: 2px solid #dce4f4; }
           .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap p {
             background-color: unset !important;
             box-shadow: unset;
             font-weight: bold;
             font-size: 16px; }
-      .Dashboard-page .RecentAction-cover .RecentAction-button-cover .btn-recent {
-        border-radius: 8px;
-        color: white;
-        font-size: 18px;
-        padding: 10px;
-        margin-top: 15px; }
-        .Dashboard-page .RecentAction-cover .RecentAction-button-cover .btn-recent span {
-          text-decoration: underline; }
+    @media (min-width: 768px) {
+      .Dashboard-page .RecentAction-cover {
+        background-color: #eef0f5; } }
+  @media (min-width: 768px) {
+    .Dashboard-page {
+      margin-top: 67px;
+      padding-top: 15px; }
+      .Dashboard-page .change-position {
+        flex-direction: column-reverse; } }
+  @media (min-width: 992px) {
+    .Dashboard-page {
+      margin-top: 68px; } }
 
 .Browse-Companies {
   display: none;
   margin-top: 75px; }
   .Browse-Companies .title-Browse-Companies h1 {
     font-family: Ubuntu-bold; }
-  .Browse-Companies .AllCompany-btn-wrap {
+  .Browse-Companies .AllCompany {
     display: flex;
     align-items: center;
+    gap: 10px; }
+    .Browse-Companies .AllCompany i {
+      color: #92a6c6; }
+  .Browse-Companies .wrapperBox-company {
     justify-content: center;
-    margin-top: 30px;
-    gap: 5px; }
-    .Browse-Companies .AllCompany-btn-wrap .join-com {
-      border: 2px solid #1647b1;
-      background-color: white;
-      border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    padding-bottom: 40px; }
+    .Browse-Companies .wrapperBox-company .box-company {
+      width: 340px;
+      height: 280px;
+      border: 2px solid #dce4f4;
+      border-radius: 25px;
+      background-color: #fff;
+      margin: 30px 0px 0px 0px;
+      overflow: hidden;
       display: flex;
-      align-items: center;
-      padding: 8px 10px;
-      gap: 6px;
-      box-shadow: #e2edfd 2px 4px 20px 2px, #e2edfd 0px 18px 36px -18px; }
-
-.dot {
-  font-size: 1px;
-  border-radius: 50%; }
-
-.line-break {
-  border-bottom: 1px solid #e2ebf6;
-  position: relative; }
-  .line-break .line-break-blue {
-    height: 4px;
-    width: 44px;
-    border-radius: 35px;
-    background-color: #0092e3;
-    position: absolute;
-    bottom: -2px;
-    left: 0; }
-
-.breadcrumb li a,
-.breadcrumb li a::before {
-  font-size: 16px;
-  color: var(--breadcrumbcolor); }
-  .breadcrumb li a i,
-  .breadcrumb li a::before i {
-    color: var(--breadcrumbcolor); }
-
-.breadcrumb .active {
-  color: var(--breadcrumbcolor_Active);
-  font-size: 16px;
-  margin: 0px;
-  font-family: Ubuntu-bold; }
-  .breadcrumb .active i {
-    color: var(--breadcrumbcolor_Active) !important;
-    font-size: 16px;
-    margin: 0px;
-    font-family: Ubuntu-bold; }
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+      cursor: pointer; }
+      .Browse-Companies .wrapperBox-company .box-company .box-top {
+        width: 100%;
+        height: 175px;
+        border-radius: 25px;
+        position: relative;
+        box-shadow: #dce4f4 0px 10px 36px 0px, #dce4f4 0px 0px 0px 1px; }
+        .Browse-Companies .wrapperBox-company .box-company .box-top img {
+          width: 70px;
+          position: absolute;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) !important; }
+        .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star {
+          display: flex;
+          justify-content: center;
+          gap: 3px;
+          position: absolute;
+          align-items: center;
+          border-radius: 6px;
+          width: 90px;
+          height: 35px;
+          top: 18%;
+          left: 16%;
+          transform: translate(-50%, -50%);
+          background-color: #ffce04; }
+          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star i {
+            color: #000; }
+          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star p {
+            font-size: 18px;
+            font-family: Ubuntu-bold;
+            color: #000; }
+        .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin {
+          display: flex;
+          justify-content: center;
+          gap: 3px;
+          position: absolute;
+          align-items: center;
+          border-radius: 6px;
+          width: 90px;
+          height: 35px;
+          top: 18%;
+          left: 16%;
+          transform: translate(-50%, -50%);
+          background-color: #bbe3fa; }
+          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin i {
+            color: #000; }
+          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin p {
+            font-size: 18px;
+            font-family: Ubuntu-bold;
+            color: #000; }
+        .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user {
+          display: flex;
+          justify-content: center;
+          gap: 3px;
+          position: absolute;
+          align-items: center;
+          border-radius: 6px;
+          width: 90px;
+          height: 35px;
+          top: 18%;
+          left: 16%;
+          transform: translate(-50%, -50%);
+          border: 1px solid #dce4f4;
+          background-color: #fff; }
+          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user i {
+            color: #dce4f4; }
+          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user p {
+            font-size: 18px;
+            font-family: Ubuntu-bold;
+            color: #000; }
+        .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover {
+          border: 1px solid #fff;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          height: 20px;
+          border-radius: 4px;
+          top: 18%;
+          right: 4%;
+          transform: translate(-50%, -50%); }
+          .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover a {
+            padding: 0px 6px; }
+          .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover i {
+            color: #a9bcd0; }
+        .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover:hover {
+          border: 1px solid #92a6c6; }
+      .Browse-Companies .wrapperBox-company .box-company .text-wrap {
+        align-self: center;
+        margin-top: 25px; }
+        .Browse-Companies .wrapperBox-company .box-company .text-wrap p:first-child {
+          font-size: 20px;
+          text-align: center;
+          font-family: Ubuntu-bold; }
+        .Browse-Companies .wrapperBox-company .box-company .text-wrap p:last-child {
+          font-family: Ubuntu-bold;
+          color: #92a6c6; }
+      .Browse-Companies .wrapperBox-company .box-company .active-btn {
+        display: flex;
+        border-radius: 35px;
+        border: 1px solid #dce4f4;
+        padding: 3px 6px;
+        align-items: center;
+        position: absolute;
+        background: #fff;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%, 88%);
+        z-index: 45;
+        gap: 5px;
+        display: none; }
+        .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover {
+          position: relative;
+          background-color: #12b785;
+          border-radius: 50%;
+          width: 18px;
+          height: 18px; }
+          .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover i {
+            color: #fff;
+            position: absolute;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) !important; }
+          .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover p {
+            font-size: 16px;
+            font-family: Ubuntu-bold; }
+    .Browse-Companies .wrapperBox-company .box-company:hover {
+      border-color: #12b785; }
+    .Browse-Companies .wrapperBox-company .box-company:focus {
+      border-color: #12b785; }
+      .Browse-Companies .wrapperBox-company .box-company:focus .active-btn {
+        display: flex !important; }
+    .Browse-Companies .wrapperBox-company .active {
+      border-color: #12b785; }
+      .Browse-Companies .wrapperBox-company .active .active-btn {
+        display: flex !important; }

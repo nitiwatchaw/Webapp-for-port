@@ -1,5 +1,5 @@
 @import "_variable.scss";
-@import "mixin.scss";
+@import "_mixin.scss";
 
 body {
     font-family: "Ubuntu";
@@ -7,6 +7,12 @@ body {
     scroll-behavior: smooth;
 }
 
+.content-all-section {
+    @media (min-width: $breakpoint-tablet) {
+        padding-left: 98px;
+        transition-duration: 0.3s;
+    }
+}
 
 //dashboard Page
 .Dashboard-page {
@@ -29,35 +35,14 @@ body {
                 font-size: 18px;
                 color: $grayDark;
                 padding-left: 5px;
+                @media (min-width: $breakpoint-tablet) {
+                    font-size: 24px;
+                }
             }
         }
-        ul {
-            margin: 0px;
+        @media (min-width: $breakpoint-tablet) {
             border-radius: 35px;
-            background-color: $blueLight;
-            border: 1px solid $dropdownBorderColor;
-            gap: 2px;
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            height: 25px;
-            li {
-                align-self: center;
-                a {
-                    font-size: 16px;
-                    padding: 4px 11px;
-                    vertical-align: middle;
-                    color: $grayDark;
-                    font-family: $font-bold;
-                }
-                a:hover,
-                .active {
-                    background-color: $blue;
-                    color: $white;
-                    border-radius: 35px;
-                    box-shadow: $blue 0px 1px 14px -2px;
-                }
-            }
+            padding: 8px 10px 8px 20px;
         }
     }
     .box-scroll-bar {
@@ -159,15 +144,15 @@ body {
                             display: flex;
                             align-items: center;
                             gap: 6px;
-                            border-bottom: 1px solid #f4f4fc;
+                            border-bottom: 1px solid $borderGray;
                             p,
                             i {
-                                color: #8a9eb7;
+                                color: $gray;
                             }
                         }
                         > p {
                             font-size: 16px;
-                            color: #4b678a;
+                            color: $grayDark;
                             font-family: $font-bold;
                         }
                     }
@@ -188,12 +173,12 @@ body {
         align-items: center;
         gap: 10px;
         i {
-            color: #a0b2cb;
+            color: $gray;
         }
     }
     .General-number-cover {
         width: 100%;
-        background-color: white;
+        background-color: $white;
         border-radius: 13px;
         display: flex;
         align-items: center;
@@ -205,14 +190,14 @@ body {
             width: 80%;
             gap: 17px;
             .cover-icon {
-                border: 1px solid #e4ecfc;
+                border: 1px solid $borderGray;
                 border-radius: 7px;
                 width: 46px;
                 height: 46px;
-                background-color: white;
+                background-color: $white;
                 position: relative;
                 i {
-                    color: #3d5a7f;
+                    color: $grayDark;
                     font-size: 16px;
                     position: absolute;
                     @include AbsoluteCenter;
@@ -224,28 +209,40 @@ body {
                 flex-direction: column;
                 p:first-child {
                     font-size: 18px;
-                    color: #3d5a7f;
+                    color: $grayDark;
                     align-self: flex-start;
-                    font-family: Ubuntu-bold;
+                    font-family: $font-bold;
                 }
                 p:last-child {
                     font-size: 16px;
                     align-self: flex-start;
-                    font-family: Ubuntu-bold;
+                    font-family: $font-bold;
                 }
             }
         }
         i {
-            color: #c7d5e7;
+            color: $gray;
         }
     }
 
-
+    .scroll-bar-right-side {
+        @media (min-width: $breakpoint-tablet) {
+            height: 400px;
+            overflow: auto;
+            display: none;
+            border: 3px solid $borderGray;
+            transform: translate(0px, -500px);
+            transition-duration: 0.2s;
+        }
+    }
+    .scroll-bar-right-side::-webkit-scrollbar {
+        display: none;
+    }
 
     .DocsType-cover {
         padding-top: 30px;
         padding-bottom: 30px;
-        border: 1px solid #dce4f4;
+        border: 1px solid $borderGray;
         .wrpa-title {
             display: flex;
             justify-content: space-between;
@@ -257,95 +254,19 @@ body {
                 gap: 5px;
                 p {
                     font-size: 18px;
-                    color: #a3b6c9;
+                    color: $gray;
                 }
             }
         }
-        .DocsType-card-cover {
-            box-shadow: rgba(100, 100, 111, 0.2) 2px 4px 20px -5px;
-            width: 100%;
-            background-color: white;
-            border-radius: 13px;
-            display: flex;
-            align-items: center;
-            padding: 14px 20px;
-            justify-content: space-between;
-            margin: 0px 0px 20px 0px;
-            .cover-detail {
-                display: flex;
-                align-items: center;
-                width: 80%;
-                gap: 17px;
-                .text-wrap {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    p:first-child {
-                        font-family: $font-bold;
-                        text-align: left;
-                    }
-                    p:last-child {
-                        text-align: left;
-                        font-size: 16px;
-                        color: #8a9eb7;
-                    }
-                }
-            }
-            .cover-icon {
-                border: 1px solid #e4ecfc;
-                border-radius: 7px;
-                width: 46px;
-                height: 46px;
-                background-color: white;
-                position: relative;
-                i {
-                    color: #3d5a7f;
-                    font-size: 16px;
-                    position: absolute;
-                    @include AbsoluteCenter;
-                }
-            }
-            > .cover {
-                width: 80px;
-                height: 54px;
-                border: 1px dashed #8a9eb7;
-                border-radius: 13px;
-                position: relative;
-                a {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    > p {
-                        font-size: 20px;
-                        color: black;
-                        font-family: $font-bold;
-                    }
-                    .wrap {
-                        display: flex;
-                        align-items: center;
-                        gap: 3px;
-                        i {
-                            color: #8a9eb7;
-                        }
-                        p {
-                            color: #8a9eb7;
-                            font-size: 16px;
-                            font-family: Ubuntu-bold;
-                        }
-                    }
-                }
-            }
+        @media (min-width: $breakpoint-tablet) {
+            background-color: $grayCalendaDisableBg;
         }
     }
 
     .RecentAction-cover {
         padding-top: 30px;
         padding-bottom: 30px;
-        border: 1px solid #dce4f4;
+        border: 1px solid $borderGray;
         border-top: 0px;
         .wrpa-title {
             display: flex;
@@ -354,7 +275,7 @@ body {
             .wrap-tex {
                 p {
                     font-size: 18px;
-                    color: #a3b6c9;
+                    color: $gray;
                 }
             }
         }
@@ -364,9 +285,9 @@ body {
             flex-direction: column;
             border-color: rgb(216, 228, 244);
             border-radius: 14px;
-            border: 1px solid #d8e4f4;
+            border: 1px solid $borderGray;
             width: 100%;
-            background-color: white;
+            background-color: $white;
             .RecentAction-card {
                 display: flex;
                 align-items: center;
@@ -378,12 +299,12 @@ body {
                     align-items: center;
                     gap: 20px;
                     .box-img {
-                        background-color: #f1f4f9;
+                        background-color: $grayLight;
                         border-radius: 13px;
                         padding: 5px;
                         .img-cover {
                             border-radius: 50%;
-                            background-color: white;
+                            background-color: $white;
                             width: 50px;
                             height: 50px;
                             position: relative;
@@ -412,11 +333,11 @@ body {
                             p:first-child,
                             p:last-child {
                                 font-size: 18px;
-                                color: #92a2ba;
+                                color: $gray;
                             }
                             .by,
                             .price {
-                                color: #3d5a7f;
+                                color: $grayDark;
                                 font-weight: bold;
                             }
                         }
@@ -426,12 +347,12 @@ body {
                     display: flex;
                     align-items: center;
                     gap: 6px;
-                    background-color: white;
+                    background-color: $white;
                     align-self: baseline;
                     margin-top: 3px;
                     .dot {
                         border-radius: 50%;
-                        border: 2px solid #dcecfc;
+                        border: 2px solid $borderGray;
                     }
                     p {
                         background-color: unset !important;
@@ -452,12 +373,12 @@ body {
                     align-items: center;
                     gap: 20px;
                     .box-img {
-                        background-color: #f1f4f9;
+                        background-color: $grayLight;
                         border-radius: 13px;
                         padding: 5px;
                         .img-cover {
                             border-radius: 50%;
-                            background-color: white;
+                            background-color: $white;
                             width: 50px;
                             height: 50px;
                             position: relative;
@@ -486,11 +407,11 @@ body {
                             p:first-child,
                             p:last-child {
                                 font-size: 18px;
-                                color: #92a2ba;
+                                color: $gray;
                             }
                             .by,
                             .price {
-                                color: #3d5a7f;
+                                color: $grayDark;
                                 font-weight: bold;
                             }
                         }
@@ -500,12 +421,12 @@ body {
                     display: flex;
                     align-items: center;
                     gap: 6px;
-                    background-color: white;
+                    background-color: $white;
                     align-self: baseline;
                     margin-top: 3px;
                     .dot {
                         border-radius: 50%;
-                        border: 2px solid #dcecfc;
+                        border: 2px solid $borderGray;
                     }
                     p {
                         background-color: unset !important;
@@ -513,23 +434,25 @@ body {
                         font-weight: bold;
                         font-size: 16px;
                     }
-                }
-            }
-            .btn-recent {
-                border-radius: 8px;
-                color: white;
-                font-size: 18px;
-                padding: 10px;
-                margin-top: 15px;
-                span {
-                    text-decoration: underline;
                 }
             }
         }
+        @media (min-width: $breakpoint-tablet) {
+            background-color: $grayCalendaDisableBg;
+        }
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+        margin-top: 67px;
+        padding-top: 15px;
+        .change-position {
+            flex-direction: column-reverse;
+        }
+    }
+    @media (min-width: $breakpoint-large) {
+        margin-top: 68px;
     }
 }
-
-
 
 // Browse-Companies Page
 .Browse-Companies {
@@ -540,77 +463,161 @@ body {
             font-family: $font-bold;
         }
     }
-    .AllCompany-btn-wrap {
+    .AllCompany {
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-        gap: 5px;
-        .join-com {
-            border: 2px solid #1647b1;
-            background-color: white;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            padding: 8px 10px;
-            gap: 6px;
-            box-shadow: rgba(226, 237, 253, 255) 2px 4px 20px 2px, rgba(226, 237, 253, 255) 0px 18px 36px -18px;
+        gap: 10px;
+        i {
+            color: $gray;
         }
     }
 
-}
+    .wrapperBox-company {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        padding-bottom: 40px;
 
-
-
-
-
-
-// dot
-.dot {
-    font-size: 1px;
-    border-radius: 50%;
-}
-
-
-// line break
-.line-break {
-    border-bottom: 1px solid $grayLight;
-    position: relative;
-    .line-break-blue {
-        height: 4px;
-        width: 44px;
-        border-radius: 35px;
-        background-color: $blue;
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-    }
-}
-
-
-// breadcrumb
-.breadcrumb {
-    li {
-        a,
-        a::before {
-            font-size: 16px;
-            color: var(--breadcrumbcolor);
-            i {
-                color: var(--breadcrumbcolor);
+        .box-company {
+            width: 340px;
+            height: 280px;
+            border: 2px solid $borderGray;
+            border-radius: 25px;
+            background-color: $white;
+            margin: 30px 0px 0px 0px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            cursor: pointer;
+            .box-top {
+                width: 100%;
+                height: 175px;
+                border-radius: 25px;
+                position: relative;
+                box-shadow:
+                    $borderGray 0px 10px 36px 0px,
+                    $borderGray 0px 0px 0px 1px;
+                img {
+                    width: 70px;
+                    position: absolute;
+                    @include AbsoluteCenter;
+                }
+                .tag-star {
+                    @include tagCompanyStar();
+                    i {
+                        color: $black;
+                    }
+                    p {
+                        font-size: 18px;
+                        font-family: $font-bold;
+                        color: $black;
+                    }
+                }
+                .tag-admin {
+                    @include tagCompanyAdmin();
+                    i {
+                        color: $black;
+                    }
+                    p {
+                        font-size: 18px;
+                        font-family: $font-bold;
+                        color: $black;
+                    }
+                }
+                .tag-user {
+                    @include tagCompanyUser();
+                    i {
+                        color: $borderGray;
+                    }
+                    p {
+                        font-size: 18px;
+                        font-family: $font-bold;
+                        color: $black;
+                    }
+                }
+                .option-cover {
+                    border: 1px solid $white;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    height: 20px;
+                    border-radius: 4px;
+                    top: 18%;
+                    right: 4%;
+                    transform: translate(-50%, -50%);
+                    a {
+                        padding: 0px 6px;
+                    }
+                    i {
+                        color: #a9bcd0;
+                    }
+                }
+                .option-cover:hover {
+                    border: 1px solid $gray;
+                }
+            }
+            .text-wrap {
+                align-self: center;
+                margin-top: 25px;
+                p:first-child {
+                    font-size: 20px;
+                    text-align: center;
+                    font-family: $font-bold;
+                }
+                p:last-child {
+                    font-family: $font-bold;
+                    color: $gray;
+                }
+            }
+            .active-btn {
+                display: flex;
+                border-radius: 35px;
+                border: 1px solid $borderGray;
+                padding: 3px 6px;
+                align-items: center;
+                position: absolute;
+                background: $white;
+                top: 47%;
+                left: 50%;
+                transform: translate(-50%, 88%);
+                z-index: 45;
+                gap: 5px;
+                display: none;
+                .correct-cover {
+                    position: relative;
+                    background-color: $green;
+                    border-radius: 50%;
+                    width: 18px;
+                    height: 18px;
+                    i {
+                        color: $white;
+                        position: absolute;
+                        @include AbsoluteCenter;
+                    }
+                    p {
+                        font-size: 16px;
+                        font-family: $font-bold;
+                    }
+                }
+            }
+        }
+        .box-company:hover {
+            border-color: $green;
+        }
+        .box-company:focus {
+            border-color: $green;
+            .active-btn {
+                display: flex !important;
+            }
+        }
+        .active {
+            border-color: $green;
+            .active-btn {
+                display: flex !important;
             }
         }
     }
-    .active {
-        color: var(--breadcrumbcolor_Active);
-        font-size: 16px;
-        margin: 0px;
-        font-family: $font-bold;
-        i {
-            color: var(--breadcrumbcolor_Active) !important;
-            font-size: 16px;
-            margin: 0px;
-            font-family: $font-bold;
-        }
-    }
 }
-

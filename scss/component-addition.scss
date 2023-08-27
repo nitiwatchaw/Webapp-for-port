@@ -1,0 +1,50 @@
+// dot
+.dot {
+    font-size: 1px;
+    border-radius: 50%;
+}
+
+// line break
+.line-break {
+    border-bottom: 1px solid $grayLight;
+    position: relative;
+    .line-break-blue {
+        height: 4px;
+        width: 44px;
+        border-radius: 35px;
+        background-color: $blue;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+    }
+}
+
+// breadcrumb
+.breadcrumb {
+    li {
+        a,
+        a::before {
+            font-size: 16px;
+            color: var(--breadcrumbcolor);
+            i {
+                color: var(--breadcrumbcolor);
+            }
+        }
+    }
+    .active {
+        color: var(--breadcrumbcolor_Active);
+        font-size: 16px;
+        margin: 0px;
+        font-family: $font-bold;
+        i {
+            color: var(--breadcrumbcolor_Active) !important;
+            font-size: 16px;
+            margin: 0px;
+            font-family: $font-bold;
+        }
+    }
+    @media (min-width: $breakpoint-tablet) {
+        justify-content: flex-end;
+        margin: 0px;
+    }
+}

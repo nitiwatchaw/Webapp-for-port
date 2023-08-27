@@ -27,6 +27,10 @@
 
 .transform {
     transform: translate(0px, 273px) !important;
+
+    @media (min-width: $breakpoint-tablet) {
+        transform: translate(0px, 196px) !important;
+    }
 }
 
 .reset-transform {
@@ -44,8 +48,51 @@
 
 .topic-tablet {
     display: none !important;
+    @media (min-width: $breakpoint-tablet) {
+        display: flex !important;
+        width: 280px;
+    }
 }
-
+.topic-mobile {
+    border-bottom: 1px solid $borderGray;
+    @media (min-width: $breakpoint-tablet) {
+        display: none !important;
+    }
+}
 .for-desktop {
     display: none !important;
+}
+
+.displayFlex {
+    @media (min-width: $breakpoint-tablet) {
+        display: flex !important;
+    }
+}
+
+.text-side-mini {
+    @media (min-width: $breakpoint-tablet) {
+        display: none !important;
+    }
+}
+.text-side-mini-show {
+    @media (min-width: $breakpoint-tablet) {
+        display: block !important;
+    }
+}
+.side-menu-list-space-between {
+    @media (min-width: $breakpoint-tablet) {
+        justify-content: space-between !important;
+    }
+}
+.btn-submenu-mini {
+    @include mediaTabletNone;
+}
+
+.for-mobile {
+    @include mediaExtraLargeNone();
+}
+.for-desktop {
+    @media (min-width: $breapoint-extralarge) {
+        display: flex !important;
+    }
 }

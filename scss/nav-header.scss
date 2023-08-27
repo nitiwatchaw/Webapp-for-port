@@ -1,6 +1,15 @@
 .logo {
     width: 150px;
 }
+
+.nav-bar-wrap {
+    @media (min-width: $breakpoint-large) {
+        background-color: $white;
+        border-bottom: 2px solid $borderGray;
+        position: fixed;
+        z-index: 200;
+    }
+}
 .left-side {
     display: flex;
     align-items: center;
@@ -16,11 +25,32 @@
     .icon-wrap {
         .dropdown {
             display: none !important;
+            @media (min-width: $breakpoint-tablet) {
+                display: block !important;
+            }
         }
     }
     .wrapImg-dropdown {
         display: flex;
         align-items: center;
+        @media (min-width: $breakpoint-tablet) {
+            justify-content: space-between;
+            gap: 5px;
+        }
+        @media (min-width: $breakpoint-large) {
+            width: 100%;
+            justify-content: flex-end;
+        }
+    }
+    @media (min-width: $breakpoint-tablet) {
+        padding: 1px;
+    }
+    @media (min-width: $breakpoint-large) {
+        position: static;
+        background-color: unset;
+        border: 0px;
+        justify-content: space-between;
+        gap: 0px;
     }
 }
 
@@ -46,11 +76,16 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            @include mediaTabletNone();
         }
         .wrapLink {
             display: flex;
             align-items: center;
             gap: 10px;
+        }
+        @media (min-width: $breakpoint-tablet) {
+            justify-content: flex-end;
+            width: auto;
         }
     }
     .wrap-search-btn {
@@ -79,12 +114,18 @@
                     border: 1px solid $dropdownBorderColor;
                     padding: 11px 11px 11px 40px;
                     background-color: $white;
+                    @media (min-width: $breakpoint-tablet) {
+                        width: 100%;
+                    }
                 }
                 input:focus {
                     outline: none;
                 }
                 input::placeholder {
                     color: $grayLight;
+                }
+                @media (min-width: $breakpoint-tablet) {
+                    width: 100%;
                 }
             }
             .square-cover {
@@ -99,7 +140,38 @@
                     font-size: 18px;
                 }
             }
+            @media (min-width: $breakpoint-tablet) {
+                width: 80%;
+                gap: 20px;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
         }
+        @media (min-width: $breakpoint-tablet) {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        @media (min-width: $breakpoint-large) {
+            flex-direction: row-reverse;
+        }
+    }
+    @media (min-width: $breakpoint-tablet) {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        z-index: 100;
+    }
+    @media (min-width: $breakpoint-large) {
+        transform: $tranformReset !important;
+        margin: 0px;
+        position: static;
+        box-shadow: unset;
+        padding: 0px !important;
+        background-color: unset;
+        border: 0px;
+        display: flex !important;
+        background: unset;
+        gap: 50px;
     }
 }
 
@@ -119,12 +191,21 @@
             gap: 5px;
         }
     }
+    @media (min-width: $breakpoint-tablet) {
+        padding: 9px;
+    }
 }
 
 .wrapProfile-collape {
     display: none;
     gap: 10px;
     align-items: center;
+    @media (min-width: $breakpoint-tablet) {
+        display: flex;
+    }
+    @media (min-width: $breakpoint-large) {
+        justify-self: flex-end;
+    }
 }
 
 .detail-profile {
@@ -135,6 +216,9 @@
         margin: 0px;
         font-size: 18px;
         color: $grayDark;
+        @media (min-width: $breakpoint-large) {
+            font-size: 15px;
+        }
     }
     .wrap {
         display: flex;
@@ -144,6 +228,9 @@
             font-size: 18px;
             margin: 0px;
             font-family: $font-bold;
+            @media (min-width: $breakpoint-large) {
+                font-size: 16px;
+            }
         }
 
         .line-wrap {

@@ -136,8 +136,6 @@ function OpenMenuSidefromSidemini() {
     btnMini.classList.toggle('btn-mini-Left')
 
 
-
-
     menuMini.classList.toggle('menu-cover-mini-width-extend')
 
 
@@ -154,11 +152,9 @@ function OpenMenuSidefromSidemini() {
 
     linkToOpenMini.classList.toggle('border-bottom-0')
 
-    
 
+    contentSection.classList.toggle('content-all-section-movement')
 
-        contentSection.classList.toggle('content-all-section-movement')
-  
 
     document.onclick = function clickOutsidemini() {
         function mobilesize(x) {
@@ -222,11 +218,11 @@ function openSubmenuMini() {
         if (linkToOpenMini.contains(e.target)) { //click inside
 
 
-          
-                contentSection.classList.add('content-all-section-movement')
-           
 
-      
+            contentSection.classList.add('content-all-section-movement')
+
+
+
             e.preventDefault(); // protect scroll up after click
             btnMini.classList.add('btn-mini-Left')
             for (let i = 0; i < titlesidebarmini.length; i++) {
@@ -561,7 +557,7 @@ function changeSlide() {
                 }
             });
         }
-        else if(mediaQueryMobile.matches){
+        else if (mediaQueryMobile.matches) {
             slider()
         }
         else {
@@ -651,7 +647,7 @@ navLinkUser.forEach((navLinkUser) => {
         if (navLinkUser.classList.contains('active-link-user')) {
             subMenuMini.classList.add('show');
             submenu.classList.add('show');
-            
+
         }
         else {
             subMenuMini.classList.remove('show');
@@ -691,40 +687,40 @@ var initialViewportWidth = window.innerWidth || document.documentElement.clientW
 
 //  mobile viewport initial, any change refresh
 if (initialViewportWidth < 768) {
- 		 window.addEventListener('resize', function () {
-				newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
-				if (newViewportWidth > 768) {
-					location.reload();
-					}
-			});
+    window.addEventListener('resize', function () {
+        newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
+        if (newViewportWidth > 768) {
+            location.reload();
+        }
+    });
 }
 
 // tablet mobile viewport initial, any change refresh
 else if (initialViewportWidth > 768 && initialViewportWidth < 992) {
     window.addEventListener('resize', function () {
-				newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
-				if (newViewportWidth < 768 || newViewportWidth > 992) {
-					location.reload();
-					}
-			});
+        newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
+        if (newViewportWidth < 768 || newViewportWidth > 992) {
+            location.reload();
+        }
+    });
 }
 
 // laptop viewport initial, any change refresh
-else if (initialViewportWidth > 992 && initialViewportWidth < 1200)  {
-      window.addEventListener('resize', function () {
-				newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
-				if (newViewportWidth < 992 || newViewportWidth > 1200) {
-					location.reload();
-					}
-			});
+else if (initialViewportWidth > 992 && initialViewportWidth < 1200) {
+    window.addEventListener('resize', function () {
+        newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
+        if (newViewportWidth < 992 || newViewportWidth > 1200) {
+            location.reload();
+        }
+    });
 }
 
 // desktop viewport initial, any change refresh
 else if (initialViewportWidth > 1200) {
-        window.addEventListener('resize', function () {
-				newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
-				if (newViewportWidth < 1200) {
-					location.reload();
-					}
-			});
+    window.addEventListener('resize', function () {
+        newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
+        if (newViewportWidth < 1200) {
+            location.reload();
+        }
+    });
 }

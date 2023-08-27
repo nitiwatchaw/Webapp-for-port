@@ -1,0 +1,71 @@
+@mixin AbsoluteCenter() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+}
+
+@mixin circleCover() {
+    border: 2px solid $dropdownBorderColor;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: $white;
+    box-shadow:
+        $grayLight 1px 1px 6px 1px,
+        $grayLight 0px 18px 36px -18px;
+}
+@mixin rightSide() {
+    border-bottom: 1px solid $borderGray;
+    background: linear-gradient(180deg, $backgroundGray 0%, $backgroundGray 26%, $backgroundGray 100%);
+    box-shadow: $boxShadow;
+}
+
+@mixin tagCompany() {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    position: absolute;
+    align-items: center;
+    border-radius: 6px;
+    width: 90px;
+    height: 35px;
+    top: 18%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+@mixin tagCompanyStar() {
+    @include tagCompany();
+    background-color: $yellow;
+}
+
+@mixin tagCompanyAdmin() {
+    @include tagCompany();
+    background-color: $blueSea;
+}
+
+@mixin tagCompanyUser() {
+    @include tagCompany();
+    border: 1px solid $borderGray;
+    background-color: $white;
+}
+
+@mixin mediaTabletNone() {
+    @media (min-width: $breakpoint-tablet) {
+        display: none;
+    }
+}
+@mixin mediaLargeNone() {
+    @media (min-width: $breakpoint-large) {
+        display: none;
+    }
+}
+@mixin mediaExtraLargeNone() {
+    @media (min-width: $breapoint-extralarge) {
+        display: none;
+    }
+}
+@mixin calModal() {
+    width: calc(100% - 84px);
+}
