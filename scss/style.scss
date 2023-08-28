@@ -7,617 +7,633 @@ body {
     scroll-behavior: smooth;
 }
 
+//over all
 .content-all-section {
-    @media (min-width: $breakpoint-tablet) {
-        padding-left: 98px;
-        transition-duration: 0.3s;
-    }
-}
-
-//dashboard Page
-.Dashboard-page {
-    margin-top: 72px;
-    padding-top: 15px;
-    .title-dashboard {
-        h1 {
-            font-family: $font-bold;
-        }
-    }
-    .Overview-bg {
-        padding: 20px 10px;
-        background-color: $blueLight;
-        position: relative;
-        margin-bottom: 20px;
-        .wrap {
-            display: flex;
-            align-items: center;
-            .title-mounth {
-                font-size: 18px;
-                color: $grayDark;
-                padding-left: 5px;
-                @media (min-width: $breakpoint-tablet) {
-                    font-size: 24px;
-                }
+    //dashboard Page
+    .Dashboard-page {
+        margin-top: 72px;
+        padding-top: 15px;
+        .title-dashboard {
+            h1 {
+                font-family: $font-bold;
             }
         }
-        @media (min-width: $breakpoint-tablet) {
-            border-radius: 35px;
-            padding: 8px 10px 8px 20px;
-        }
-    }
-    .box-scroll-bar {
-        background-color: $blueBg;
-        overflow: auto;
-        height: 100%;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        display: flex;
-        gap: 20px;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        padding: 40px 20px;
-        border-radius: 10px;
-        .cardCover {
+        .Overview-bg {
+            padding: 20px 10px;
+            background-color: $blueLight;
             position: relative;
-            .content {
-                background-color: $white;
-                box-shadow: $boxShadow;
-                border-radius: 18px;
-                padding: 16px;
-                position: relative;
-                z-index: 40;
-                width: 165px;
-                height: 240px;
+            margin-bottom: 20px;
+            .wrap {
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                .wrap-title {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    border-bottom: 2px solid $grayLight;
-                    padding-bottom: 4px;
-                    > i {
-                        color: $gray;
+                align-items: center;
+                .title-mounth {
+                    font-size: 18px;
+                    color: $grayDark;
+                    padding-left: 5px;
+                    @media (min-width: $breakpoint-tablet) {
+                        font-size: 24px;
                     }
-                    .wrapDot-text {
-                        display: flex;
-                        align-items: center;
-                        gap: 10px;
-                        i {
-                            border-radius: 50%;
-                            box-shadow: $boxShadow;
-                        }
-                        p {
-                            font-family: $font-bold;
-                            color: #233a67;
-                        }
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 15px;
                     }
                 }
-                .borderDoc {
-                    margin-top: 20px;
-                    border: 2px dashed $grayLight;
-                    border-radius: 14px;
-                    padding: 8px;
-                    display: flex;
-                    align-items: center;
-                    display: flex;
-                    justify-content: space-evenly;
-                    gap: 13px;
-                    color: black;
-                    .icon-cover {
-                        background-color: $grayLight;
-                        position: relative;
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 6px;
-                        i {
-                            position: absolute;
-                            @include AbsoluteCenter;
-                            font-size: 16px;
-                            color: $grayDark;
-                        }
-                    }
-                    .text-wrap {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        p:first-child {
-                            font-size: 28px;
-                            font-family: $font-bold;
-                        }
-                    }
-                }
-                .total-cover {
-                    margin-top: 15px;
+            }
+            @media (min-width: $breakpoint-tablet) {
+                border-radius: 35px;
+                padding: 8px 10px 8px 20px;
+            }
+            @media (min-width: $breakpoint-extralarge) {
+                padding: 4px 10px 4px 20px;
+            }
+        }
+        .box-scroll-bar {
+            background-color: $blueBg;
+            overflow: auto;
+            height: 100%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 40px 20px;
+            border-radius: 10px;
+            .cardCover {
+                position: relative;
+                .content {
+                    background-color: $white;
+                    box-shadow: $boxShadow;
+                    border-radius: 18px;
+                    padding: 16px;
+                    position: relative;
+                    z-index: 40;
+                    width: 165px;
+                    height: 240px;
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
                     justify-content: space-between;
-                    .total-box {
-                        justify-content: space-between;
-                        width: 100%;
+                    .wrap-title {
                         display: flex;
-                        flex-direction: row;
-                        gap: 10px;
-                        .wrap {
+                        align-items: center;
+                        justify-content: space-between;
+                        border-bottom: 2px solid $grayLight;
+                        padding-bottom: 4px;
+                        > i {
+                            color: $gray;
+                        }
+                        .wrapDot-text {
                             display: flex;
                             align-items: center;
-                            gap: 6px;
-                            border-bottom: 1px solid $borderGray;
-                            p,
+                            gap: 10px;
                             i {
-                                color: $gray;
+                                border-radius: 50%;
+                                box-shadow: $boxShadow;
+                            }
+                            p {
+                                font-family: $font-bold;
+                                color: #233a67;
                             }
                         }
-                        > p {
-                            font-size: 16px;
-                            color: $grayDark;
-                            font-family: $font-bold;
+                    }
+                    .borderDoc {
+                        margin-top: 20px;
+                        border: 2px dashed $grayLight;
+                        border-radius: 14px;
+                        padding: 8px;
+                        display: flex;
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-evenly;
+                        gap: 13px;
+                        color: black;
+                        .icon-cover {
+                            background-color: $grayLight;
+                            position: relative;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 6px;
+                            i {
+                                position: absolute;
+                                @include AbsoluteCenter;
+                                font-size: 16px;
+                                color: $grayDark;
+                            }
+                        }
+                        .text-wrap {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            p:first-child {
+                                font-size: 28px;
+                                font-family: $font-bold;
+                            }
+                        }
+                    }
+                    .total-cover {
+                        margin-top: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        .total-box {
+                            justify-content: space-between;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            gap: 10px;
+                            .wrap {
+                                display: flex;
+                                align-items: center;
+                                gap: 6px;
+                                border-bottom: 1px solid $borderGray;
+                                p,
+                                i {
+                                    color: $gray;
+                                }
+                            }
+                            > p {
+                                font-size: 16px;
+                                color: $grayDark;
+                                font-family: $font-bold;
+                            }
                         }
                     }
                 }
-            }
-            .cardCover-clone {
-                position: absolute;
-                width: 165px;
-                height: 240px;
-                border-radius: 18px;
-                top: 5px;
-                left: 0;
-            }
-        }
-    }
-    .General-number {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        i {
-            color: $gray;
-        }
-    }
-    .General-number-cover {
-        width: 100%;
-        background-color: $white;
-        border-radius: 13px;
-        display: flex;
-        align-items: center;
-        padding: 14px 20px;
-        justify-content: space-between;
-        .cover-detail {
-            display: flex;
-            align-items: center;
-            width: 80%;
-            gap: 17px;
-            .cover-icon {
-                border: 1px solid $borderGray;
-                border-radius: 7px;
-                width: 46px;
-                height: 46px;
-                background-color: $white;
-                position: relative;
-                i {
-                    color: $grayDark;
-                    font-size: 16px;
+                .cardCover-clone {
                     position: absolute;
-                    @include AbsoluteCenter;
-                }
-            }
-            .text-wrap {
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
-                p:first-child {
-                    font-size: 18px;
-                    color: $grayDark;
-                    align-self: flex-start;
-                    font-family: $font-bold;
-                }
-                p:last-child {
-                    font-size: 16px;
-                    align-self: flex-start;
-                    font-family: $font-bold;
+                    width: 165px;
+                    height: 240px;
+                    border-radius: 18px;
+                    top: 5px;
+                    left: 0;
                 }
             }
         }
-        i {
-            color: $gray;
-        }
-    }
-
-    .scroll-bar-right-side {
-        @media (min-width: $breakpoint-tablet) {
-            height: 400px;
-            overflow: auto;
-            display: none;
-            border: 3px solid $borderGray;
-            transform: translate(0px, -500px);
-            transition-duration: 0.2s;
-        }
-    }
-    .scroll-bar-right-side::-webkit-scrollbar {
-        display: none;
-    }
-
-    .DocsType-cover {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        border: 1px solid $borderGray;
-        .wrpa-title {
+        .General-number {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            .wrap-text {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                gap: 5px;
-                p {
-                    font-size: 18px;
-                    color: $gray;
-                }
+            gap: 10px;
+            i {
+                color: $gray;
             }
         }
-        @media (min-width: $breakpoint-tablet) {
-            background-color: $grayCalendaDisableBg;
-        }
-    }
-
-    .RecentAction-cover {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        border: 1px solid $borderGray;
-        border-top: 0px;
-        .wrpa-title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .wrap-tex {
-                p {
-                    font-size: 18px;
-                    color: $gray;
-                }
-            }
-        }
-        .RecentAction-button-cover {
-            display: flex;
-            padding: 17px 14px;
-            flex-direction: column;
-            border-color: rgb(216, 228, 244);
-            border-radius: 14px;
-            border: 1px solid $borderGray;
+        .General-number-cover {
             width: 100%;
             background-color: $white;
-            .RecentAction-card {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                flex-direction: column-reverse;
-                row-gap: 10px;
-                .wrap-section {
-                    display: flex;
-                    align-items: center;
-                    gap: 20px;
-                    .box-img {
-                        background-color: $grayLight;
-                        border-radius: 13px;
-                        padding: 5px;
-                        .img-cover {
-                            border-radius: 50%;
-                            background-color: $white;
-                            width: 50px;
-                            height: 50px;
-                            position: relative;
-                            overflow: hidden;
-                            img {
-                                width: 50px;
-                                position: absolute;
-                                top: 55%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                            }
-                        }
-                    }
-                    .text-wrap {
-                        display: flex;
-                        flex-direction: column;
-                        text-align: left;
-                        gap: 5px;
-                        justify-content: space-between;
-                        .title {
-                            font-size: 18px;
-                            font-weight: bold;
-                            letter-spacing: 0.3px;
-                        }
-                        .detail-wrap {
-                            p:first-child,
-                            p:last-child {
-                                font-size: 18px;
-                                color: $gray;
-                            }
-                            .by,
-                            .price {
-                                color: $grayDark;
-                                font-weight: bold;
-                            }
-                        }
-                    }
-                }
-                .dot-wrap {
-                    display: flex;
-                    align-items: center;
-                    gap: 6px;
-                    background-color: $white;
-                    align-self: baseline;
-                    margin-top: 3px;
-                    .dot {
-                        border-radius: 50%;
-                        border: 2px solid $borderGray;
-                    }
-                    p {
-                        background-color: unset !important;
-                        box-shadow: unset;
-                        font-weight: bold;
-                        font-size: 16px;
-                    }
-                }
-            }
-            .RecentAction-card {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                flex-direction: column-reverse;
-                row-gap: 10px;
-                .wrap-section {
-                    display: flex;
-                    align-items: center;
-                    gap: 20px;
-                    .box-img {
-                        background-color: $grayLight;
-                        border-radius: 13px;
-                        padding: 5px;
-                        .img-cover {
-                            border-radius: 50%;
-                            background-color: $white;
-                            width: 50px;
-                            height: 50px;
-                            position: relative;
-                            overflow: hidden;
-                            img {
-                                width: 50px;
-                                position: absolute;
-                                top: 55%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                            }
-                        }
-                    }
-                    .text-wrap {
-                        display: flex;
-                        flex-direction: column;
-                        text-align: left;
-                        gap: 5px;
-                        justify-content: space-between;
-                        .title {
-                            font-size: 18px;
-                            font-weight: bold;
-                            letter-spacing: 0.3px;
-                        }
-                        .detail-wrap {
-                            p:first-child,
-                            p:last-child {
-                                font-size: 18px;
-                                color: $gray;
-                            }
-                            .by,
-                            .price {
-                                color: $grayDark;
-                                font-weight: bold;
-                            }
-                        }
-                    }
-                }
-                .dot-wrap {
-                    display: flex;
-                    align-items: center;
-                    gap: 6px;
-                    background-color: $white;
-                    align-self: baseline;
-                    margin-top: 3px;
-                    .dot {
-                        border-radius: 50%;
-                        border: 2px solid $borderGray;
-                    }
-                    p {
-                        background-color: unset !important;
-                        box-shadow: unset;
-                        font-weight: bold;
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-        @media (min-width: $breakpoint-tablet) {
-            background-color: $grayCalendaDisableBg;
-        }
-    }
-
-    @media (min-width: $breakpoint-tablet) {
-        margin-top: 67px;
-        padding-top: 15px;
-        .change-position {
-            flex-direction: column-reverse;
-        }
-    }
-    @media (min-width: $breakpoint-large) {
-        margin-top: 68px;
-    }
-}
-
-// Browse-Companies Page
-.Browse-Companies {
-    display: none;
-    margin-top: 75px;
-    .title-Browse-Companies {
-        h1 {
-            font-family: $font-bold;
-        }
-    }
-    .AllCompany {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        i {
-            color: $gray;
-        }
-    }
-
-    .wrapperBox-company {
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 30px;
-        padding-bottom: 40px;
-
-        .box-company {
-            width: 340px;
-            height: 280px;
-            border: 2px solid $borderGray;
-            border-radius: 25px;
-            background-color: $white;
-            margin: 30px 0px 0px 0px;
-            overflow: hidden;
+            border-radius: 13px;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            position: relative;
-            cursor: pointer;
-            .box-top {
-                width: 100%;
-                height: 175px;
-                border-radius: 25px;
-                position: relative;
-                box-shadow:
-                    $borderGray 0px 10px 36px 0px,
-                    $borderGray 0px 0px 0px 1px;
-                img {
-                    width: 70px;
-                    position: absolute;
-                    @include AbsoluteCenter;
-                }
-                .tag-star {
-                    @include tagCompanyStar();
-                    i {
-                        color: $black;
-                    }
-                    p {
-                        font-size: 18px;
-                        font-family: $font-bold;
-                        color: $black;
-                    }
-                }
-                .tag-admin {
-                    @include tagCompanyAdmin();
-                    i {
-                        color: $black;
-                    }
-                    p {
-                        font-size: 18px;
-                        font-family: $font-bold;
-                        color: $black;
-                    }
-                }
-                .tag-user {
-                    @include tagCompanyUser();
-                    i {
-                        color: $borderGray;
-                    }
-                    p {
-                        font-size: 18px;
-                        font-family: $font-bold;
-                        color: $black;
-                    }
-                }
-                .option-cover {
-                    border: 1px solid $white;
-                    position: absolute;
-                    display: flex;
-                    align-items: center;
-                    height: 20px;
-                    border-radius: 4px;
-                    top: 18%;
-                    right: 4%;
-                    transform: translate(-50%, -50%);
-                    a {
-                        padding: 0px 6px;
-                    }
-                    i {
-                        color: #a9bcd0;
-                    }
-                }
-                .option-cover:hover {
-                    border: 1px solid $gray;
-                }
-            }
-            .text-wrap {
-                align-self: center;
-                margin-top: 25px;
-                p:first-child {
-                    font-size: 20px;
-                    text-align: center;
-                    font-family: $font-bold;
-                }
-                p:last-child {
-                    font-family: $font-bold;
-                    color: $gray;
-                }
-            }
-            .active-btn {
+            align-items: center;
+            padding: 14px 20px;
+            justify-content: space-between;
+            .cover-detail {
                 display: flex;
-                border-radius: 35px;
-                border: 1px solid $borderGray;
-                padding: 3px 6px;
                 align-items: center;
-                position: absolute;
-                background: $white;
-                top: 47%;
-                left: 50%;
-                transform: translate(-50%, 88%);
-                z-index: 45;
-                gap: 5px;
-                display: none;
-                .correct-cover {
+                width: 80%;
+                gap: 17px;
+                .cover-icon {
+                    border: 1px solid $borderGray;
+                    border-radius: 7px;
+                    width: 46px;
+                    height: 46px;
+                    background-color: $white;
                     position: relative;
-                    background-color: $green;
-                    border-radius: 50%;
-                    width: 18px;
-                    height: 18px;
                     i {
-                        color: $white;
+                        color: $grayDark;
+                        font-size: 16px;
                         position: absolute;
                         @include AbsoluteCenter;
                     }
-                    p {
-                        font-size: 16px;
+                }
+                .text-wrap {
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    p:first-child {
+                        font-size: 18px;
+                        color: $grayDark;
+                        align-self: flex-start;
                         font-family: $font-bold;
+                        @media (min-width: $breakpoint-extralarge) {
+                            font-size: 14px;
+                        }
+                    }
+                    p:last-child {
+                        font-size: 16px;
+                        align-self: flex-start;
+                        font-family: $font-bold;
+                        @media (min-width: $breakpoint-extralarge) {
+                            font-size: 16px !important;
+                        }
                     }
                 }
             }
-        }
-        .box-company:hover {
-            border-color: $green;
-        }
-        .box-company:focus {
-            border-color: $green;
-            .active-btn {
-                display: flex !important;
+            i {
+                color: $gray;
             }
         }
-        .active {
-            border-color: $green;
-            .active-btn {
-                display: flex !important;
+
+        .scroll-bar-right-side {
+            @media (min-width: $breakpoint-tablet) {
+                height: 400px;
+                overflow: auto;
+                display: none;
+                border: 3px solid $borderGray;
+                transform: translate(0px, -500px);
+                transition-duration: 0.2s;
+            }
+            @media (min-width: $breakpoint-extralarge) {
+                display: flex;
+                overflow: unset;
+                height: unset;
+                transform: unset;
+                border: 0px;
             }
         }
+        .scroll-bar-right-side::-webkit-scrollbar {
+            display: none;
+        }
+
+        .DocsType-cover {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border: 1px solid $borderGray;
+            .wrpa-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .wrap-text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 5px;
+                    p {
+                        font-size: 18px;
+                        color: $gray;
+                        @media (min-width: $breakpoint-extralarge) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            @media (min-width: $breakpoint-tablet) {
+                background-color: $grayCalendaDisableBg;
+            }
+            @media (min-width: $breakpoint-extralarge) {
+                background-color: $white;
+            }
+        }
+
+        .RecentAction-cover {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border: 1px solid $borderGray;
+            border-top: 0px;
+            .wrpa-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .wrap-text {
+                    p {
+                        font-size: 18px;
+                        color: $gray;
+                        @media (min-width: $breakpoint-extralarge) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .RecentAction-button-cover {
+                display: flex;
+                padding: 17px 14px;
+                flex-direction: column;
+                border-color: rgb(216, 228, 244);
+                border-radius: 14px;
+                border: 1px solid $borderGray;
+                width: 100%;
+                background-color: $white;
+
+                .RecentAction-card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column-reverse;
+                    row-gap: 10px;
+                    .wrap-section {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        .box-img {
+                            background-color: $grayLight;
+                            border-radius: 13px;
+                            padding: 5px;
+                            .img-cover {
+                                border-radius: 50%;
+                                background-color: $white;
+                                width: 50px;
+                                height: 50px;
+                                position: relative;
+                                overflow: hidden;
+                                img {
+                                    width: 50px;
+                                    position: absolute;
+                                    top: 55%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    @media (min-width: $breakpoint-extralarge) {
+                                        width: 37px;
+                                        top: 58%;
+                                    }
+                                }
+                                @media (min-width: $breakpoint-extralarge) {
+                                    width: 43px;
+                                    height: 43px;
+                                }
+                            }
+                            @media (min-width: $breakpoint-extralarge) {
+                                padding: 4px;
+                            }
+                        }
+                        .text-wrap {
+                            display: flex;
+                            flex-direction: column;
+                            text-align: left;
+                            gap: 5px;
+                            justify-content: space-between;
+                            .title {
+                                font-size: 16px;
+                                font-weight: bold;
+                                letter-spacing: 0.3px;
+                                @media (min-width: $breakpoint-extralarge) {
+                                    font-size: 14px;
+                                }
+                            }
+                            .detail-wrap {
+                                p:first-child,
+                                p:last-child {
+                                    font-size: 18px !important;
+                                    color: $gray;
+                                    @media (min-width: $breakpoint-extralarge) {
+                                        font-size: 14px !important;
+                                    }
+                                }
+                                .by,
+                                .price {
+                                    color: $grayDark;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        @media (min-width: $breakpoint-extralarge) {
+                            gap: 13px;
+                        }
+                    }
+                    .dot-wrap {
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                        background-color: $white;
+                        align-self: baseline;
+                        margin-top: 3px;
+                        .dot {
+                            border-radius: 50%;
+                            border: 2px solid $borderGray;
+                        }
+                        p {
+                            background-color: unset !important;
+                            box-shadow: unset;
+                            font-weight: bold;
+                            font-size: 16px;
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                    @media (min-width: $breakpoint-extralarge) {
+                        flex-direction: row;
+                    }
+                }
+            }
+            @media (min-width: $breakpoint-tablet) {
+                background-color: $grayCalendaDisableBg;
+            }
+            @media (min-width: $breakpoint-extralarge) {
+                background-color: $white;
+            }
+        }
+
+        @media (min-width: $breakpoint-tablet) {
+            margin-top: 67px;
+            padding-top: 15px;
+            .change-position {
+                flex-direction: column-reverse;
+                @media (min-width: $breakpoint-extralarge) {
+                    flex-direction: row;
+                }
+            }
+        }
+        @media (min-width: $breakpoint-large) {
+            margin-top: 68px;
+        }
+        @media (min-width: $breakpoint-extralarge) {
+            margin-top: 65px;
+        }
+    }
+
+    // Browse-Companies Page
+    .Browse-Companies {
+        display: none;
+        margin-top: 75px;
+        .title-Browse-Companies {
+            h1 {
+                font-family: $font-bold;
+            }
+        }
+        .AllCompany {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            i {
+                color: $gray;
+            }
+        }
+
+        .wrapperBox-company {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            padding-bottom: 40px;
+
+            .box-company {
+                width: 340px;
+                height: 280px;
+                border: 2px solid $borderGray;
+                border-radius: 25px;
+                background-color: $white;
+                margin: 30px 0px 0px 0px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: relative;
+                cursor: pointer;
+                .box-top {
+                    width: 100%;
+                    height: 175px;
+                    border-radius: 25px;
+                    position: relative;
+                    box-shadow:
+                        $borderGray 0px 10px 36px 0px,
+                        $borderGray 0px 0px 0px 1px;
+                    img {
+                        width: 70px;
+                        position: absolute;
+                        @include AbsoluteCenter;
+                    }
+                    .tag-star {
+                        @include tagCompanyStar();
+                        i {
+                            color: $black;
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 10px;
+                            }
+                        }
+                        p {
+                            font-size: 18px;
+                            font-family: $font-bold;
+                            color: $black;
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .tag-admin {
+                        @include tagCompanyAdmin();
+                        i {
+                            color: $black;
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 10px;
+                            }
+                        }
+                        p {
+                            font-size: 18px;
+                            font-family: $font-bold;
+                            color: $black;
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .tag-user {
+                        @include tagCompanyUser();
+                        i {
+                            color: $borderGray;
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 10px;
+                            }
+                        }
+                        p {
+                            font-size: 18px;
+                            font-family: $font-bold;
+                            color: $black;
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .option-cover {
+                        border: 1px solid $white;
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        height: 20px;
+                        border-radius: 4px;
+                        top: 18%;
+                        right: 4%;
+                        transform: translate(-50%, -50%);
+                        a {
+                            padding: 0px 6px;
+                        }
+                        i {
+                            color: $gray;
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .option-cover:hover {
+                        border: 1px solid $gray;
+                    }
+                }
+                .text-wrap {
+                    align-self: center;
+                    margin-top: 25px;
+                    p:first-child {
+                        font-size: 20px;
+                        text-align: center;
+                        font-family: $font-bold;
+                    }
+                    p:last-child {
+                        font-family: $font-bold;
+                        color: $gray;
+                    }
+                }
+                .active-btn {
+                    display: flex;
+                    border-radius: 35px;
+                    border: 1px solid $borderGray;
+                    padding: 3px 6px;
+                    align-items: center;
+                    position: absolute;
+                    background: $white;
+                    top: 47%;
+                    left: 50%;
+                    transform: translate(-50%, 88%);
+                    z-index: 45;
+                    gap: 5px;
+                    display: none;
+                    .correct-cover {
+                        position: relative;
+                        background-color: $green;
+                        border-radius: 50%;
+                        width: 18px;
+                        height: 18px;
+                        i {
+                            color: $white;
+                            position: absolute;
+                            @include AbsoluteCenter;
+                        }
+                        p {
+                            font-size: 16px;
+                            font-family: $font-bold;
+                        }
+                    }
+                  
+                }
+                @media (min-width: $breakpoint-extralarge) {
+                    width: 300px;
+                }
+            }
+            .box-company:hover {
+                border-color: $green;
+            }
+            .box-company:focus {
+                border-color: $green;
+                .active-btn {
+                    display: flex !important;
+                }
+            }
+            .active {
+                border-color: $green;
+                .active-btn {
+                    display: flex !important;
+                }
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+        padding-left: 98px;
+        transition-duration: 0.3s;
     }
 }

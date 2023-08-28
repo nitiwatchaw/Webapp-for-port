@@ -1,5 +1,8 @@
 .logo {
     width: 150px;
+    @media (min-width: $breakpoint-extralarge) {
+        width: 120px;
+    }
 }
 
 .nav-bar-wrap {
@@ -8,6 +11,10 @@
         border-bottom: 2px solid $borderGray;
         position: fixed;
         z-index: 200;
+    }
+    @media (min-width: $breakpoint-extralarge) {
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 }
 .left-side {
@@ -41,6 +48,7 @@
             width: 100%;
             justify-content: flex-end;
         }
+        @include mediaExtraLargeNone();
     }
     @media (min-width: $breakpoint-tablet) {
         padding: 1px;
@@ -51,6 +59,9 @@
         border: 0px;
         justify-content: space-between;
         gap: 0px;
+    }
+    @media (min-width: $breakpoint-extralarge) {
+        height: 80px;
     }
 }
 
@@ -108,6 +119,9 @@
                     top: 52%;
                     left: 26px;
                     transform: translate(-50%, -50%);
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 13px;
+                    }
                 }
                 input {
                     border-radius: 12px;
@@ -117,27 +131,25 @@
                     @media (min-width: $breakpoint-tablet) {
                         width: 100%;
                     }
+                    @media (min-width: $breakpoint-extralarge) {
+                        padding: 7px 11px 7px 40px;
+                        border-radius: 9px;
+                    }
                 }
                 input:focus {
                     outline: none;
                 }
                 input::placeholder {
                     color: $grayLight;
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 13px;
+                    }
                 }
                 @media (min-width: $breakpoint-tablet) {
                     width: 100%;
                 }
-            }
-            .square-cover {
-                @include circleCover();
-                border-radius: 12px !important;
-                a {
-                    @include AbsoluteCenter();
-                    padding: 13px;
-                    object-fit: cover;
-                    text-align: center;
-                    color: $black;
-                    font-size: 18px;
+                @media (min-width: $breakpoint-extralarge) {
+                    width: unset;
                 }
             }
             @media (min-width: $breakpoint-tablet) {
@@ -153,6 +165,9 @@
         }
         @media (min-width: $breakpoint-large) {
             flex-direction: row-reverse;
+        }
+        @media (min-width: $breakpoint-extralarge) {
+            width: unset;
         }
     }
     @media (min-width: $breakpoint-tablet) {
@@ -173,6 +188,12 @@
         background: unset;
         gap: 50px;
     }
+    @media (min-width: $breakpoint-extralarge) {
+        justify-content: space-between;
+        height: 80px;
+        background-color: $backgroundGray;
+        padding: 0px 25px !important;
+    }
 }
 
 .topic {
@@ -189,6 +210,9 @@
             flex-direction: column;
             align-items: center;
             gap: 5px;
+        }
+        @media (min-width: $breakpoint-extralarge) {
+            justify-content: space-between;
         }
     }
     @media (min-width: $breakpoint-tablet) {
@@ -219,6 +243,9 @@
         @media (min-width: $breakpoint-large) {
             font-size: 15px;
         }
+        @media (min-width: $breakpoint-extralarge) {
+            font-size: 13px;
+        }
     }
     .wrap {
         display: flex;
@@ -231,6 +258,9 @@
             @media (min-width: $breakpoint-large) {
                 font-size: 16px;
             }
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 13px;
+            }
         }
 
         .line-wrap {
@@ -242,6 +272,9 @@
                 height: 3px;
                 border-radius: 35px;
                 background-color: $dropdownBorderColor;
+                @media (min-width: $breakpoint-extralarge) {
+                    width: 16px;
+                }
             }
             .line:last-child {
                 width: 14px;
@@ -249,7 +282,13 @@
                 border-radius: 35px;
                 align-self: flex-end;
                 background-color: $dropdownBorderColor;
+                @media (min-width: $breakpoint-extralarge) {
+                    width: 10px;
+                }
             }
+        }
+        @media (min-width: $breakpoint-extralarge) {
+            gap: 5px;
         }
     }
 }

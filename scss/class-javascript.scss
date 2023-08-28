@@ -40,10 +40,16 @@
 .content-all-section-movement {
     padding: auto;
     transition-duration: 0.3s;
+    @media (min-width: $breapkoint-superExtralarge) {
+        padding-left: 17% !important;
+    }
 }
 
 .menu-cover-mini-width-extend {
     width: 280px !important;
+    @media (min-width: $breakpoint-extralarge) {
+        width: calc(100% - 83.5%) !important;
+    }
 }
 
 .topic-tablet {
@@ -51,6 +57,9 @@
     @media (min-width: $breakpoint-tablet) {
         display: flex !important;
         width: 280px;
+    }
+    @media (min-width: $breakpoint-extralarge) {
+        width: 100%;
     }
 }
 .topic-mobile {
@@ -92,7 +101,7 @@
     @include mediaExtraLargeNone();
 }
 .for-desktop {
-    @media (min-width: $breapoint-extralarge) {
+    @media (min-width: $breakpoint-extralarge) {
         display: flex !important;
     }
 }

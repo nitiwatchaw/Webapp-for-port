@@ -19,6 +19,9 @@
                 .modal-title {
                     font-size: 17px !important;
                     font-family: $font-bold;
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 15px !important;
+                    }
                 }
                 .btn-close {
                     padding: 0px;
@@ -34,6 +37,9 @@
                     i {
                         font-size: 18px;
                         color: $modalColorGray;
+                        @media (min-width: $breakpoint-extralarge) {
+                            font-size: 11px !important;
+                        }
                     }
                 }
                 .modalbtn-close-adjust:focus {
@@ -66,6 +72,9 @@
                         img {
                             width: 130px;
                             @include AbsoluteCenter();
+                            @media (min-width: $breakpoint-extralarge) {
+                                width: 100px;
+                            }
                         }
                     }
                     .text-wrap {
@@ -79,6 +88,9 @@
                         > p {
                             font-family: $font-bold;
                             font-size: 20px;
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 15px;
+                            }
                         }
                         .cover-text {
                             background-color: $grayLight;
@@ -87,11 +99,21 @@
                             align-self: center;
                             padding: 5px;
                             color: $grayDark;
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 10px;
+                            }
                         }
+                    }
+                    @media (min-width: $breakpoint-extralarge) {
+                        width: 260px;
+                        height: 240px;
                     }
                 }
                 .box-template:hover {
                     border: 2px solid $blue;
+                }
+                @media (min-width: $breakpoint-extralarge) {
+                    column-gap: 30px;
                 }
             }
             .modal-footer {
@@ -102,14 +124,21 @@
                     font-family: $font-bold;
                     color: $grayDark;
                     width: 100%;
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 13px;
+                    }
                 }
             }
+        }
+        @media (min-width: $breakpoint-extralarge) {
+            max-width: unset;
+            width: 77%;
         }
     }
     @media (min-width: $breakpoint-tablet) {
         @include calModal();
         right: 0;
-        margin-left:84px;
+        margin-left: 84px;
     }
 }
 #modal-delete {
@@ -134,6 +163,9 @@
                     span {
                         text-decoration: underline;
                     }
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 15px !important;
+                    }
                 }
                 .btn-close {
                     padding: 0px;
@@ -149,6 +181,9 @@
                     i {
                         font-size: 18px;
                         color: $modalColorGray;
+                        @media (min-width: $breakpoint-extralarge) {
+                            font-size: 11px !important;
+                        }
                     }
                 }
                 .modalbtn-close-adjust:focus {
@@ -171,6 +206,9 @@
                     border-radius: 13px;
                     font-family: $font-bold;
                     margin-bottom: 20px;
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 14px ;
+                    }
                 }
                 form {
                     display: flex;
@@ -179,6 +217,12 @@
                         text-decoration: underline;
                         font-family: $font-bold;
                         font-size: 18px;
+                        @media (min-width: $breakpoint-extralarge) {
+                            font-size: 14px;
+                        }
+                    }
+                    @media (min-width: $breakpoint-extralarge) {
+                        width: 100%;
                     }
                 }
                 input {
@@ -218,12 +262,18 @@
                         color: $white;
                         font-size: 16px;
                         opacity: 0.8;
+                        @media (min-width: $breakpoint-extralarge) {
+                            font-size: 10px;
+                        }
                     }
                     p {
                         color: $white;
                         font-size: 16px;
                         font-weight: bold;
                         letter-spacing: 1px;
+                        @media (min-width: $breakpoint-extralarge) {
+                            font-size: 11px;
+                        }
                     }
                 }
             }
@@ -235,6 +285,9 @@
                     font-family: $font-bold;
                     color: $grayDark;
                     width: 100%;
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 13px;
+                    }
                 }
             }
         }

@@ -126,7 +126,6 @@
                             font-weight: bold;
                             letter-spacing: 1px;
                         }
-                      
                     }
                     .cover-icon,
                     .cover-icon-2 {
@@ -251,7 +250,6 @@
                         p {
                             color: var(--iconSidebar);
                         }
-                      
                     }
                     a:hover {
                         i,
@@ -269,16 +267,13 @@
             font-size: 16px;
             padding: 0px 20px 20px 20px;
         }
-    
     }
     .side-content::-webkit-scrollbar {
         display: none;
     }
     .side-content-mobile {
         display: block;
-    
     }
- 
 }
 
 .menu-cover-mini {
@@ -317,11 +312,19 @@
                     width: 100px;
                     z-index: 20;
                     background-color: var(--backgroundSidebar);
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 12px;
+                        padding: 4px;
+                        width: 88px;
+                    }
                 }
                 @media (min-width: $breakpoint-tablet) {
                     position: absolute;
                     left: 22px;
                     display: none;
+                }
+                @media (min-width: $breakpoint-extralarge) {
+                    left: 13px;
                 }
             }
             .line {
@@ -339,6 +342,10 @@
                 width: 18px;
                 height: 18px;
                 @include AbsoluteCenter();
+                @media (min-width: $breakpoint-extralarge) {
+                    font-size: 15px;
+                    height: unset;
+                }
             }
         }
         .side-menu-list {
@@ -353,6 +360,9 @@
                             color: $modal-backdrop;
                             font-size: 18px;
                             @include AbsoluteCenter();
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 13px;
+                            }
                         }
                         .wrap {
                             i {
@@ -360,6 +370,9 @@
                             }
                             @media (min-width: $breakpoint-tablet) {
                                 gap: 17px;
+                            }
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 14px;
                             }
                         }
                     }
@@ -379,6 +392,10 @@
                             i {
                                 color: var(--iconSidebar);
                             }
+                        }
+                        @media (min-width: $breakpoint-extralarge) {
+                            padding: 13px 15px;
+                            border-radius: 10px;
                         }
                     }
                     a:hover {
@@ -414,6 +431,10 @@
                         @media (min-width: $breakpoint-tablet) {
                             gap: 17px;
                         }
+                        @media (min-width: $breakpoint-extralarge) {
+                            gap: 10px;
+                            font-size: 13px;
+                        }
                     }
                     .cover-icon,
                     .cover-icon-2 {
@@ -441,6 +462,9 @@
                                 color: $white;
                                 font-weight: bold;
                                 letter-spacing: 1px;
+                                @media (min-width: $breakpoint-extralarge) {
+                                    font-size: 12px;
+                                }
                             }
                         }
                         .cover-icon {
@@ -448,10 +472,17 @@
                                 color: $white;
                                 font-size: 18px;
                                 @include AbsoluteCenter();
+                                @media (min-width: $breakpoint-extralarge) {
+                                    font-size: 13px;
+                                }
                             }
                         }
                         @media (min-width: $breakpoint-tablet) {
                             justify-content: center;
+                        }
+                        @media (min-width: $breakpoint-extralarge) {
+                            padding: 13px 15px;
+                            border-radius: 6px;
                         }
                     }
                 }
@@ -480,6 +511,9 @@
                                 position: relative;
                                 color: var(--textSubmenuSidebar);
                                 font-weight: bold;
+                                @media (min-width: $breakpoint-extralarge) {
+                                    font-size: 13px;
+                                }
                             }
                             a:before {
                                 content: "•";
@@ -498,9 +532,20 @@
                                 background-color: unset;
                                 color: var(--textSubmenuHover);
                             }
+                            @media (min-width: $breakpoint-extralarge) {
+                                padding: 0px 43px;
+                            }
+                        }
+                        li:first-child {
+                            @media (min-width: $breakpoint-extralarge) {
+                                padding-top: 10px;
+                            }
                         }
                         li:last-child {
                             margin-bottom: 0px !important;
+                            @media (min-width: $breakpoint-extralarge) {
+                                padding-bottom: 13px;
+                            }
                         }
                     }
                     .link-open-submenu {
@@ -540,10 +585,19 @@
                         i,
                         p {
                             color: var(--iconSidebar);
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 13px;
+                            }
                         }
                         @media (min-width: $breakpoint-tablet) {
                             padding: 10px 15px;
                             gap: 17px;
+                        }
+                        @media (min-width: $breakpoint-extralarge) {
+                            padding: 13px 15px;
+                            border-radius: 10px;
+                            gap: 10px;
+                            font-size: 10px;
                         }
                     }
                     a:hover {
@@ -561,6 +615,9 @@
             color: var(--textfooter);
             font-size: 16px;
             padding: 0px 20px 20px 20px;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 14px;
+            }
         }
         @media (min-width: $breakpoint-tablet) {
             overflow: auto;

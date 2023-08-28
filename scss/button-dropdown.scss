@@ -38,11 +38,20 @@ button {
         i {
             color: $grayDark;
             padding: 0px;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 11px;
+            }
         }
         p {
             color: $grayLight;
             font-size: 18px;
             padding: 0px;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 14px;
+            }
+        }
+        @media (min-width: $breakpoint-extralarge) {
+            top: 53px !important;
         }
     }
     .dropdown-menu::before {
@@ -57,17 +66,26 @@ button {
         right: 20.9px;
     }
 }
+//setting button
 .square-cover {
     @include circleCover();
     border-radius: 12px !important;
-    a {
+    i {
         position: absolute;
         @include AbsoluteCenter;
         padding: 13px;
         object-fit: cover;
         text-align: center;
         color: $black;
-        font-size: 18px;
+        font-size: 16px;
+        @media (min-width: $breakpoint-extralarge) {
+            font-size: 13px;
+        }
+    }
+    @media (min-width: $breakpoint-extralarge) {
+        width: 40px;
+        height: 40px;
+        border-radius: 9px;
     }
 }
 
@@ -120,6 +138,9 @@ button {
         a {
             font-weight: bold;
             font-size: 18px;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 13px;
+            }
         }
     }
     @include mediaTabletNone();
@@ -136,6 +157,9 @@ button {
         top: 56%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @media (min-width: $breakpoint-extralarge) {
+            width: 34px;
+        }
     }
 }
 
@@ -149,6 +173,9 @@ button {
         top: 56%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @media (min-width: $breakpoint-extralarge) {
+            width: 34px;
+        }
     }
 }
 
@@ -198,6 +225,9 @@ button {
         a {
             font-weight: bold;
             font-size: 18px;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 13px;
+            }
         }
     }
 }
@@ -271,7 +301,10 @@ button {
                 align-items: flex-start;
                 > p:last-child {
                     font-size: 18px;
-                    color: #617c9c;
+                    color: $grayDark;
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 12px;
+                    }
                 }
                 .wrap-text {
                     display: flex;
@@ -284,6 +317,9 @@ button {
                     }
                     p:first-child {
                         color: $white;
+                        @media (min-width: $breakpoint-extralarge) {
+                            font-size: 15px;
+                        }
                     }
                     p:first-child:hover {
                         background-color: unset;
@@ -315,6 +351,9 @@ button {
 
             p:first-child {
                 color: $white;
+                @media (min-width: $breakpoint-extralarge) {
+                    font-size: 12px;
+                }
             }
             i {
                 color: $grayDark;
@@ -333,6 +372,10 @@ button {
         @media (min-width: $breakpoint-large) {
             top: 46px !important;
             right: -180px !important;
+        }
+        @media (min-width: $breakpoint-extralarge) {
+            width: 211px !important;
+            right: -159px !important;
         }
     }
     .dropdown-menu::before {
@@ -396,6 +439,10 @@ button {
         text-align: center;
         align-items: center;
     }
+    @media (min-width: $breakpoint-extralarge) {
+        width: 22px;
+        height: 22px;
+    }
 }
 .switch-btn:focus {
     outline: 2px solid $grayLight !important;
@@ -444,10 +491,20 @@ button {
                         top: 60%;
                         left: 50%;
                         transform: translate(-50%, -50%);
+                        @media (min-width: $breakpoint-extralarge) {
+                            width: 42px;
+                        }
+                    }
+                    @media (min-width: $breakpoint-extralarge) {
+                        width: 50px;
+                        height: 50px;
                     }
                 }
                 > p {
                     font-family: $font-bold;
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 14px;
+                    }
                 }
                 > i {
                     font-size: 16px;
@@ -458,6 +515,9 @@ button {
                     width: 70%;
                     .profile-name {
                         font-family: $font-bold;
+                        @media (min-width: $breakpoint-extralarge) {
+                            font-size: 14px;
+                        }
                     }
 
                     .text-wrapLink-span {
@@ -468,6 +528,9 @@ button {
                             color: $grayDark;
                             letter-spacing: 1px;
                             font-weight: bold;
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 11px;
+                            }
                         }
                         .link-tag {
                             color: $blue;
@@ -476,6 +539,9 @@ button {
                             color: $Darkblue;
                         }
                     }
+                }
+                @media (min-width: $breakpoint-extralarge) {
+                    padding: 12px 24px;
                 }
             }
             a:hover {
@@ -538,6 +604,9 @@ button {
         @media (min-width: $breakpoint-tablet) {
             right: -232px !important;
         }
+        @media (min-width: $breakpoint-extralarge) {
+            top: 53px !important;
+        }
     }
     .dropdown-menu:active {
         background-color: $white;
@@ -551,8 +620,11 @@ button {
 
     a:active {
         .profile-name {
-            color: black;
+            color: $black;
         }
+    }
+    @media (min-width: $breakpoint-extralarge) {
+        height: 42px;
     }
 }
 .wrapLink-circle-cover {
@@ -571,6 +643,16 @@ button {
             top: -2px;
             color: $white;
             text-align: center;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 10px;
+                line-height: 21px;
+            }
+        }
+        @media (min-width: $breakpoint-extralarge) {
+            width: 16px;
+            height: 16px;
+            right: 0px;
+            top: -7px;
         }
     }
     a {
@@ -579,6 +661,11 @@ button {
         text-align: center;
         padding: 13px;
         color: $grayDark;
+        i {
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 14px;
+            }
+        }
     }
 }
 
@@ -593,6 +680,11 @@ button {
         border-radius: 50%;
         background-color: $blue;
         outline: 2px solid $white;
+        @media (min-width: $breakpoint-extralarge) {
+            width: 8px;
+            height: 8px;
+            top: -1px;
+        }
     }
 }
 
@@ -635,6 +727,9 @@ button {
         @media (min-width: $breakpoint-large) {
             padding: 10px 20px;
         }
+        @media (min-width: $breakpoint-extralarge) {
+            height: 37px;
+        }
     }
     .create-btn:hover {
         background-color: $blueHover;
@@ -658,9 +753,15 @@ button {
             font-size: 18px;
             color: $grayDark;
             font-family: $font-bold;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 13px;
+            }
         }
         i {
             color: $gray;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 10px;
+            }
         }
     }
     .dropdown-toggle::after {
@@ -697,6 +798,9 @@ button {
         }
         p {
             font-family: $font-bold;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 14px;
+            }
         }
         i {
             color: $gray;
@@ -757,6 +861,9 @@ button {
                 @media (min-width: $breakpoint-tablet) {
                     transform: translateX(15px);
                 }
+                @media (min-width: $breakpoint-extralarge) {
+                    transform: translateX(23px);
+                }
             }
         }
         .slider {
@@ -781,6 +888,16 @@ button {
             background-color: var(--switchBackground);
             -webkit-transition: 0.3s;
             transition: 0.3s;
+            @media (min-width: $breakpoint-extralarge) {
+                height: 16px;
+                width: 16px;
+                top: 3px;
+                box-shadow: inset 6px -4px 0px 0px $grayLight;
+            }
+        }
+        @media (min-width: $breakpoint-extralarge) {
+            height: 24px;
+            border: 1px solid $blue;
         }
     }
     @media (min-width: $breakpoint-tablet) {
@@ -808,6 +925,9 @@ button {
                 .getUnderline {
                     text-decoration: revert;
                 }
+                @media (min-width: $breakpoint-extralarge) {
+                    font-size: 13px !important;
+                }
             }
             .btn-alertAdjust {
                 background-color: $pink;
@@ -822,6 +942,13 @@ button {
                 p {
                     color: $white;
                     @include AbsoluteCenter();
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 10px;
+                    }
+                }
+                @media (min-width: $breakpoint-extralarge) {
+                    width: 10px;
+                    height: 10px;
                 }
             }
             .btn-alertAdjust:hover {
@@ -838,6 +965,9 @@ button {
             font-size: 16px;
             padding: 4px 10px;
             box-shadow: $blue -1px 1px 17px 1px;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 12px;
+            }
         }
         @media (min-width: $breakpoint-tablet) {
             flex-direction: row;
@@ -891,6 +1021,10 @@ button {
         height: 18px;
         @include AbsoluteCenter();
     }
+    @media (min-width: $breakpoint-extralarge) {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 .btn-menu-side {
@@ -902,6 +1036,10 @@ button {
     padding: 0px;
     z-index: 10;
     position: relative;
+    @media (min-width: $breakpoint-extralarge) {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 //overview btn
@@ -927,6 +1065,10 @@ button {
                 @media (min-width: $breakpoint-tablet) {
                     padding: 7px 19px;
                 }
+                @media (min-width: $breakpoint-extralarge) {
+                    font-size: 14px;
+                    padding: 5px 19px;
+                }
             }
             a:hover,
             .active {
@@ -940,6 +1082,11 @@ button {
             width: 350px;
             height: 40px;
             margin-left: auto;
+        }
+        @media (min-width: $breakpoint-extralarge) {
+            height: 35px;
+            padding: 0px 3px;
+            width: 310px;
         }
     }
 }
@@ -971,7 +1118,10 @@ button {
             p:last-child {
                 text-align: left;
                 font-size: 16px;
-                color: #8a9eb7;
+                color: $gray;
+                @media (min-width: $breakpoint-extralarge) {
+                    font-size: 13px;
+                }
             }
         }
     }
@@ -1005,6 +1155,9 @@ button {
                 font-size: 20px;
                 color: $black;
                 font-family: $font-bold;
+                @media (min-width: $breakpoint-extralarge) {
+                    font-size: 13px;
+                }
             }
             .wrap {
                 display: flex;
@@ -1012,11 +1165,17 @@ button {
                 gap: 3px;
                 i {
                     color: $gray;
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 13px;
+                    }
                 }
                 p {
                     color: $gray;
                     font-size: 16px;
                     font-family: $font-bold;
+                    @media (min-width: $breakpoint-extralarge) {
+                        font-size: 13px;
+                    }
                 }
             }
         }
@@ -1032,6 +1191,9 @@ button {
     margin-top: 15px;
     span {
         text-decoration: underline;
+    }
+    @media (min-width: $breakpoint-extralarge) {
+        font-size: 14px;
     }
 }
 
@@ -1054,10 +1216,16 @@ button {
         i {
             color: $gray;
             font-size: 16px;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 13px;
+            }
         }
         p {
             color: $blueDark;
             font-family: $font-bold;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 14px;
+            }
         }
         @media (min-width: $breakpoint-tablet) {
             width: 198px;
@@ -1076,10 +1244,16 @@ button {
         i {
             color: $gray;
             font-size: 16px;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 13px;
+            }
         }
         p {
             color: $white;
             font-size: 16px;
+            @media (min-width: $breakpoint-extralarge) {
+                font-size: 14px;
+            }
         }
         @media (min-width: $breakpoint-tablet) {
             width: 198px;
@@ -1108,6 +1282,7 @@ button {
                 color: $white;
                 position: relative;
             }
+
             i {
                 font-size: 33px;
                 position: absolute;
@@ -1118,4 +1293,5 @@ button {
             }
         }
     }
+    @include mediaExtraLargeNone();
 }

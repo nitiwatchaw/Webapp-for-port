@@ -121,36 +121,37 @@ body {
   position: relative;
   scroll-behavior: smooth; }
 
-@media (min-width: 768px) {
-  .content-all-section {
-    padding-left: 98px;
-    transition-duration: 0.3s; } }
-
-.Dashboard-page {
+.content-all-section .Dashboard-page {
   margin-top: 72px;
   padding-top: 15px; }
-  .Dashboard-page .title-dashboard h1 {
+  .content-all-section .Dashboard-page .title-dashboard h1 {
     font-family: Ubuntu-bold; }
-  .Dashboard-page .Overview-bg {
+  .content-all-section .Dashboard-page .Overview-bg {
     padding: 20px 10px;
     background-color: #edf5ff;
     position: relative;
     margin-bottom: 20px; }
-    .Dashboard-page .Overview-bg .wrap {
+    .content-all-section .Dashboard-page .Overview-bg .wrap {
       display: flex;
       align-items: center; }
-      .Dashboard-page .Overview-bg .wrap .title-mounth {
+      .content-all-section .Dashboard-page .Overview-bg .wrap .title-mounth {
         font-size: 18px;
         color: #617c9c;
         padding-left: 5px; }
         @media (min-width: 768px) {
-          .Dashboard-page .Overview-bg .wrap .title-mounth {
+          .content-all-section .Dashboard-page .Overview-bg .wrap .title-mounth {
             font-size: 24px; } }
+        @media (min-width: 1200px) {
+          .content-all-section .Dashboard-page .Overview-bg .wrap .title-mounth {
+            font-size: 15px; } }
     @media (min-width: 768px) {
-      .Dashboard-page .Overview-bg {
+      .content-all-section .Dashboard-page .Overview-bg {
         border-radius: 35px;
         padding: 8px 10px 8px 20px; } }
-  .Dashboard-page .box-scroll-bar {
+    @media (min-width: 1200px) {
+      .content-all-section .Dashboard-page .Overview-bg {
+        padding: 4px 10px 4px 20px; } }
+  .content-all-section .Dashboard-page .box-scroll-bar {
     background-color: #b2ceff;
     overflow: auto;
     height: 100%;
@@ -162,9 +163,9 @@ body {
     justify-content: space-between;
     padding: 40px 20px;
     border-radius: 10px; }
-    .Dashboard-page .box-scroll-bar .cardCover {
+    .content-all-section .Dashboard-page .box-scroll-bar .cardCover {
       position: relative; }
-      .Dashboard-page .box-scroll-bar .cardCover .content {
+      .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content {
         background-color: #fff;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 6px 0px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
         border-radius: 18px;
@@ -176,25 +177,25 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
-        .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title {
+        .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title {
           display: flex;
           align-items: center;
           justify-content: space-between;
           border-bottom: 2px solid #e2ebf6;
           padding-bottom: 4px; }
-          .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title > i {
+          .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title > i {
             color: #92a6c6; }
-          .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text {
+          .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text {
             display: flex;
             align-items: center;
             gap: 10px; }
-            .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text i {
+            .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text i {
               border-radius: 50%;
               box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 6px 0px, rgba(0, 0, 0, 0.05) 0px 5px 10px; }
-            .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text p {
+            .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text p {
               font-family: Ubuntu-bold;
               color: #233a67; }
-        .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc {
+        .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc {
           margin-top: 20px;
           border: 2px dashed #e2ebf6;
           border-radius: 14px;
@@ -205,13 +206,13 @@ body {
           justify-content: space-evenly;
           gap: 13px;
           color: black; }
-          .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .icon-cover {
+          .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .icon-cover {
             background-color: #e2ebf6;
             position: relative;
             width: 50px;
             height: 50px;
             border-radius: 6px; }
-            .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .icon-cover i {
+            .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .icon-cover i {
               position: absolute;
               position: absolute;
               top: 50%;
@@ -219,51 +220,51 @@ body {
               transform: translate(-50%, -50%) !important;
               font-size: 16px;
               color: #617c9c; }
-          .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .text-wrap {
+          .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .text-wrap {
             display: flex;
             flex-direction: column;
             justify-content: flex-start; }
-            .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .text-wrap p:first-child {
+            .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .text-wrap p:first-child {
               font-size: 28px;
               font-family: Ubuntu-bold; }
-        .Dashboard-page .box-scroll-bar .cardCover .content .total-cover {
+        .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .total-cover {
           margin-top: 15px;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: space-between; }
-          .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box {
+          .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box {
             justify-content: space-between;
             width: 100%;
             display: flex;
             flex-direction: row;
             gap: 10px; }
-            .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap {
+            .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap {
               display: flex;
               align-items: center;
               gap: 6px;
               border-bottom: 1px solid #dce4f4; }
-              .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap p,
-              .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap i {
+              .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap p,
+              .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap i {
                 color: #92a6c6; }
-            .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box > p {
+            .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box > p {
               font-size: 16px;
               color: #617c9c;
               font-family: Ubuntu-bold; }
-      .Dashboard-page .box-scroll-bar .cardCover .cardCover-clone {
+      .content-all-section .Dashboard-page .box-scroll-bar .cardCover .cardCover-clone {
         position: absolute;
         width: 165px;
         height: 240px;
         border-radius: 18px;
         top: 5px;
         left: 0; }
-  .Dashboard-page .General-number {
+  .content-all-section .Dashboard-page .General-number {
     display: flex;
     align-items: center;
     gap: 10px; }
-    .Dashboard-page .General-number i {
+    .content-all-section .Dashboard-page .General-number i {
       color: #92a6c6; }
-  .Dashboard-page .General-number-cover {
+  .content-all-section .Dashboard-page .General-number-cover {
     width: 100%;
     background-color: #fff;
     border-radius: 13px;
@@ -271,19 +272,19 @@ body {
     align-items: center;
     padding: 14px 20px;
     justify-content: space-between; }
-    .Dashboard-page .General-number-cover .cover-detail {
+    .content-all-section .Dashboard-page .General-number-cover .cover-detail {
       display: flex;
       align-items: center;
       width: 80%;
       gap: 17px; }
-      .Dashboard-page .General-number-cover .cover-detail .cover-icon {
+      .content-all-section .Dashboard-page .General-number-cover .cover-detail .cover-icon {
         border: 1px solid #dce4f4;
         border-radius: 7px;
         width: 46px;
         height: 46px;
         background-color: #fff;
         position: relative; }
-        .Dashboard-page .General-number-cover .cover-detail .cover-icon i {
+        .content-all-section .Dashboard-page .General-number-cover .cover-detail .cover-icon i {
           color: #617c9c;
           font-size: 16px;
           position: absolute;
@@ -291,63 +292,85 @@ body {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%) !important; }
-      .Dashboard-page .General-number-cover .cover-detail .text-wrap {
+      .content-all-section .Dashboard-page .General-number-cover .cover-detail .text-wrap {
         display: flex;
         justify-content: flex-start;
         flex-direction: column; }
-        .Dashboard-page .General-number-cover .cover-detail .text-wrap p:first-child {
+        .content-all-section .Dashboard-page .General-number-cover .cover-detail .text-wrap p:first-child {
           font-size: 18px;
           color: #617c9c;
           align-self: flex-start;
           font-family: Ubuntu-bold; }
-        .Dashboard-page .General-number-cover .cover-detail .text-wrap p:last-child {
+          @media (min-width: 1200px) {
+            .content-all-section .Dashboard-page .General-number-cover .cover-detail .text-wrap p:first-child {
+              font-size: 14px; } }
+        .content-all-section .Dashboard-page .General-number-cover .cover-detail .text-wrap p:last-child {
           font-size: 16px;
           align-self: flex-start;
           font-family: Ubuntu-bold; }
-    .Dashboard-page .General-number-cover i {
+          @media (min-width: 1200px) {
+            .content-all-section .Dashboard-page .General-number-cover .cover-detail .text-wrap p:last-child {
+              font-size: 16px !important; } }
+    .content-all-section .Dashboard-page .General-number-cover i {
       color: #92a6c6; }
   @media (min-width: 768px) {
-    .Dashboard-page .scroll-bar-right-side {
+    .content-all-section .Dashboard-page .scroll-bar-right-side {
       height: 400px;
       overflow: auto;
       display: none;
       border: 3px solid #dce4f4;
       transform: translate(0px, -500px);
       transition-duration: 0.2s; } }
-  .Dashboard-page .scroll-bar-right-side::-webkit-scrollbar {
+  @media (min-width: 1200px) {
+    .content-all-section .Dashboard-page .scroll-bar-right-side {
+      display: flex;
+      overflow: unset;
+      height: unset;
+      transform: unset;
+      border: 0px; } }
+  .content-all-section .Dashboard-page .scroll-bar-right-side::-webkit-scrollbar {
     display: none; }
-  .Dashboard-page .DocsType-cover {
+  .content-all-section .Dashboard-page .DocsType-cover {
     padding-top: 30px;
     padding-bottom: 30px;
     border: 1px solid #dce4f4; }
-    .Dashboard-page .DocsType-cover .wrpa-title {
+    .content-all-section .Dashboard-page .DocsType-cover .wrpa-title {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      .Dashboard-page .DocsType-cover .wrpa-title .wrap-text {
+      .content-all-section .Dashboard-page .DocsType-cover .wrpa-title .wrap-text {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 5px; }
-        .Dashboard-page .DocsType-cover .wrpa-title .wrap-text p {
+        .content-all-section .Dashboard-page .DocsType-cover .wrpa-title .wrap-text p {
           font-size: 18px;
           color: #92a6c6; }
+          @media (min-width: 1200px) {
+            .content-all-section .Dashboard-page .DocsType-cover .wrpa-title .wrap-text p {
+              font-size: 14px; } }
     @media (min-width: 768px) {
-      .Dashboard-page .DocsType-cover {
+      .content-all-section .Dashboard-page .DocsType-cover {
         background-color: #eef0f5; } }
-  .Dashboard-page .RecentAction-cover {
+    @media (min-width: 1200px) {
+      .content-all-section .Dashboard-page .DocsType-cover {
+        background-color: #fff; } }
+  .content-all-section .Dashboard-page .RecentAction-cover {
     padding-top: 30px;
     padding-bottom: 30px;
     border: 1px solid #dce4f4;
     border-top: 0px; }
-    .Dashboard-page .RecentAction-cover .wrpa-title {
+    .content-all-section .Dashboard-page .RecentAction-cover .wrpa-title {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      .Dashboard-page .RecentAction-cover .wrpa-title .wrap-tex p {
+      .content-all-section .Dashboard-page .RecentAction-cover .wrpa-title .wrap-text p {
         font-size: 18px;
         color: #92a6c6; }
-    .Dashboard-page .RecentAction-cover .RecentAction-button-cover {
+        @media (min-width: 1200px) {
+          .content-all-section .Dashboard-page .RecentAction-cover .wrpa-title .wrap-text p {
+            font-size: 14px; } }
+    .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover {
       display: flex;
       padding: 17px 14px;
       flex-direction: column;
@@ -356,157 +379,133 @@ body {
       border: 1px solid #dce4f4;
       width: 100%;
       background-color: #fff; }
-      .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card {
+      .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column-reverse;
         row-gap: 10px; }
-        .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section {
+        .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section {
           display: flex;
           align-items: center;
           gap: 20px; }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img {
+          .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img {
             background-color: #e2ebf6;
             border-radius: 13px;
             padding: 5px; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover {
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover {
               border-radius: 50%;
               background-color: #fff;
               width: 50px;
               height: 50px;
               position: relative;
               overflow: hidden; }
-              .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover img {
+              .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover img {
                 width: 50px;
                 position: absolute;
                 top: 55%;
                 left: 50%;
                 transform: translate(-50%, -50%); }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap {
+                @media (min-width: 1200px) {
+                  .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover img {
+                    width: 37px;
+                    top: 58%; } }
+              @media (min-width: 1200px) {
+                .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover {
+                  width: 43px;
+                  height: 43px; } }
+            @media (min-width: 1200px) {
+              .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img {
+                padding: 4px; } }
+          .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap {
             display: flex;
             flex-direction: column;
             text-align: left;
             gap: 5px;
             justify-content: space-between; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .title {
-              font-size: 18px;
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .title {
+              font-size: 16px;
               font-weight: bold;
               letter-spacing: 0.3px; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:first-child,
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:last-child {
-              font-size: 18px;
+              @media (min-width: 1200px) {
+                .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .title {
+                  font-size: 14px; } }
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:first-child,
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:last-child {
+              font-size: 18px !important;
               color: #92a6c6; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .by,
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .price {
+              @media (min-width: 1200px) {
+                .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:first-child,
+                .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:last-child {
+                  font-size: 14px !important; } }
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .by,
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .price {
               color: #617c9c;
               font-weight: bold; }
-        .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap {
+          @media (min-width: 1200px) {
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section {
+              gap: 13px; } }
+        .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap {
           display: flex;
           align-items: center;
           gap: 6px;
           background-color: #fff;
           align-self: baseline;
           margin-top: 3px; }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap .dot {
+          .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap .dot {
             border-radius: 50%;
             border: 2px solid #dce4f4; }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap p {
+          .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap p {
             background-color: unset !important;
             box-shadow: unset;
             font-weight: bold;
             font-size: 16px; }
-      .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        row-gap: 10px; }
-        .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section {
-          display: flex;
-          align-items: center;
-          gap: 20px; }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img {
-            background-color: #e2ebf6;
-            border-radius: 13px;
-            padding: 5px; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover {
-              border-radius: 50%;
-              background-color: #fff;
-              width: 50px;
-              height: 50px;
-              position: relative;
-              overflow: hidden; }
-              .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover img {
-                width: 50px;
-                position: absolute;
-                top: 55%;
-                left: 50%;
-                transform: translate(-50%, -50%); }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            gap: 5px;
-            justify-content: space-between; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .title {
-              font-size: 18px;
-              font-weight: bold;
-              letter-spacing: 0.3px; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:first-child,
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:last-child {
-              font-size: 18px;
-              color: #92a6c6; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .by,
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .price {
-              color: #617c9c;
-              font-weight: bold; }
-        .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          background-color: #fff;
-          align-self: baseline;
-          margin-top: 3px; }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap .dot {
-            border-radius: 50%;
-            border: 2px solid #dce4f4; }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap p {
-            background-color: unset !important;
-            box-shadow: unset;
-            font-weight: bold;
-            font-size: 16px; }
+            @media (min-width: 1200px) {
+              .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap p {
+                font-size: 10px; } }
+        @media (min-width: 1200px) {
+          .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card {
+            flex-direction: row; } }
     @media (min-width: 768px) {
-      .Dashboard-page .RecentAction-cover {
+      .content-all-section .Dashboard-page .RecentAction-cover {
         background-color: #eef0f5; } }
+    @media (min-width: 1200px) {
+      .content-all-section .Dashboard-page .RecentAction-cover {
+        background-color: #fff; } }
   @media (min-width: 768px) {
-    .Dashboard-page {
+    .content-all-section .Dashboard-page {
       margin-top: 67px;
       padding-top: 15px; }
-      .Dashboard-page .change-position {
+      .content-all-section .Dashboard-page .change-position {
         flex-direction: column-reverse; } }
+    @media (min-width: 768px) and (min-width: 1200px) {
+      .content-all-section .Dashboard-page .change-position {
+        flex-direction: row; } }
   @media (min-width: 992px) {
-    .Dashboard-page {
+    .content-all-section .Dashboard-page {
       margin-top: 68px; } }
+  @media (min-width: 1200px) {
+    .content-all-section .Dashboard-page {
+      margin-top: 65px; } }
 
-.Browse-Companies {
+.content-all-section .Browse-Companies {
   display: none;
   margin-top: 75px; }
-  .Browse-Companies .title-Browse-Companies h1 {
+  .content-all-section .Browse-Companies .title-Browse-Companies h1 {
     font-family: Ubuntu-bold; }
-  .Browse-Companies .AllCompany {
+  .content-all-section .Browse-Companies .AllCompany {
     display: flex;
     align-items: center;
     gap: 10px; }
-    .Browse-Companies .AllCompany i {
+    .content-all-section .Browse-Companies .AllCompany i {
       color: #92a6c6; }
-  .Browse-Companies .wrapperBox-company {
+  .content-all-section .Browse-Companies .wrapperBox-company {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
     padding-bottom: 40px; }
-    .Browse-Companies .wrapperBox-company .box-company {
+    .content-all-section .Browse-Companies .wrapperBox-company .box-company {
       width: 340px;
       height: 280px;
       border: 2px solid #dce4f4;
@@ -519,20 +518,20 @@ body {
       justify-content: flex-start;
       position: relative;
       cursor: pointer; }
-      .Browse-Companies .wrapperBox-company .box-company .box-top {
+      .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top {
         width: 100%;
         height: 175px;
         border-radius: 25px;
         position: relative;
         box-shadow: #dce4f4 0px 10px 36px 0px, #dce4f4 0px 0px 0px 1px; }
-        .Browse-Companies .wrapperBox-company .box-company .box-top img {
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top img {
           width: 70px;
           position: absolute;
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%) !important; }
-        .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star {
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star {
           display: flex;
           justify-content: center;
           gap: 3px;
@@ -545,13 +544,23 @@ body {
           left: 16%;
           transform: translate(-50%, -50%);
           background-color: #ffce04; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star i {
+          @media (min-width: 1200px) {
+            .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star {
+              height: 30px;
+              width: 75px; } }
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star i {
             color: #000; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star p {
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star i {
+                font-size: 10px; } }
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star p {
             font-size: 18px;
             font-family: Ubuntu-bold;
             color: #000; }
-        .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin {
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star p {
+                font-size: 14px; } }
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin {
           display: flex;
           justify-content: center;
           gap: 3px;
@@ -564,13 +573,23 @@ body {
           left: 16%;
           transform: translate(-50%, -50%);
           background-color: #bbe3fa; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin i {
+          @media (min-width: 1200px) {
+            .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin {
+              height: 30px;
+              width: 75px; } }
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin i {
             color: #000; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin p {
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin i {
+                font-size: 10px; } }
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin p {
             font-size: 18px;
             font-family: Ubuntu-bold;
             color: #000; }
-        .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user {
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin p {
+                font-size: 14px; } }
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user {
           display: flex;
           justify-content: center;
           gap: 3px;
@@ -584,13 +603,23 @@ body {
           transform: translate(-50%, -50%);
           border: 1px solid #dce4f4;
           background-color: #fff; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user i {
+          @media (min-width: 1200px) {
+            .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user {
+              height: 30px;
+              width: 75px; } }
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user i {
             color: #dce4f4; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user p {
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user i {
+                font-size: 10px; } }
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user p {
             font-size: 18px;
             font-family: Ubuntu-bold;
             color: #000; }
-        .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover {
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user p {
+                font-size: 14px; } }
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover {
           border: 1px solid #fff;
           position: absolute;
           display: flex;
@@ -600,23 +629,26 @@ body {
           top: 18%;
           right: 4%;
           transform: translate(-50%, -50%); }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover a {
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover a {
             padding: 0px 6px; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover i {
-            color: #a9bcd0; }
-        .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover:hover {
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover i {
+            color: #92a6c6; }
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover i {
+                font-size: 12px; } }
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover:hover {
           border: 1px solid #92a6c6; }
-      .Browse-Companies .wrapperBox-company .box-company .text-wrap {
+      .content-all-section .Browse-Companies .wrapperBox-company .box-company .text-wrap {
         align-self: center;
         margin-top: 25px; }
-        .Browse-Companies .wrapperBox-company .box-company .text-wrap p:first-child {
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .text-wrap p:first-child {
           font-size: 20px;
           text-align: center;
           font-family: Ubuntu-bold; }
-        .Browse-Companies .wrapperBox-company .box-company .text-wrap p:last-child {
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .text-wrap p:last-child {
           font-family: Ubuntu-bold;
           color: #92a6c6; }
-      .Browse-Companies .wrapperBox-company .box-company .active-btn {
+      .content-all-section .Browse-Companies .wrapperBox-company .box-company .active-btn {
         display: flex;
         border-radius: 35px;
         border: 1px solid #dce4f4;
@@ -630,35 +662,46 @@ body {
         z-index: 45;
         gap: 5px;
         display: none; }
-        .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover {
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover {
           position: relative;
           background-color: #12b785;
           border-radius: 50%;
           width: 18px;
           height: 18px; }
-          .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover i {
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover i {
             color: #fff;
             position: absolute;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) !important; }
-          .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover p {
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover p {
             font-size: 16px;
             font-family: Ubuntu-bold; }
-    .Browse-Companies .wrapperBox-company .box-company:hover {
+      @media (min-width: 1200px) {
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company {
+          width: 300px; } }
+    .content-all-section .Browse-Companies .wrapperBox-company .box-company:hover {
       border-color: #12b785; }
-    .Browse-Companies .wrapperBox-company .box-company:focus {
+    .content-all-section .Browse-Companies .wrapperBox-company .box-company:focus {
       border-color: #12b785; }
-      .Browse-Companies .wrapperBox-company .box-company:focus .active-btn {
+      .content-all-section .Browse-Companies .wrapperBox-company .box-company:focus .active-btn {
         display: flex !important; }
-    .Browse-Companies .wrapperBox-company .active {
+    .content-all-section .Browse-Companies .wrapperBox-company .active {
       border-color: #12b785; }
-      .Browse-Companies .wrapperBox-company .active .active-btn {
+      .content-all-section .Browse-Companies .wrapperBox-company .active .active-btn {
         display: flex !important; }
+
+@media (min-width: 768px) {
+  .content-all-section {
+    padding-left: 98px;
+    transition-duration: 0.3s; } }
 
 .logo {
   width: 150px; }
+  @media (min-width: 1200px) {
+    .logo {
+      width: 120px; } }
 
 @media (min-width: 992px) {
   .nav-bar-wrap {
@@ -666,6 +709,11 @@ body {
     border-bottom: 2px solid #dce4f4;
     position: fixed;
     z-index: 200; } }
+
+@media (min-width: 1200px) {
+  .nav-bar-wrap {
+    padding-top: 0px;
+    padding-bottom: 0px; } }
 
 .left-side {
   display: flex;
@@ -694,6 +742,9 @@ body {
       .left-side .wrapImg-dropdown {
         width: 100%;
         justify-content: flex-end; } }
+    @media (min-width: 1200px) {
+      .left-side .wrapImg-dropdown {
+        display: none; } }
   @media (min-width: 768px) {
     .left-side {
       padding: 1px; } }
@@ -704,6 +755,9 @@ body {
       border: 0px;
       justify-content: space-between;
       gap: 0px; } }
+  @media (min-width: 1200px) {
+    .left-side {
+      height: 80px; } }
 
 .right-side {
   border-bottom: 1px solid #dce4f4;
@@ -759,6 +813,9 @@ body {
           top: 52%;
           left: 26px;
           transform: translate(-50%, -50%); }
+          @media (min-width: 1200px) {
+            .right-side .wrap-search-btn .wrap-search-setting form i {
+              font-size: 13px; } }
         .right-side .wrap-search-btn .wrap-search-setting form input {
           border-radius: 12px;
           border: 1px solid #cbd9e8;
@@ -767,32 +824,23 @@ body {
           @media (min-width: 768px) {
             .right-side .wrap-search-btn .wrap-search-setting form input {
               width: 100%; } }
+          @media (min-width: 1200px) {
+            .right-side .wrap-search-btn .wrap-search-setting form input {
+              padding: 7px 11px 7px 40px;
+              border-radius: 9px; } }
         .right-side .wrap-search-btn .wrap-search-setting form input:focus {
           outline: none; }
         .right-side .wrap-search-btn .wrap-search-setting form input::placeholder {
           color: #e2ebf6; }
+          @media (min-width: 1200px) {
+            .right-side .wrap-search-btn .wrap-search-setting form input::placeholder {
+              font-size: 13px; } }
         @media (min-width: 768px) {
           .right-side .wrap-search-btn .wrap-search-setting form {
             width: 100%; } }
-      .right-side .wrap-search-btn .wrap-search-setting .square-cover {
-        border: 2px solid #cbd9e8;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        position: relative;
-        background-color: #fff;
-        box-shadow: #e2ebf6 1px 1px 6px 1px, #e2ebf6 0px 18px 36px -18px;
-        border-radius: 12px !important; }
-        .right-side .wrap-search-btn .wrap-search-setting .square-cover a {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%) !important;
-          padding: 13px;
-          object-fit: cover;
-          text-align: center;
-          color: #000;
-          font-size: 18px; }
+        @media (min-width: 1200px) {
+          .right-side .wrap-search-btn .wrap-search-setting form {
+            width: unset; } }
       @media (min-width: 768px) {
         .right-side .wrap-search-btn .wrap-search-setting {
           width: 80%;
@@ -806,6 +854,9 @@ body {
     @media (min-width: 992px) {
       .right-side .wrap-search-btn {
         flex-direction: row-reverse; } }
+    @media (min-width: 1200px) {
+      .right-side .wrap-search-btn {
+        width: unset; } }
   @media (min-width: 768px) {
     .right-side {
       flex-direction: row;
@@ -824,6 +875,12 @@ body {
       display: flex !important;
       background: unset;
       gap: 50px; } }
+  @media (min-width: 1200px) {
+    .right-side {
+      justify-content: space-between;
+      height: 80px;
+      background-color: #f6f9ff;
+      padding: 0px 25px !important; } }
 
 .topic {
   display: flex;
@@ -839,6 +896,9 @@ body {
       flex-direction: column;
       align-items: center;
       gap: 5px; }
+    @media (min-width: 1200px) {
+      .topic .icon-wrap {
+        justify-content: space-between; } }
   @media (min-width: 768px) {
     .topic {
       padding: 9px; } }
@@ -865,6 +925,9 @@ body {
     @media (min-width: 992px) {
       .detail-profile p {
         font-size: 15px; } }
+    @media (min-width: 1200px) {
+      .detail-profile p {
+        font-size: 13px; } }
   .detail-profile .wrap {
     display: flex;
     align-items: center;
@@ -876,6 +939,9 @@ body {
       @media (min-width: 992px) {
         .detail-profile .wrap h5 {
           font-size: 16px; } }
+      @media (min-width: 1200px) {
+        .detail-profile .wrap h5 {
+          font-size: 13px; } }
     .detail-profile .wrap .line-wrap {
       display: flex;
       flex-direction: column;
@@ -885,12 +951,21 @@ body {
         height: 3px;
         border-radius: 35px;
         background-color: #cbd9e8; }
+        @media (min-width: 1200px) {
+          .detail-profile .wrap .line-wrap .line:first-child {
+            width: 16px; } }
       .detail-profile .wrap .line-wrap .line:last-child {
         width: 14px;
         height: 3px;
         border-radius: 35px;
         align-self: flex-end;
         background-color: #cbd9e8; }
+        @media (min-width: 1200px) {
+          .detail-profile .wrap .line-wrap .line:last-child {
+            width: 10px; } }
+    @media (min-width: 1200px) {
+      .detail-profile .wrap {
+        gap: 5px; } }
 
 button {
   border: 0px;
@@ -925,10 +1000,19 @@ button {
   #setting .dropdown-menu i {
     color: #617c9c;
     padding: 0px; }
+    @media (min-width: 1200px) {
+      #setting .dropdown-menu i {
+        font-size: 11px; } }
   #setting .dropdown-menu p {
     color: #e2ebf6;
     font-size: 18px;
     padding: 0px; }
+    @media (min-width: 1200px) {
+      #setting .dropdown-menu p {
+        font-size: 14px; } }
+  @media (min-width: 1200px) {
+    #setting .dropdown-menu {
+      top: 53px !important; } }
 
 #setting .dropdown-menu::before {
   content: "";
@@ -950,7 +1034,11 @@ button {
   background-color: #fff;
   box-shadow: #e2ebf6 1px 1px 6px 1px, #e2ebf6 0px 18px 36px -18px;
   border-radius: 12px !important; }
-  .square-cover a {
+  @media (min-width: 1200px) {
+    .square-cover {
+      width: 42px;
+      height: 42px; } }
+  .square-cover i {
     position: absolute;
     position: absolute;
     top: 50%;
@@ -960,7 +1048,15 @@ button {
     object-fit: cover;
     text-align: center;
     color: #000;
-    font-size: 18px; }
+    font-size: 16px; }
+    @media (min-width: 1200px) {
+      .square-cover i {
+        font-size: 13px; } }
+  @media (min-width: 1200px) {
+    .square-cover {
+      width: 40px;
+      height: 40px;
+      border-radius: 9px; } }
 
 #profile-img {
   height: 50px;
@@ -1003,6 +1099,9 @@ button {
     #profile-img .dropdown-menu a {
       font-weight: bold;
       font-size: 18px; }
+      @media (min-width: 1200px) {
+        #profile-img .dropdown-menu a {
+          font-size: 13px; } }
   @media (min-width: 768px) {
     #profile-img {
       display: none; } }
@@ -1016,6 +1115,10 @@ button {
   background-color: #fff;
   box-shadow: #e2ebf6 1px 1px 6px 1px, #e2ebf6 0px 18px 36px -18px;
   overflow: hidden; }
+  @media (min-width: 1200px) {
+    .circle-cover-collape {
+      width: 42px;
+      height: 42px; } }
   @media (min-width: 768px) {
     .circle-cover-collape {
       display: none; } }
@@ -1026,6 +1129,9 @@ button {
     top: 56%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media (min-width: 1200px) {
+      .circle-cover-collape img {
+        width: 34px; } }
 
 .circle-cover {
   border: 2px solid #cbd9e8;
@@ -1036,6 +1142,10 @@ button {
   background-color: #fff;
   box-shadow: #e2ebf6 1px 1px 6px 1px, #e2ebf6 0px 18px 36px -18px;
   overflow: hidden; }
+  @media (min-width: 1200px) {
+    .circle-cover {
+      width: 42px;
+      height: 42px; } }
   .circle-cover img {
     position: absolute;
     width: 42px;
@@ -1043,6 +1153,9 @@ button {
     top: 56%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media (min-width: 1200px) {
+      .circle-cover img {
+        width: 34px; } }
 
 #profile-img-2 {
   height: 50px;
@@ -1082,6 +1195,9 @@ button {
     #profile-img-2 .dropdown-menu a {
       font-weight: bold;
       font-size: 18px; }
+      @media (min-width: 1200px) {
+        #profile-img-2 .dropdown-menu a {
+          font-size: 13px; } }
 
 #switchDropdown .dropdown-toggle::after {
   display: none; }
@@ -1148,6 +1264,9 @@ button {
       #switchDropdown .dropdown-menu li .text-cover > p:last-child {
         font-size: 18px;
         color: #617c9c; }
+        @media (min-width: 1200px) {
+          #switchDropdown .dropdown-menu li .text-cover > p:last-child {
+            font-size: 12px; } }
       #switchDropdown .dropdown-menu li .text-cover .wrap-text {
         display: flex;
         gap: 4px;
@@ -1157,6 +1276,9 @@ button {
           color: #6dc0b3; }
         #switchDropdown .dropdown-menu li .text-cover .wrap-text p:first-child {
           color: #fff; }
+          @media (min-width: 1200px) {
+            #switchDropdown .dropdown-menu li .text-cover .wrap-text p:first-child {
+              font-size: 15px; } }
         #switchDropdown .dropdown-menu li .text-cover .wrap-text p:first-child:hover {
           background-color: unset; }
   #switchDropdown .dropdown-menu li:hover {
@@ -1176,6 +1298,9 @@ button {
     justify-content: space-between; }
     #switchDropdown .dropdown-menu .list-dropdown-last p:first-child {
       color: #fff; }
+      @media (min-width: 1200px) {
+        #switchDropdown .dropdown-menu .list-dropdown-last p:first-child {
+          font-size: 12px; } }
     #switchDropdown .dropdown-menu .list-dropdown-last i {
       color: #617c9c;
       position: relative; }
@@ -1191,6 +1316,10 @@ button {
     #switchDropdown .dropdown-menu {
       top: 46px !important;
       right: -180px !important; } }
+  @media (min-width: 1200px) {
+    #switchDropdown .dropdown-menu {
+      width: 211px !important;
+      right: -159px !important; } }
 
 #switchDropdown .dropdown-menu::before {
   content: "";
@@ -1252,6 +1381,10 @@ button {
     width: 15px;
     text-align: center;
     align-items: center; }
+  @media (min-width: 1200px) {
+    .switch-btn {
+      width: 22px;
+      height: 22px; } }
 
 .switch-btn:focus {
   outline: 2px solid #e2ebf6 !important; }
@@ -1292,8 +1425,18 @@ button {
             top: 60%;
             left: 50%;
             transform: translate(-50%, -50%); }
+            @media (min-width: 1200px) {
+              #mail .dropdown-menu li .dropdown-item .main-img-cover img {
+                width: 42px; } }
+          @media (min-width: 1200px) {
+            #mail .dropdown-menu li .dropdown-item .main-img-cover {
+              width: 50px;
+              height: 50px; } }
         #mail .dropdown-menu li .dropdown-item > p {
           font-family: Ubuntu-bold; }
+          @media (min-width: 1200px) {
+            #mail .dropdown-menu li .dropdown-item > p {
+              font-size: 14px; } }
         #mail .dropdown-menu li .dropdown-item > i {
           font-size: 16px;
           color: #e2ebf6; }
@@ -1301,6 +1444,9 @@ button {
           width: 70%; }
           #mail .dropdown-menu li .dropdown-item .text-wrap .profile-name {
             font-family: Ubuntu-bold; }
+            @media (min-width: 1200px) {
+              #mail .dropdown-menu li .dropdown-item .text-wrap .profile-name {
+                font-size: 14px; } }
           #mail .dropdown-menu li .dropdown-item .text-wrap .text-wrapLink-span {
             display: flex;
             align-items: center; }
@@ -1308,10 +1454,16 @@ button {
               color: #617c9c;
               letter-spacing: 1px;
               font-weight: bold; }
+              @media (min-width: 1200px) {
+                #mail .dropdown-menu li .dropdown-item .text-wrap .text-wrapLink-span p {
+                  font-size: 11px; } }
             #mail .dropdown-menu li .dropdown-item .text-wrap .text-wrapLink-span .link-tag {
               color: #0092e3; }
             #mail .dropdown-menu li .dropdown-item .text-wrap .text-wrapLink-span .time {
               color: #021133; }
+        @media (min-width: 1200px) {
+          #mail .dropdown-menu li .dropdown-item {
+            padding: 12px 24px; } }
       #mail .dropdown-menu li a:hover {
         background-color: #f6f9ff; }
       #mail .dropdown-menu li .addition {
@@ -1355,6 +1507,9 @@ button {
     @media (min-width: 768px) {
       #mail .dropdown-menu {
         right: -232px !important; } }
+    @media (min-width: 1200px) {
+      #mail .dropdown-menu {
+        top: 53px !important; } }
   #mail .dropdown-menu:active {
     background-color: #fff; }
   #mail .dropdown-toggle::after {
@@ -1362,7 +1517,10 @@ button {
   #mail .dropdown-menu {
     width: 280px; }
   #mail a:active .profile-name {
-    color: black; }
+    color: #000; }
+  @media (min-width: 1200px) {
+    #mail {
+      height: 42px; } }
 
 .wrapLink-circle-cover {
   border: 2px solid #cbd9e8;
@@ -1372,6 +1530,10 @@ button {
   position: relative;
   background-color: #fff;
   box-shadow: #e2ebf6 1px 1px 6px 1px, #e2ebf6 0px 18px 36px -18px; }
+  @media (min-width: 1200px) {
+    .wrapLink-circle-cover {
+      width: 42px;
+      height: 42px; } }
   .wrapLink-circle-cover .notice {
     position: absolute;
     width: 20px;
@@ -1386,6 +1548,16 @@ button {
       top: -2px;
       color: #fff;
       text-align: center; }
+      @media (min-width: 1200px) {
+        .wrapLink-circle-cover .notice p {
+          font-size: 10px;
+          line-height: 21px; } }
+    @media (min-width: 1200px) {
+      .wrapLink-circle-cover .notice {
+        width: 16px;
+        height: 16px;
+        right: 0px;
+        top: -7px; } }
   .wrapLink-circle-cover a {
     position: absolute;
     top: 50%;
@@ -1395,6 +1567,9 @@ button {
     text-align: center;
     padding: 13px;
     color: #617c9c; }
+    @media (min-width: 1200px) {
+      .wrapLink-circle-cover a i {
+        font-size: 14px; } }
 
 .wrapLink-circle-cover:nth-child(2) .notice {
   position: absolute;
@@ -1405,6 +1580,11 @@ button {
   border-radius: 50%;
   background-color: #0092e3;
   outline: 2px solid #fff; }
+  @media (min-width: 1200px) {
+    .wrapLink-circle-cover:nth-child(2) .notice {
+      width: 8px;
+      height: 8px;
+      top: -1px; } }
 
 .wrapLink-circle-cover-collape {
   border: 2px solid #cbd9e8;
@@ -1414,6 +1594,10 @@ button {
   position: relative;
   background-color: #fff;
   box-shadow: #e2ebf6 1px 1px 6px 1px, #e2ebf6 0px 18px 36px -18px; }
+  @media (min-width: 1200px) {
+    .wrapLink-circle-cover-collape {
+      width: 42px;
+      height: 42px; } }
 
 .wrap-search-btn .create-btn {
   display: flex;
@@ -1446,6 +1630,9 @@ button {
   @media (min-width: 992px) {
     .wrap-search-btn .create-btn {
       padding: 10px 20px; } }
+  @media (min-width: 1200px) {
+    .wrap-search-btn .create-btn {
+      height: 37px; } }
 
 .wrap-search-btn .create-btn:hover {
   background-color: #0270ac; }
@@ -1466,9 +1653,17 @@ button {
     font-size: 18px;
     color: #617c9c;
     font-family: Ubuntu-bold; }
+    @media (min-width: 1200px) {
+      #DocsType button p,
+      #RecentAction button p {
+        font-size: 13px; } }
   #DocsType button i,
   #RecentAction button i {
     color: #92a6c6; }
+    @media (min-width: 1200px) {
+      #DocsType button i,
+      #RecentAction button i {
+        font-size: 10px; } }
 
 #DocsType .dropdown-toggle::after,
 #RecentAction .dropdown-toggle::after {
@@ -1499,6 +1694,9 @@ button {
     opacity: 0.6; }
   #company-dropdown .dropdown-menu p {
     font-family: Ubuntu-bold; }
+    @media (min-width: 1200px) {
+      #company-dropdown .dropdown-menu p {
+        font-size: 14px; } }
   #company-dropdown .dropdown-menu i {
     color: #92a6c6; }
 
@@ -1555,6 +1753,9 @@ button {
       @media (min-width: 768px) {
         .toggle-switch .switch-label .checkbox:checked ~ .slider::before {
           transform: translateX(15px); } }
+      @media (min-width: 1200px) {
+        .toggle-switch .switch-label .checkbox:checked ~ .slider::before {
+          transform: translateX(23px); } }
     .toggle-switch .switch-label .slider {
       position: absolute;
       width: 100%;
@@ -1576,6 +1777,16 @@ button {
       background-color: var(--switchBackground);
       -webkit-transition: 0.3s;
       transition: 0.3s; }
+      @media (min-width: 1200px) {
+        .toggle-switch .switch-label .slider::before {
+          height: 16px;
+          width: 16px;
+          top: 3px;
+          box-shadow: inset 6px -4px 0px 0px #e2ebf6; } }
+    @media (min-width: 1200px) {
+      .toggle-switch .switch-label {
+        height: 24px;
+        border: 1px solid #0092e3; } }
   @media (min-width: 768px) {
     .toggle-switch {
       width: 83px; } }
@@ -1599,6 +1810,9 @@ button {
         font-size: 18px; }
         .alert-adjust .alert-content .wrapper-alert .cover-text .getUnderline {
           text-decoration: revert; }
+        @media (min-width: 1200px) {
+          .alert-adjust .alert-content .wrapper-alert .cover-text {
+            font-size: 13px !important; } }
       .alert-adjust .alert-content .wrapper-alert .btn-alertAdjust {
         background-color: #f4548c;
         box-shadow: #f4548c -1px 1px 17px 1px;
@@ -1615,6 +1829,13 @@ button {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%) !important; }
+          @media (min-width: 1200px) {
+            .alert-adjust .alert-content .wrapper-alert .btn-alertAdjust p {
+              font-size: 10px; } }
+        @media (min-width: 1200px) {
+          .alert-adjust .alert-content .wrapper-alert .btn-alertAdjust {
+            width: 10px;
+            height: 10px; } }
       .alert-adjust .alert-content .wrapper-alert .btn-alertAdjust:hover {
         opacity: 0.75; }
       @media (min-width: 768px) {
@@ -1627,6 +1848,9 @@ button {
       font-size: 16px;
       padding: 4px 10px;
       box-shadow: #0092e3 -1px 1px 17px 1px; }
+      @media (min-width: 1200px) {
+        .alert-adjust .alert-content .btn-bill {
+          font-size: 12px; } }
     @media (min-width: 768px) {
       .alert-adjust .alert-content {
         flex-direction: row;
@@ -1685,6 +1909,10 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) !important; }
+  @media (min-width: 1200px) {
+    .btn-menu-side-mobile {
+      width: 24px;
+      height: 24px; } }
 
 .btn-menu-side {
   background-color: var(--backgroundSidebar);
@@ -1695,6 +1923,10 @@ button {
   padding: 0px;
   z-index: 10;
   position: relative; }
+  @media (min-width: 1200px) {
+    .btn-menu-side {
+      width: 24px;
+      height: 24px; } }
 
 .Overview-bg ul {
   margin: 0px;
@@ -1717,6 +1949,10 @@ button {
       @media (min-width: 768px) {
         .Overview-bg ul li a {
           padding: 7px 19px; } }
+      @media (min-width: 1200px) {
+        .Overview-bg ul li a {
+          font-size: 14px;
+          padding: 5px 19px; } }
     .Overview-bg ul li a:hover,
     .Overview-bg ul li .active {
       background-color: #0092e3;
@@ -1728,6 +1964,11 @@ button {
       width: 350px;
       height: 40px;
       margin-left: auto; } }
+  @media (min-width: 1200px) {
+    .Overview-bg ul {
+      height: 35px;
+      padding: 0px 3px;
+      width: 310px; } }
 
 .DocsType-card-cover {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 6px 0px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
@@ -1754,7 +1995,10 @@ button {
       .DocsType-card-cover .cover-detail .text-wrap p:last-child {
         text-align: left;
         font-size: 16px;
-        color: #8a9eb7; }
+        color: #92a6c6; }
+        @media (min-width: 1200px) {
+          .DocsType-card-cover .cover-detail .text-wrap p:last-child {
+            font-size: 13px; } }
   .DocsType-card-cover .cover-icon {
     border: 1px solid #dce4f4;
     border-radius: 7px;
@@ -1789,16 +2033,25 @@ button {
         font-size: 20px;
         color: #000;
         font-family: Ubuntu-bold; }
+        @media (min-width: 1200px) {
+          .DocsType-card-cover > .cover a > p {
+            font-size: 13px; } }
       .DocsType-card-cover > .cover a .wrap {
         display: flex;
         align-items: center;
         gap: 3px; }
         .DocsType-card-cover > .cover a .wrap i {
           color: #92a6c6; }
+          @media (min-width: 1200px) {
+            .DocsType-card-cover > .cover a .wrap i {
+              font-size: 13px; } }
         .DocsType-card-cover > .cover a .wrap p {
           color: #92a6c6;
           font-size: 16px;
           font-family: Ubuntu-bold; }
+          @media (min-width: 1200px) {
+            .DocsType-card-cover > .cover a .wrap p {
+              font-size: 13px; } }
 
 .btn-recent {
   border-radius: 8px;
@@ -1808,6 +2061,9 @@ button {
   margin-top: 15px; }
   .btn-recent span {
     text-decoration: underline; }
+  @media (min-width: 1200px) {
+    .btn-recent {
+      font-size: 14px; } }
 
 .AllCompany-btn-wrap {
   display: flex;
@@ -1826,9 +2082,15 @@ button {
     .AllCompany-btn-wrap .join-com i {
       color: #92a6c6;
       font-size: 16px; }
+      @media (min-width: 1200px) {
+        .AllCompany-btn-wrap .join-com i {
+          font-size: 13px; } }
     .AllCompany-btn-wrap .join-com p {
       color: #233a67;
       font-family: Ubuntu-bold; }
+      @media (min-width: 1200px) {
+        .AllCompany-btn-wrap .join-com p {
+          font-size: 14px; } }
     @media (min-width: 768px) {
       .AllCompany-btn-wrap .join-com {
         width: 198px;
@@ -1845,9 +2107,15 @@ button {
     .AllCompany-btn-wrap .create-com i {
       color: #92a6c6;
       font-size: 16px; }
+      @media (min-width: 1200px) {
+        .AllCompany-btn-wrap .create-com i {
+          font-size: 13px; } }
     .AllCompany-btn-wrap .create-com p {
       color: #fff;
       font-size: 16px; }
+      @media (min-width: 1200px) {
+        .AllCompany-btn-wrap .create-com p {
+          font-size: 14px; } }
     @media (min-width: 768px) {
       .AllCompany-btn-wrap .create-com {
         width: 198px;
@@ -1880,6 +2148,9 @@ button {
           right: 170px;
           transform: translate(-50%, -50%);
           color: #fff; } }
+  @media (min-width: 1200px) {
+    .collape-right-side {
+      display: none; } }
 
 /*  Ubuntu-bold */
 @font-face {
@@ -1923,9 +2194,16 @@ a {
 a:focus {
   color: unset; }
 
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 20px; } }
+
 h2 {
   margin: 0px;
   font-family: Ubuntu-bold; }
+  @media (min-width: 1200px) {
+    h2 {
+      font-size: 19px; } }
 
 p {
   margin: 0px; }
@@ -1959,6 +2237,9 @@ li {
       #modal-create .modal-dialog .modal-content .modal-header .modal-title {
         font-size: 17px !important;
         font-family: Ubuntu-bold; }
+        @media (min-width: 1200px) {
+          #modal-create .modal-dialog .modal-content .modal-header .modal-title {
+            font-size: 15px !important; } }
       #modal-create .modal-dialog .modal-content .modal-header .btn-close {
         padding: 0px;
         margin: 0px; }
@@ -1972,6 +2253,9 @@ li {
         #modal-create .modal-dialog .modal-content .modal-header .modalbtn-close-adjust i {
           font-size: 18px;
           color: #9eb1cd; }
+          @media (min-width: 1200px) {
+            #modal-create .modal-dialog .modal-content .modal-header .modalbtn-close-adjust i {
+              font-size: 11px !important; } }
       #modal-create .modal-dialog .modal-content .modal-header .modalbtn-close-adjust:focus {
         box-shadow: unset; }
     #modal-create .modal-dialog .modal-content .modal-body {
@@ -2003,6 +2287,9 @@ li {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) !important; }
+            @media (min-width: 1200px) {
+              #modal-create .modal-dialog .modal-content .modal-body .box-template .img-cover img {
+                width: 100px; } }
         #modal-create .modal-dialog .modal-content .modal-body .box-template .text-wrap {
           height: 45%;
           width: 100%;
@@ -2014,6 +2301,9 @@ li {
           #modal-create .modal-dialog .modal-content .modal-body .box-template .text-wrap > p {
             font-family: Ubuntu-bold;
             font-size: 20px; }
+            @media (min-width: 1200px) {
+              #modal-create .modal-dialog .modal-content .modal-body .box-template .text-wrap > p {
+                font-size: 15px; } }
           #modal-create .modal-dialog .modal-content .modal-body .box-template .text-wrap .cover-text {
             background-color: #e2ebf6;
             border-radius: 8px;
@@ -2021,8 +2311,18 @@ li {
             align-self: center;
             padding: 5px;
             color: #617c9c; }
+            @media (min-width: 1200px) {
+              #modal-create .modal-dialog .modal-content .modal-body .box-template .text-wrap .cover-text {
+                font-size: 10px; } }
+        @media (min-width: 1200px) {
+          #modal-create .modal-dialog .modal-content .modal-body .box-template {
+            width: 260px;
+            height: 240px; } }
       #modal-create .modal-dialog .modal-content .modal-body .box-template:hover {
         border: 2px solid #0092e3; }
+      @media (min-width: 1200px) {
+        #modal-create .modal-dialog .modal-content .modal-body {
+          column-gap: 30px; } }
     #modal-create .modal-dialog .modal-content .modal-footer {
       justify-content: center;
       padding: 0px;
@@ -2031,6 +2331,13 @@ li {
         font-family: Ubuntu-bold;
         color: #617c9c;
         width: 100%; }
+        @media (min-width: 1200px) {
+          #modal-create .modal-dialog .modal-content .modal-footer button {
+            font-size: 13px; } }
+  @media (min-width: 1200px) {
+    #modal-create .modal-dialog {
+      max-width: unset;
+      width: 77%; } }
 
 @media (min-width: 768px) {
   #modal-create {
@@ -2061,6 +2368,9 @@ li {
         font-family: Ubuntu-bold; }
         #modal-delete .modal-dialog .modal-content .modal-header .modal-title span {
           text-decoration: underline; }
+        @media (min-width: 1200px) {
+          #modal-delete .modal-dialog .modal-content .modal-header .modal-title {
+            font-size: 15px !important; } }
       #modal-delete .modal-dialog .modal-content .modal-header .btn-close {
         padding: 0px;
         margin: 0px; }
@@ -2074,6 +2384,9 @@ li {
         #modal-delete .modal-dialog .modal-content .modal-header .modalbtn-close-adjust i {
           font-size: 18px;
           color: #9eb1cd; }
+          @media (min-width: 1200px) {
+            #modal-delete .modal-dialog .modal-content .modal-header .modalbtn-close-adjust i {
+              font-size: 11px !important; } }
       #modal-delete .modal-dialog .modal-content .modal-header .modalbtn-close-adjust:focus {
         box-shadow: unset; }
     #modal-delete .modal-dialog .modal-content .modal-body {
@@ -2091,6 +2404,9 @@ li {
         border-radius: 13px;
         font-family: Ubuntu-bold;
         margin-bottom: 20px; }
+        @media (min-width: 1200px) {
+          #modal-delete .modal-dialog .modal-content .modal-body .warning-text {
+            font-size: 14px; } }
       #modal-delete .modal-dialog .modal-content .modal-body form {
         display: flex;
         align-items: center; }
@@ -2098,6 +2414,12 @@ li {
           text-decoration: underline;
           font-family: Ubuntu-bold;
           font-size: 18px; }
+          @media (min-width: 1200px) {
+            #modal-delete .modal-dialog .modal-content .modal-body form .approve {
+              font-size: 14px; } }
+        @media (min-width: 1200px) {
+          #modal-delete .modal-dialog .modal-content .modal-body form {
+            width: 100%; } }
       #modal-delete .modal-dialog .modal-content .modal-body input {
         margin-right: 10px; }
       #modal-delete .modal-dialog .modal-content .modal-body input[type="checkbox"] {
@@ -2130,11 +2452,17 @@ li {
           color: #fff;
           font-size: 16px;
           opacity: 0.8; }
+          @media (min-width: 1200px) {
+            #modal-delete .modal-dialog .modal-content .modal-body .btn-wrap i {
+              font-size: 10px; } }
         #modal-delete .modal-dialog .modal-content .modal-body .btn-wrap p {
           color: #fff;
           font-size: 16px;
           font-weight: bold;
           letter-spacing: 1px; }
+          @media (min-width: 1200px) {
+            #modal-delete .modal-dialog .modal-content .modal-body .btn-wrap p {
+              font-size: 11px; } }
     #modal-delete .modal-dialog .modal-content .modal-footer {
       justify-content: center;
       padding: 0px;
@@ -2143,6 +2471,9 @@ li {
         font-family: Ubuntu-bold;
         color: #617c9c;
         width: 100%; }
+        @media (min-width: 1200px) {
+          #modal-delete .modal-dialog .modal-content .modal-footer button {
+            font-size: 13px; } }
 
 @media (min-width: 768px) {
   #modal-delete {
@@ -2442,11 +2773,19 @@ li {
           width: 100px;
           z-index: 20;
           background-color: var(--backgroundSidebar); }
+          @media (min-width: 1200px) {
+            .menu-cover-mini .side-content .head-title .cover-title h4 {
+              font-size: 12px;
+              padding: 4px;
+              width: 88px; } }
         @media (min-width: 768px) {
           .menu-cover-mini .side-content .head-title .cover-title {
             position: absolute;
             left: 22px;
             display: none; } }
+        @media (min-width: 1200px) {
+          .menu-cover-mini .side-content .head-title .cover-title {
+            left: 13px; } }
       .menu-cover-mini .side-content .head-title .line {
         width: 100%;
         border-top: 1px dashed var(--lineSidebar);
@@ -2464,6 +2803,10 @@ li {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) !important; }
+        @media (min-width: 1200px) {
+          .menu-cover-mini .side-content .head-title i {
+            font-size: 15px;
+            height: unset; } }
     .menu-cover-mini .side-content .side-menu-list > ul {
       padding: 20px; }
       .menu-cover-mini .side-content .side-menu-list > ul li {
@@ -2477,6 +2820,10 @@ li {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%) !important; }
+          @media (min-width: 1200px) {
+            .menu-cover-mini .side-content .side-menu-list > ul li .cover-icon i,
+            .menu-cover-mini .side-content .side-menu-list > ul li .cover-icon-2 i {
+              font-size: 13px; } }
         .menu-cover-mini .side-content .side-menu-list > ul li .cover-icon .wrap i,
         .menu-cover-mini .side-content .side-menu-list > ul li .cover-icon-2 .wrap i {
           color: var(--iconSidebar); }
@@ -2484,6 +2831,10 @@ li {
           .menu-cover-mini .side-content .side-menu-list > ul li .cover-icon .wrap,
           .menu-cover-mini .side-content .side-menu-list > ul li .cover-icon-2 .wrap {
             gap: 17px; } }
+        @media (min-width: 1200px) {
+          .menu-cover-mini .side-content .side-menu-list > ul li .cover-icon .wrap,
+          .menu-cover-mini .side-content .side-menu-list > ul li .cover-icon-2 .wrap {
+            font-size: 14px; } }
         .menu-cover-mini .side-content .side-menu-list > ul li a {
           border-radius: 10px;
           display: flex;
@@ -2497,6 +2848,10 @@ li {
             gap: 10px; }
             .menu-cover-mini .side-content .side-menu-list > ul li a .wrap i {
               color: var(--iconSidebar); }
+          @media (min-width: 1200px) {
+            .menu-cover-mini .side-content .side-menu-list > ul li a {
+              padding: 13px 15px;
+              border-radius: 10px; } }
         .menu-cover-mini .side-content .side-menu-list > ul li a:hover {
           background-color: var(--backgroundSidebarHover);
           border-radius: 6px; }
@@ -2520,6 +2875,10 @@ li {
         @media (min-width: 768px) {
           .menu-cover-mini .side-content .side-menu-list > ul li .wrap {
             gap: 17px; } }
+        @media (min-width: 1200px) {
+          .menu-cover-mini .side-content .side-menu-list > ul li .wrap {
+            gap: 10px;
+            font-size: 13px; } }
         .menu-cover-mini .side-content .side-menu-list > ul li .cover-icon,
         .menu-cover-mini .side-content .side-menu-list > ul li .cover-icon-2 {
           background-color: #8db3fc;
@@ -2541,6 +2900,9 @@ li {
           color: #fff;
           font-weight: bold;
           letter-spacing: 1px; }
+          @media (min-width: 1200px) {
+            .menu-cover-mini .side-content .side-menu-list > ul .Dashboard-btn a .wrap p {
+              font-size: 12px; } }
         .menu-cover-mini .side-content .side-menu-list > ul .Dashboard-btn a .cover-icon i {
           color: #fff;
           font-size: 18px;
@@ -2548,9 +2910,16 @@ li {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%) !important; }
+          @media (min-width: 1200px) {
+            .menu-cover-mini .side-content .side-menu-list > ul .Dashboard-btn a .cover-icon i {
+              font-size: 13px; } }
         @media (min-width: 768px) {
           .menu-cover-mini .side-content .side-menu-list > ul .Dashboard-btn a {
             justify-content: center; } }
+        @media (min-width: 1200px) {
+          .menu-cover-mini .side-content .side-menu-list > ul .Dashboard-btn a {
+            padding: 13px 15px;
+            border-radius: 6px; } }
       .menu-cover-mini .side-content .side-menu-list > ul .Dashboard-btn:first-child {
         border-radius: 10px;
         margin-bottom: 15px;
@@ -2574,6 +2943,9 @@ li {
               position: relative;
               color: var(--textSubmenuSidebar);
               font-weight: bold; }
+              @media (min-width: 1200px) {
+                .menu-cover-mini .side-content .side-menu-list > ul .multiple .sub-menu li a {
+                  font-size: 13px; } }
             .menu-cover-mini .side-content .side-menu-list > ul .multiple .sub-menu li a:before {
               content: "•";
               position: absolute;
@@ -2587,8 +2959,17 @@ li {
             .menu-cover-mini .side-content .side-menu-list > ul .multiple .sub-menu li .active-link-sub {
               background-color: unset;
               color: var(--textSubmenuHover); }
+            @media (min-width: 1200px) {
+              .menu-cover-mini .side-content .side-menu-list > ul .multiple .sub-menu li {
+                padding: 0px 43px; } }
+          @media (min-width: 1200px) {
+            .menu-cover-mini .side-content .side-menu-list > ul .multiple .sub-menu li:first-child {
+              padding-top: 10px; } }
           .menu-cover-mini .side-content .side-menu-list > ul .multiple .sub-menu li:last-child {
             margin-bottom: 0px !important; }
+            @media (min-width: 1200px) {
+              .menu-cover-mini .side-content .side-menu-list > ul .multiple .sub-menu li:last-child {
+                padding-bottom: 13px; } }
         .menu-cover-mini .side-content .side-menu-list > ul .multiple .link-open-submenu .active-link {
           border-bottom: 1px solid var(--borderUserSidebar);
           background-color: var(--backgroundMainSidebarFocus) !important; }
@@ -2615,10 +2996,20 @@ li {
           .menu-cover-mini .side-content .footer-menu .bg-ul li a i,
           .menu-cover-mini .side-content .footer-menu .bg-ul li a p {
             color: var(--iconSidebar); }
+            @media (min-width: 1200px) {
+              .menu-cover-mini .side-content .footer-menu .bg-ul li a i,
+              .menu-cover-mini .side-content .footer-menu .bg-ul li a p {
+                font-size: 13px; } }
           @media (min-width: 768px) {
             .menu-cover-mini .side-content .footer-menu .bg-ul li a {
               padding: 10px 15px;
               gap: 17px; } }
+          @media (min-width: 1200px) {
+            .menu-cover-mini .side-content .footer-menu .bg-ul li a {
+              padding: 13px 15px;
+              border-radius: 10px;
+              gap: 10px;
+              font-size: 10px; } }
         .menu-cover-mini .side-content .footer-menu .bg-ul li a:hover i,
         .menu-cover-mini .side-content .footer-menu .bg-ul li a:hover p {
           color: var(--textSidebarHover); }
@@ -2628,6 +3019,9 @@ li {
       color: var(--textfooter);
       font-size: 16px;
       padding: 0px 20px 20px 20px; }
+      @media (min-width: 1200px) {
+        .menu-cover-mini .side-content .copyright {
+          font-size: 14px; } }
     @media (min-width: 768px) {
       .menu-cover-mini .side-content {
         overflow: auto;
@@ -2686,9 +3080,15 @@ li {
 .content-all-section-movement {
   padding: auto;
   transition-duration: 0.3s; }
+  @media (min-width: 1600px) {
+    .content-all-section-movement {
+      padding-left: 17% !important; } }
 
 .menu-cover-mini-width-extend {
   width: 280px !important; }
+  @media (min-width: 1200px) {
+    .menu-cover-mini-width-extend {
+      width: calc(100% - 83.5%) !important; } }
 
 .topic-tablet {
   display: none !important; }
@@ -2696,6 +3096,9 @@ li {
     .topic-tablet {
       display: flex !important;
       width: 280px; } }
+  @media (min-width: 1200px) {
+    .topic-tablet {
+      width: 100%; } }
 
 .topic-mobile {
   border-bottom: 1px solid #dce4f4; }
@@ -2769,9 +3172,19 @@ li {
         .wrap-slider .swiper .swiper-wrapper .swiper-slide .box p:first-child {
           font-size: 16px;
           color: #617c9c; }
+          @media (min-width: 1200px) {
+            .wrap-slider .swiper .swiper-wrapper .swiper-slide .box p:first-child {
+              font-size: 13px; } }
         .wrap-slider .swiper .swiper-wrapper .swiper-slide .box p:last-child {
           font-size: 20px;
           font-weight: bold; }
+          @media (min-width: 1200px) {
+            .wrap-slider .swiper .swiper-wrapper .swiper-slide .box p:last-child {
+              font-size: 16px; } }
+        @media (min-width: 1200px) {
+          .wrap-slider .swiper .swiper-wrapper .swiper-slide .box {
+            width: 65px;
+            height: 70px; } }
       .wrap-slider .swiper .swiper-wrapper .swiper-slide .box:hover,
       .wrap-slider .swiper .swiper-wrapper .swiper-slide .box.active {
         height: 85px;
@@ -2780,6 +3193,13 @@ li {
       .wrap-slider .swiper .swiper-wrapper {
         height: 120px;
         align-items: center; } }
+    @media (min-width: 1200px) {
+      .wrap-slider .swiper .swiper-wrapper {
+        height: 85px; } }
+
+@media (min-width: 1200px) {
+  .wrap-slider {
+    padding-right: 70px; } }
 
 .wrap-btn-swift {
   display: flex;
@@ -2812,6 +3232,15 @@ li {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) !important; }
+      @media (min-width: 1200px) {
+        .wrap-btn-swift .swiper-button-next i,
+        .wrap-btn-swift .swiper-button-prev i {
+          font-size: 10px; } }
+    @media (min-width: 1200px) {
+      .wrap-btn-swift .swiper-button-next,
+      .wrap-btn-swift .swiper-button-prev {
+        width: 42px;
+        height: 32px; } }
   .wrap-btn-swift .swiper-button-next:hover,
   .wrap-btn-swift .swiper-button-prev:hover {
     background-color: #fff;
@@ -2835,6 +3264,11 @@ li {
     left: unset;
     top: unset;
     bottom: unset; }
+    @media (min-width: 1200px) {
+      .wrap-btn-swift .swiper-button-next.swiper-button-disabled,
+      .wrap-btn-swift .swiper-button-prev.swiper-button-disabled {
+        width: 42px;
+        height: 32px; } }
   @media (min-width: 992px) {
     .wrap-btn-swift {
       position: absolute;
@@ -2989,6 +3423,9 @@ li {
             .calenda-section table .table-body .cover .content .event p {
               max-width: 86%;
               line-height: 24px; }
+              @media (min-width: 1200px) {
+                .calenda-section table .table-body .cover .content .event p {
+                  font-size: 16px; } }
             .calenda-section table .table-body .cover .content .event i {
               margin-right: 3px;
               align-self: center; }
@@ -3032,6 +3469,10 @@ li {
   .breadcrumb li a i,
   .breadcrumb li a::before i {
     color: var(--breadcrumbcolor); }
+  @media (min-width: 1200px) {
+    .breadcrumb li a,
+    .breadcrumb li a::before {
+      font-size: 13px; } }
 
 .breadcrumb .active {
   color: var(--breadcrumbcolor_Active);
@@ -3043,6 +3484,13 @@ li {
     font-size: 16px;
     margin: 0px;
     font-family: Ubuntu-bold; }
+    @media (min-width: 1200px) {
+      .breadcrumb .active i {
+        font-size: 13px; } }
+  @media (min-width: 1200px) {
+    .breadcrumb .active {
+      font-size: 13px;
+      line-height: 25px; } }
 
 @media (min-width: 768px) {
   .breadcrumb {

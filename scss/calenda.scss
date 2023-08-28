@@ -28,7 +28,7 @@
             i {
                 color: $black;
             }
-            @media (min-width:$breakpoint-tablet) {
+            @media (min-width: $breakpoint-tablet) {
                 gap: 25px;
             }
         }
@@ -42,7 +42,7 @@
             height: 55px;
             border-radius: 12px 0px 0px 12px;
             font-size: 20px;
-            @media (min-width:$breakpoint-tablet) {
+            @media (min-width: $breakpoint-tablet) {
                 width: 100px;
                 height: 45px;
             }
@@ -53,7 +53,7 @@
             height: 55px;
             border-radius: 0px 12px 12px 0px;
             font-size: 20px;
-            @media (min-width:$breakpoint-tablet) {
+            @media (min-width: $breakpoint-tablet) {
                 width: 100px;
                 height: 45px;
             }
@@ -181,6 +181,10 @@
                         p {
                             max-width: 86%;
                             line-height: 24px;
+                            @media (min-width: $breakpoint-extralarge) {
+                                font-size: 16px;
+                    
+                            }
                         }
                         i {
                             margin-right: 3px;

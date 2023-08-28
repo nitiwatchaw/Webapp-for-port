@@ -120,36 +120,37 @@ body {
   position: relative;
   scroll-behavior: smooth; }
 
-@media (min-width: 768px) {
-  .content-all-section {
-    padding-left: 98px;
-    transition-duration: 0.3s; } }
-
-.Dashboard-page {
+.content-all-section .Dashboard-page {
   margin-top: 72px;
   padding-top: 15px; }
-  .Dashboard-page .title-dashboard h1 {
+  .content-all-section .Dashboard-page .title-dashboard h1 {
     font-family: Ubuntu-bold; }
-  .Dashboard-page .Overview-bg {
+  .content-all-section .Dashboard-page .Overview-bg {
     padding: 20px 10px;
     background-color: #edf5ff;
     position: relative;
     margin-bottom: 20px; }
-    .Dashboard-page .Overview-bg .wrap {
+    .content-all-section .Dashboard-page .Overview-bg .wrap {
       display: flex;
       align-items: center; }
-      .Dashboard-page .Overview-bg .wrap .title-mounth {
+      .content-all-section .Dashboard-page .Overview-bg .wrap .title-mounth {
         font-size: 18px;
         color: #617c9c;
         padding-left: 5px; }
         @media (min-width: 768px) {
-          .Dashboard-page .Overview-bg .wrap .title-mounth {
+          .content-all-section .Dashboard-page .Overview-bg .wrap .title-mounth {
             font-size: 24px; } }
+        @media (min-width: 1200px) {
+          .content-all-section .Dashboard-page .Overview-bg .wrap .title-mounth {
+            font-size: 15px; } }
     @media (min-width: 768px) {
-      .Dashboard-page .Overview-bg {
+      .content-all-section .Dashboard-page .Overview-bg {
         border-radius: 35px;
         padding: 8px 10px 8px 20px; } }
-  .Dashboard-page .box-scroll-bar {
+    @media (min-width: 1200px) {
+      .content-all-section .Dashboard-page .Overview-bg {
+        padding: 4px 10px 4px 20px; } }
+  .content-all-section .Dashboard-page .box-scroll-bar {
     background-color: #b2ceff;
     overflow: auto;
     height: 100%;
@@ -161,9 +162,9 @@ body {
     justify-content: space-between;
     padding: 40px 20px;
     border-radius: 10px; }
-    .Dashboard-page .box-scroll-bar .cardCover {
+    .content-all-section .Dashboard-page .box-scroll-bar .cardCover {
       position: relative; }
-      .Dashboard-page .box-scroll-bar .cardCover .content {
+      .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content {
         background-color: #fff;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 6px 0px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
         border-radius: 18px;
@@ -175,25 +176,25 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
-        .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title {
+        .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title {
           display: flex;
           align-items: center;
           justify-content: space-between;
           border-bottom: 2px solid #e2ebf6;
           padding-bottom: 4px; }
-          .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title > i {
+          .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title > i {
             color: #92a6c6; }
-          .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text {
+          .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text {
             display: flex;
             align-items: center;
             gap: 10px; }
-            .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text i {
+            .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text i {
               border-radius: 50%;
               box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 6px 0px, rgba(0, 0, 0, 0.05) 0px 5px 10px; }
-            .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text p {
+            .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .wrap-title .wrapDot-text p {
               font-family: Ubuntu-bold;
               color: #233a67; }
-        .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc {
+        .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc {
           margin-top: 20px;
           border: 2px dashed #e2ebf6;
           border-radius: 14px;
@@ -204,13 +205,13 @@ body {
           justify-content: space-evenly;
           gap: 13px;
           color: black; }
-          .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .icon-cover {
+          .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .icon-cover {
             background-color: #e2ebf6;
             position: relative;
             width: 50px;
             height: 50px;
             border-radius: 6px; }
-            .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .icon-cover i {
+            .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .icon-cover i {
               position: absolute;
               position: absolute;
               top: 50%;
@@ -218,51 +219,51 @@ body {
               transform: translate(-50%, -50%) !important;
               font-size: 16px;
               color: #617c9c; }
-          .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .text-wrap {
+          .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .text-wrap {
             display: flex;
             flex-direction: column;
             justify-content: flex-start; }
-            .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .text-wrap p:first-child {
+            .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .borderDoc .text-wrap p:first-child {
               font-size: 28px;
               font-family: Ubuntu-bold; }
-        .Dashboard-page .box-scroll-bar .cardCover .content .total-cover {
+        .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .total-cover {
           margin-top: 15px;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: space-between; }
-          .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box {
+          .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box {
             justify-content: space-between;
             width: 100%;
             display: flex;
             flex-direction: row;
             gap: 10px; }
-            .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap {
+            .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap {
               display: flex;
               align-items: center;
               gap: 6px;
               border-bottom: 1px solid #dce4f4; }
-              .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap p,
-              .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap i {
+              .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap p,
+              .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box .wrap i {
                 color: #92a6c6; }
-            .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box > p {
+            .content-all-section .Dashboard-page .box-scroll-bar .cardCover .content .total-cover .total-box > p {
               font-size: 16px;
               color: #617c9c;
               font-family: Ubuntu-bold; }
-      .Dashboard-page .box-scroll-bar .cardCover .cardCover-clone {
+      .content-all-section .Dashboard-page .box-scroll-bar .cardCover .cardCover-clone {
         position: absolute;
         width: 165px;
         height: 240px;
         border-radius: 18px;
         top: 5px;
         left: 0; }
-  .Dashboard-page .General-number {
+  .content-all-section .Dashboard-page .General-number {
     display: flex;
     align-items: center;
     gap: 10px; }
-    .Dashboard-page .General-number i {
+    .content-all-section .Dashboard-page .General-number i {
       color: #92a6c6; }
-  .Dashboard-page .General-number-cover {
+  .content-all-section .Dashboard-page .General-number-cover {
     width: 100%;
     background-color: #fff;
     border-radius: 13px;
@@ -270,19 +271,19 @@ body {
     align-items: center;
     padding: 14px 20px;
     justify-content: space-between; }
-    .Dashboard-page .General-number-cover .cover-detail {
+    .content-all-section .Dashboard-page .General-number-cover .cover-detail {
       display: flex;
       align-items: center;
       width: 80%;
       gap: 17px; }
-      .Dashboard-page .General-number-cover .cover-detail .cover-icon {
+      .content-all-section .Dashboard-page .General-number-cover .cover-detail .cover-icon {
         border: 1px solid #dce4f4;
         border-radius: 7px;
         width: 46px;
         height: 46px;
         background-color: #fff;
         position: relative; }
-        .Dashboard-page .General-number-cover .cover-detail .cover-icon i {
+        .content-all-section .Dashboard-page .General-number-cover .cover-detail .cover-icon i {
           color: #617c9c;
           font-size: 16px;
           position: absolute;
@@ -290,63 +291,85 @@ body {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%) !important; }
-      .Dashboard-page .General-number-cover .cover-detail .text-wrap {
+      .content-all-section .Dashboard-page .General-number-cover .cover-detail .text-wrap {
         display: flex;
         justify-content: flex-start;
         flex-direction: column; }
-        .Dashboard-page .General-number-cover .cover-detail .text-wrap p:first-child {
+        .content-all-section .Dashboard-page .General-number-cover .cover-detail .text-wrap p:first-child {
           font-size: 18px;
           color: #617c9c;
           align-self: flex-start;
           font-family: Ubuntu-bold; }
-        .Dashboard-page .General-number-cover .cover-detail .text-wrap p:last-child {
+          @media (min-width: 1200px) {
+            .content-all-section .Dashboard-page .General-number-cover .cover-detail .text-wrap p:first-child {
+              font-size: 14px; } }
+        .content-all-section .Dashboard-page .General-number-cover .cover-detail .text-wrap p:last-child {
           font-size: 16px;
           align-self: flex-start;
           font-family: Ubuntu-bold; }
-    .Dashboard-page .General-number-cover i {
+          @media (min-width: 1200px) {
+            .content-all-section .Dashboard-page .General-number-cover .cover-detail .text-wrap p:last-child {
+              font-size: 16px !important; } }
+    .content-all-section .Dashboard-page .General-number-cover i {
       color: #92a6c6; }
   @media (min-width: 768px) {
-    .Dashboard-page .scroll-bar-right-side {
+    .content-all-section .Dashboard-page .scroll-bar-right-side {
       height: 400px;
       overflow: auto;
       display: none;
       border: 3px solid #dce4f4;
       transform: translate(0px, -500px);
       transition-duration: 0.2s; } }
-  .Dashboard-page .scroll-bar-right-side::-webkit-scrollbar {
+  @media (min-width: 1200px) {
+    .content-all-section .Dashboard-page .scroll-bar-right-side {
+      display: flex;
+      overflow: unset;
+      height: unset;
+      transform: unset;
+      border: 0px; } }
+  .content-all-section .Dashboard-page .scroll-bar-right-side::-webkit-scrollbar {
     display: none; }
-  .Dashboard-page .DocsType-cover {
+  .content-all-section .Dashboard-page .DocsType-cover {
     padding-top: 30px;
     padding-bottom: 30px;
     border: 1px solid #dce4f4; }
-    .Dashboard-page .DocsType-cover .wrpa-title {
+    .content-all-section .Dashboard-page .DocsType-cover .wrpa-title {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      .Dashboard-page .DocsType-cover .wrpa-title .wrap-text {
+      .content-all-section .Dashboard-page .DocsType-cover .wrpa-title .wrap-text {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 5px; }
-        .Dashboard-page .DocsType-cover .wrpa-title .wrap-text p {
+        .content-all-section .Dashboard-page .DocsType-cover .wrpa-title .wrap-text p {
           font-size: 18px;
           color: #92a6c6; }
+          @media (min-width: 1200px) {
+            .content-all-section .Dashboard-page .DocsType-cover .wrpa-title .wrap-text p {
+              font-size: 14px; } }
     @media (min-width: 768px) {
-      .Dashboard-page .DocsType-cover {
+      .content-all-section .Dashboard-page .DocsType-cover {
         background-color: #eef0f5; } }
-  .Dashboard-page .RecentAction-cover {
+    @media (min-width: 1200px) {
+      .content-all-section .Dashboard-page .DocsType-cover {
+        background-color: #fff; } }
+  .content-all-section .Dashboard-page .RecentAction-cover {
     padding-top: 30px;
     padding-bottom: 30px;
     border: 1px solid #dce4f4;
     border-top: 0px; }
-    .Dashboard-page .RecentAction-cover .wrpa-title {
+    .content-all-section .Dashboard-page .RecentAction-cover .wrpa-title {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      .Dashboard-page .RecentAction-cover .wrpa-title .wrap-tex p {
+      .content-all-section .Dashboard-page .RecentAction-cover .wrpa-title .wrap-text p {
         font-size: 18px;
         color: #92a6c6; }
-    .Dashboard-page .RecentAction-cover .RecentAction-button-cover {
+        @media (min-width: 1200px) {
+          .content-all-section .Dashboard-page .RecentAction-cover .wrpa-title .wrap-text p {
+            font-size: 14px; } }
+    .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover {
       display: flex;
       padding: 17px 14px;
       flex-direction: column;
@@ -355,157 +378,133 @@ body {
       border: 1px solid #dce4f4;
       width: 100%;
       background-color: #fff; }
-      .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card {
+      .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column-reverse;
         row-gap: 10px; }
-        .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section {
+        .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section {
           display: flex;
           align-items: center;
           gap: 20px; }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img {
+          .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img {
             background-color: #e2ebf6;
             border-radius: 13px;
             padding: 5px; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover {
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover {
               border-radius: 50%;
               background-color: #fff;
               width: 50px;
               height: 50px;
               position: relative;
               overflow: hidden; }
-              .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover img {
+              .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover img {
                 width: 50px;
                 position: absolute;
                 top: 55%;
                 left: 50%;
                 transform: translate(-50%, -50%); }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap {
+                @media (min-width: 1200px) {
+                  .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover img {
+                    width: 37px;
+                    top: 58%; } }
+              @media (min-width: 1200px) {
+                .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover {
+                  width: 43px;
+                  height: 43px; } }
+            @media (min-width: 1200px) {
+              .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img {
+                padding: 4px; } }
+          .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap {
             display: flex;
             flex-direction: column;
             text-align: left;
             gap: 5px;
             justify-content: space-between; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .title {
-              font-size: 18px;
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .title {
+              font-size: 16px;
               font-weight: bold;
               letter-spacing: 0.3px; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:first-child,
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:last-child {
-              font-size: 18px;
+              @media (min-width: 1200px) {
+                .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .title {
+                  font-size: 14px; } }
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:first-child,
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:last-child {
+              font-size: 18px !important;
               color: #92a6c6; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .by,
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .price {
+              @media (min-width: 1200px) {
+                .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:first-child,
+                .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:last-child {
+                  font-size: 14px !important; } }
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .by,
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .price {
               color: #617c9c;
               font-weight: bold; }
-        .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap {
+          @media (min-width: 1200px) {
+            .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section {
+              gap: 13px; } }
+        .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap {
           display: flex;
           align-items: center;
           gap: 6px;
           background-color: #fff;
           align-self: baseline;
           margin-top: 3px; }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap .dot {
+          .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap .dot {
             border-radius: 50%;
             border: 2px solid #dce4f4; }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap p {
+          .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap p {
             background-color: unset !important;
             box-shadow: unset;
             font-weight: bold;
             font-size: 16px; }
-      .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        row-gap: 10px; }
-        .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section {
-          display: flex;
-          align-items: center;
-          gap: 20px; }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img {
-            background-color: #e2ebf6;
-            border-radius: 13px;
-            padding: 5px; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover {
-              border-radius: 50%;
-              background-color: #fff;
-              width: 50px;
-              height: 50px;
-              position: relative;
-              overflow: hidden; }
-              .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .box-img .img-cover img {
-                width: 50px;
-                position: absolute;
-                top: 55%;
-                left: 50%;
-                transform: translate(-50%, -50%); }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            gap: 5px;
-            justify-content: space-between; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .title {
-              font-size: 18px;
-              font-weight: bold;
-              letter-spacing: 0.3px; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:first-child,
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:last-child {
-              font-size: 18px;
-              color: #92a6c6; }
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .by,
-            .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap .price {
-              color: #617c9c;
-              font-weight: bold; }
-        .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          background-color: #fff;
-          align-self: baseline;
-          margin-top: 3px; }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap .dot {
-            border-radius: 50%;
-            border: 2px solid #dce4f4; }
-          .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap p {
-            background-color: unset !important;
-            box-shadow: unset;
-            font-weight: bold;
-            font-size: 16px; }
+            @media (min-width: 1200px) {
+              .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .dot-wrap p {
+                font-size: 10px; } }
+        @media (min-width: 1200px) {
+          .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card {
+            flex-direction: row; } }
     @media (min-width: 768px) {
-      .Dashboard-page .RecentAction-cover {
+      .content-all-section .Dashboard-page .RecentAction-cover {
         background-color: #eef0f5; } }
+    @media (min-width: 1200px) {
+      .content-all-section .Dashboard-page .RecentAction-cover {
+        background-color: #fff; } }
   @media (min-width: 768px) {
-    .Dashboard-page {
+    .content-all-section .Dashboard-page {
       margin-top: 67px;
       padding-top: 15px; }
-      .Dashboard-page .change-position {
+      .content-all-section .Dashboard-page .change-position {
         flex-direction: column-reverse; } }
+    @media (min-width: 768px) and (min-width: 1200px) {
+      .content-all-section .Dashboard-page .change-position {
+        flex-direction: row; } }
   @media (min-width: 992px) {
-    .Dashboard-page {
+    .content-all-section .Dashboard-page {
       margin-top: 68px; } }
+  @media (min-width: 1200px) {
+    .content-all-section .Dashboard-page {
+      margin-top: 65px; } }
 
-.Browse-Companies {
+.content-all-section .Browse-Companies {
   display: none;
   margin-top: 75px; }
-  .Browse-Companies .title-Browse-Companies h1 {
+  .content-all-section .Browse-Companies .title-Browse-Companies h1 {
     font-family: Ubuntu-bold; }
-  .Browse-Companies .AllCompany {
+  .content-all-section .Browse-Companies .AllCompany {
     display: flex;
     align-items: center;
     gap: 10px; }
-    .Browse-Companies .AllCompany i {
+    .content-all-section .Browse-Companies .AllCompany i {
       color: #92a6c6; }
-  .Browse-Companies .wrapperBox-company {
+  .content-all-section .Browse-Companies .wrapperBox-company {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
     padding-bottom: 40px; }
-    .Browse-Companies .wrapperBox-company .box-company {
+    .content-all-section .Browse-Companies .wrapperBox-company .box-company {
       width: 340px;
       height: 280px;
       border: 2px solid #dce4f4;
@@ -518,20 +517,20 @@ body {
       justify-content: flex-start;
       position: relative;
       cursor: pointer; }
-      .Browse-Companies .wrapperBox-company .box-company .box-top {
+      .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top {
         width: 100%;
         height: 175px;
         border-radius: 25px;
         position: relative;
         box-shadow: #dce4f4 0px 10px 36px 0px, #dce4f4 0px 0px 0px 1px; }
-        .Browse-Companies .wrapperBox-company .box-company .box-top img {
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top img {
           width: 70px;
           position: absolute;
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%) !important; }
-        .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star {
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star {
           display: flex;
           justify-content: center;
           gap: 3px;
@@ -544,13 +543,23 @@ body {
           left: 16%;
           transform: translate(-50%, -50%);
           background-color: #ffce04; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star i {
+          @media (min-width: 1200px) {
+            .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star {
+              height: 30px;
+              width: 75px; } }
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star i {
             color: #000; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star p {
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star i {
+                font-size: 10px; } }
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star p {
             font-size: 18px;
             font-family: Ubuntu-bold;
             color: #000; }
-        .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin {
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star p {
+                font-size: 14px; } }
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin {
           display: flex;
           justify-content: center;
           gap: 3px;
@@ -563,13 +572,23 @@ body {
           left: 16%;
           transform: translate(-50%, -50%);
           background-color: #bbe3fa; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin i {
+          @media (min-width: 1200px) {
+            .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin {
+              height: 30px;
+              width: 75px; } }
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin i {
             color: #000; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin p {
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin i {
+                font-size: 10px; } }
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin p {
             font-size: 18px;
             font-family: Ubuntu-bold;
             color: #000; }
-        .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user {
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin p {
+                font-size: 14px; } }
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user {
           display: flex;
           justify-content: center;
           gap: 3px;
@@ -583,13 +602,23 @@ body {
           transform: translate(-50%, -50%);
           border: 1px solid #dce4f4;
           background-color: #fff; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user i {
+          @media (min-width: 1200px) {
+            .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user {
+              height: 30px;
+              width: 75px; } }
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user i {
             color: #dce4f4; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user p {
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user i {
+                font-size: 10px; } }
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user p {
             font-size: 18px;
             font-family: Ubuntu-bold;
             color: #000; }
-        .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover {
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user p {
+                font-size: 14px; } }
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover {
           border: 1px solid #fff;
           position: absolute;
           display: flex;
@@ -599,23 +628,26 @@ body {
           top: 18%;
           right: 4%;
           transform: translate(-50%, -50%); }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover a {
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover a {
             padding: 0px 6px; }
-          .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover i {
-            color: #a9bcd0; }
-        .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover:hover {
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover i {
+            color: #92a6c6; }
+            @media (min-width: 1200px) {
+              .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover i {
+                font-size: 12px; } }
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover:hover {
           border: 1px solid #92a6c6; }
-      .Browse-Companies .wrapperBox-company .box-company .text-wrap {
+      .content-all-section .Browse-Companies .wrapperBox-company .box-company .text-wrap {
         align-self: center;
         margin-top: 25px; }
-        .Browse-Companies .wrapperBox-company .box-company .text-wrap p:first-child {
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .text-wrap p:first-child {
           font-size: 20px;
           text-align: center;
           font-family: Ubuntu-bold; }
-        .Browse-Companies .wrapperBox-company .box-company .text-wrap p:last-child {
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .text-wrap p:last-child {
           font-family: Ubuntu-bold;
           color: #92a6c6; }
-      .Browse-Companies .wrapperBox-company .box-company .active-btn {
+      .content-all-section .Browse-Companies .wrapperBox-company .box-company .active-btn {
         display: flex;
         border-radius: 35px;
         border: 1px solid #dce4f4;
@@ -629,29 +661,37 @@ body {
         z-index: 45;
         gap: 5px;
         display: none; }
-        .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover {
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover {
           position: relative;
           background-color: #12b785;
           border-radius: 50%;
           width: 18px;
           height: 18px; }
-          .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover i {
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover i {
             color: #fff;
             position: absolute;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) !important; }
-          .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover p {
+          .content-all-section .Browse-Companies .wrapperBox-company .box-company .active-btn .correct-cover p {
             font-size: 16px;
             font-family: Ubuntu-bold; }
-    .Browse-Companies .wrapperBox-company .box-company:hover {
+      @media (min-width: 1200px) {
+        .content-all-section .Browse-Companies .wrapperBox-company .box-company {
+          width: 300px; } }
+    .content-all-section .Browse-Companies .wrapperBox-company .box-company:hover {
       border-color: #12b785; }
-    .Browse-Companies .wrapperBox-company .box-company:focus {
+    .content-all-section .Browse-Companies .wrapperBox-company .box-company:focus {
       border-color: #12b785; }
-      .Browse-Companies .wrapperBox-company .box-company:focus .active-btn {
+      .content-all-section .Browse-Companies .wrapperBox-company .box-company:focus .active-btn {
         display: flex !important; }
-    .Browse-Companies .wrapperBox-company .active {
+    .content-all-section .Browse-Companies .wrapperBox-company .active {
       border-color: #12b785; }
-      .Browse-Companies .wrapperBox-company .active .active-btn {
+      .content-all-section .Browse-Companies .wrapperBox-company .active .active-btn {
         display: flex !important; }
+
+@media (min-width: 768px) {
+  .content-all-section {
+    padding-left: 98px;
+    transition-duration: 0.3s; } }

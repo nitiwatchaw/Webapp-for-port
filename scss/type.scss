@@ -66,10 +66,17 @@ a {
 a:focus {
     color: unset;
 }
-
+h1{
+    @media (min-width:$breakpoint-extralarge) {
+        font-size: 20px;
+    }
+}
 h2 {
     margin: 0px;
     font-family: $font-bold;
+    @media (min-width:$breakpoint-extralarge) {
+        font-size: 19px;
+    }
 }
 p {
     margin: 0px;
