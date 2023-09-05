@@ -1,102 +1,136 @@
-//media breakpoint
-$breakpoint-tablet: 768px;
-$breakpoint-large: 992px;
-$breakpoint-extralarge: 1200px;
-$breapkoint-superExtralarge: 1600px;
-
-//other variable
-$tranformReset: translate(0px, 0px);
-$font-bold: Ubuntu-bold;
-
+@import "mixin.scss";
 
 //color variable
-$colorRadient: linear-gradient(
-    20deg,
-    rgba(37, 87, 196, 1) 0%,
-    rgba(47, 89, 201, 1) 14%,
-    rgba(55, 91, 205, 1) 38%,
-    rgba(70, 94, 212, 1) 52%,
-    rgba(83, 98, 218, 1) 68%,
-    rgba(87, 103, 219, 1) 100%
-);
 
-$colorRadient2:
-    linear-gradient(
-            180deg,
-            rgba(79, 126, 238, 1) 0%,
-            rgba(66, 127, 236, 1) 36%,
-            rgba(56, 128, 234, 1) 58%,
-            rgba(49, 128, 232, 1) 79%,
-            rgba(30, 130, 229, 1) 99%
-        )
-        rgb(79, 126, 238) 2px 4px 20px 2px,
-    rgb(79, 126, 238) 0px 18px 36px -18px,
-    rgb(79, 126, 238);
 
-$boxShadowRadient:
-    rgb(79, 126, 238) 2px 4px 20px 2px,
-    rgb(79, 126, 238) 0px 18px 36px -18px;
 
-$colorRadientBg: rgb(79, 126, 238);
-$dotShadow:
-    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+$primary: rgb(7, 30, 184) ;
 
-$boxShadow:
-    rgba(0, 0, 0, 0.15) 0px 1px 6px 0px,
-    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+$secondary: $primary + 130%;
+$infoDark: $primary + 100%;
+
+$tertiary: #617c9c;
+$tertiary-emphasis: #92a6c6;
+$success: #12b785;
+$successLight: #6dc0b3;
+$danger: #f4548c;
+$warning: #ffce04;
+$info: #bbe3fa;
+$light: #f6f9ff;
+$dark: rgba(0, 0, 0, 0.4);
+$white: #fff;
+$black: #000;
+$gray: #eef0f5;
+$purple: #5252c0;
+$active: $primary + 70%;
+$primaryRadient: linear-gradient(176deg, $primary + 80% 58%, $secondary 100%);
+
+$primaryShadow:
+    $infoDark 0px 2px 11px 0px,
+    $infoDark 0px 18px 36px -18px;
+
+$dangershadow:
+    $danger 0px 2px 11px 0px,
+    $danger 0px 18px 36px -18px;
+
 $dropdownMenuShadow:
     rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 
-$white: #fff;
-$black: #000;
-$blue: #0092e3;
-$blueBg: #b2ceff;
-$blueLight: #edf5ff;
-$blueDark: #233a67;
-$blueHover: #0270ac;
-$purple: #5252c0;
-$green: #12b785;
-$greenLight: #6dc0b3;
-$pink: #f4548c;
-$pinkLight: #ffebf3;
-$orange: #d68025;
-$yellow: #ffce04;
-$blueSea: #bbe3fa;
-$gray: #92a6c6;
-$grayLight: #e2ebf6;
-$grayBlue: #ebf2ff;
-$grayDark: #617c9c;
-$grayCalenda: #e3e6ed;
-$grayCalendaDisableText: #cbccd4;
-$grayCalendaDisableBg: #eef0f5;
-$grayBackgroundTItlaCalenda: #fafcff;
-$backgroundGray: #f6f9ff;
+$boxShadow:
+    rgba(0, 0, 0, 0.15) 0px 1px 6px 0px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 
-$DocType-pink: #f5f4ff;
-$DocType-blue: #ebf4fb;
-$DocType-green: #edf8f6;
+$dotShadow:
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
-$greenButton: #63d4d4;
-$greenButtonHover: #51abab;
+// color class
+.blue {
+    color: blue;
+    background-color: blue;
+    box-shadow: $dotShadow;
+}
 
-$grenPin: #25b003;
+.purple {
+    color: $purple;
+    background-color: $purple;
+    box-shadow: $dotShadow;
+}
 
-$dropdownBorderColor: #cbd9e8;
-$dropdownBackgroundColorBLue: #0f2c7c;
+.green {
+    color: $success;
+    background-color: $success;
+    box-shadow: $dotShadow;
+}
 
-$switchDropdownLiHover: #0b2455;
+.pink {
+    color: $danger;
+    background-color: $danger;
+    box-shadow: $dotShadow;
+}
 
-$modalColorGray: #9eb1cd;
-$modal-backdrop: #8db3fc;
+.gray {
+    color: $tertiary-emphasis;
+    background-color: $tertiary-emphasis;
+    box-shadow: $dotShadow;
+}
 
-$pink-btn: #f55995;
-$blue-btn: #1148b1;
-$shadow-btn: -1px 5px 20px 0px;
+.DocType-pink {
+    background-color: $danger + 160% !important;
+}
 
-$borderGray: #dce4f4;
-$Darkblue: #021133;
+.DocType-blue {
+    background-color: $infoDark + 240% !important;
+}
+
+.DocType-green {
+    background-color: $success + 190% !important;
+}
+
+.green-completed {
+    color: $success;
+}
+
+.btn-green {
+    background-color: $success;
+}
+
+.btn-primary {
+    background-color: $primary;
+}
+.btn-green:hover {
+    background-color: $success - 30%;
+}
+
+.btn-blue {
+    background-color: blue;
+}
+
+.btn-blue:hover {
+    background-color: blue - 30%;
+}
+
+.bg-white {
+    background-color: $white;
+    border-radius: 13px;
+}
+
+.bg-gray {
+    background-color: $light !important;
+}
+
+.green-pin {
+    color: $success;
+}
+
+.blue-pin {
+    color: $infoDark;
+}
+
+.text-gray {
+    color: $tertiary-emphasis;
+}
 
 :root:has(.colorChange-Mobile:checked),
 :root:has(.colorChange-Tablet:checked) {
@@ -106,6 +140,7 @@ $Darkblue: #021133;
     --textSidebar: black;
     --textSubmenuSidebar: black;
     --textfooter: #a2b7cf;
+
     --iconSidebar: #a2b7cf;
     --borderMultiple: #99afc9;
     --borderUserSidebar: #99afc9;
@@ -126,119 +161,56 @@ $Darkblue: #021133;
     --backgroundiconSubmenuFocus: transparent;
 }
 :root {
+    // primary
     --backgroundSidebar: #032c7b;
+    //secondary
     --lineSidebar: #4064a8;
+    //white
     --iconOpen_CLoseSidebar: white;
+    //secondary
     --textSidebar: #90abdf;
+    //secondary
     --textSubmenuSidebar: #7092d2;
+    //secondary
     --textfooter: #90abdf;
+    // secondary
     --iconSidebar: #6e9bf2;
+    // primary
     --borderMultiple: #032c7b;
+    // primary
     --borderUserSidebar: #012260;
+    // dark
     --backgroundFooterSidebar: #173686;
+    // primary
     --backgroundiconSubmenu: #082c7c;
-
+    // dark
     --backgroundSidebarHover: #022567;
+    //white
     --textSidebarHover: white;
+    //white
     --textSubmenuHover: white;
+    //info
     --textSubmenuBeforeHover: #0193e3;
-
+    // dark
     --backgroundSidebarFocus: #022567;
+    // dark
     --backgroundSubmenuSidebarFocus: #022567;
-
+    //dark
     --backgroundMainSidebarFocus: #012260;
+    //white
     --textSidebarFocus: white;
+    //white
     --textUserActive: white;
+    // primary
     --backgroundiconSubmenuFocus: #082c7c;
-
-    /* switch toggle */
-    --switchBackground: #042c7c;
-
-    /* breadcrumb color */
-    --breadcrumbcolor: #93a5bc;
-    --breadcrumbcolor_Active: #215cbd;
 }
 
-// color class
-.blue {
-    color: $blue;
-    background-color: $blue;
-    box-shadow: $dotShadow;
-}
+//media breakpoint
+$breakpoint-tablet: 768px;
+$breakpoint-large: 992px;
+$breakpoint-extralarge: 1200px;
+$breapkoint-superExtralarge: 1600px;
 
-.purple {
-    color: $purple;
-    background-color: $purple;
-    box-shadow: $dotShadow;
-}
-
-.green {
-    color: $green;
-    background-color: $green;
-    box-shadow: $dotShadow;
-}
-
-.pink {
-    color: $pink;
-    background-color: $pink;
-    box-shadow: $dotShadow;
-}
-
-.gray {
-    color: $gray;
-    background-color: $gray;
-    box-shadow: $dotShadow;
-}
-
-.DocType-pink {
-    background-color: $DocType-pink !important;
-}
-
-.DocType-blue {
-    background-color: $DocType-blue !important;
-}
-
-.DocType-green {
-    background-color: $DocType-green !important;
-}
-
-.green-completed {
-    color: $greenButton;
-}
-
-.btn-green {
-    background-color: $greenButton;
-}
-
-.btn-green:hover {
-    background-color: $greenButtonHover;
-}
-
-.btn-blue {
-    background-color: $blue;
-}
-
-.btn-blue:hover {
-    background-color: $blueHover;
-}
-
-.bg-white {
-    background-color: $white;
-    border-radius: 13px;
-}
-
-.bg-gray {
-    background-color: $backgroundGray !important;
-}
-
-.green-pin {
-    color: $grenPin;
-}
-
-.blue-pin {
-    color: $blue;
-}
-
-.text-gray {
-    color: $gray;
-}
+//other variable
+$tranformReset: translate(0px, 0px);
+$font-bold: Ubuntu-bold;

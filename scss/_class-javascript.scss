@@ -22,6 +22,7 @@
 
 .btn-mini-Left {
     margin-left: auto;
+   
     border-radius: 5px 0px 0px 5px !important;
 }
 
@@ -41,14 +42,14 @@
     padding: auto;
     transition-duration: 0.3s;
     @media (min-width: $breapkoint-superExtralarge) {
-        padding-left: 17% !important;
+        padding-left: 17.2% !important;
     }
 }
 
 .menu-cover-mini-width-extend {
     width: 280px !important;
     @media (min-width: $breakpoint-extralarge) {
-        width: calc(100% - 83.5%) !important;
+        width: calc(100% - 83.3%) !important;
     }
 }
 
@@ -63,7 +64,7 @@
     }
 }
 .topic-mobile {
-    border-bottom: 1px solid $borderGray;
+    border-bottom: 1px solid $light;
     @media (min-width: $breakpoint-tablet) {
         display: none !important;
     }
@@ -86,11 +87,13 @@
 .text-side-mini-show {
     @media (min-width: $breakpoint-tablet) {
         display: block !important;
+        transition-duration: .3s;
     }
 }
 .side-menu-list-space-between {
     @media (min-width: $breakpoint-tablet) {
         justify-content: space-between !important;
+        transition-duration: .3s;
     }
 }
 .btn-submenu-mini {

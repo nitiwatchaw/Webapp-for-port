@@ -24,7 +24,7 @@
                     height: 77px;
                     max-height: unset;
                     align-self: center;
-                    border: 2px solid $dropdownBorderColor;
+                    border: 2px solid $secondary;
                     border-radius: 10px;
                     text-align: center;
                     background: $white;
@@ -34,10 +34,8 @@
                     align-items: center;
                     p:first-child {
                         font-size: 16px;
-                        color: $grayDark;
-                        @media (min-width: $breakpoint-extralarge) {
-                            font-size: 13px;
-                        }
+                        color: $primary;
+                        @include fontAdjustforExtralarge();
                     }
                     p:last-child {
                         font-size: 20px;
@@ -54,7 +52,7 @@
                 .box:hover,
                 .box.active {
                     height: 85px;
-                    border: 2px solid $blue;
+                    border: 2px solid $infoDark;
                 }
             }
             @media (min-width: $breakpoint-tablet) {
@@ -86,7 +84,7 @@
         border-radius: 7px;
         width: 47px;
         height: 40px;
-        border: 2px solid $dropdownBorderColor;
+        border: 2px solid $secondary;
         position: relative;
         right: unset;
         left: unset;
@@ -113,7 +111,7 @@
     .swiper-button-prev:hover {
         background-color: $white;
         border-radius: 7px;
-        border: 2px solid $blue;
+        border: 2px solid $primary;
     }
     .swiper-button-next:after,
     .swiper-button-prev:after,
@@ -124,11 +122,11 @@
     }
     .swiper-button-next.swiper-button-disabled,
     .swiper-button-prev.swiper-button-disabled {
-        background-color: $grayLight;
+        background-color: $light;
         border-radius: 7px;
         width: 47px;
         height: 40px;
-        border: 1px solid $gray;
+        border: 1px solid $secondary;
         position: relative;
         right: unset;
         left: unset;

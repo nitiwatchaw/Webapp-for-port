@@ -8,17 +8,17 @@
         flex-direction: column;
         justify-content: space-between;
         row-gap: 20px;
-        border-top: 1px solid $dropdownBorderColor;
-        border-bottom: 1px solid $dropdownBorderColor;
-        background-color: $grayBackgroundTItlaCalenda;
+        border-top: 1px solid $secondary;
+        border-bottom: 1px solid $secondary;
+        background-color: $white;
         padding: 25px 0px;
         > button {
             width: 123px;
             height: 55px;
             font-size: 20px;
-            color: $blue;
+            color: $primary;
             border-radius: 12px;
-            border: 1px solid $dropdownBorderColor;
+            border: 1px solid $secondary;
         }
         .calenda-title-wrap {
             display: flex;
@@ -37,7 +37,7 @@
             align-items: center;
         }
         .mounth {
-            border: 1px solid $dropdownBorderColor;
+            border: 1px solid $secondary;
             width: 123px;
             height: 55px;
             border-radius: 12px 0px 0px 12px;
@@ -48,7 +48,7 @@
             }
         }
         .week {
-            border: 1px solid $dropdownBorderColor;
+            border: 1px solid $secondary;
             width: 123px;
             height: 55px;
             border-radius: 0px 12px 12px 0px;
@@ -61,7 +61,7 @@
         .active,
         .mounth:hover,
         .week:hover {
-            background-color: $grayLight;
+            background-color: $secondary;
         }
         @media (min-width: $breakpoint-tablet) {
             flex-direction: row;
@@ -105,13 +105,14 @@
         }
         .table-title {
             .bg-head {
-                background-color: $grayLight;
+                background-color: $secondary;
             }
 
             .table-head {
                 thead {
                     height: 60px;
                     width: 100%;
+                    border-bottom: 1px solid white;
                 }
             }
         }
@@ -125,7 +126,7 @@
                 position: relative;
                 width: 100%;
                 border-top: 0.5px solid $white !important;
-                background-color: $grayCalenda;
+                background-color: $gray + 5%  ;
 
                 td:first-child,
                 td:last-child {
@@ -150,23 +151,23 @@
                     z-index: 4;
                     --bs-table-bg: none;
                     .notCurrentMonth {
-                        color: $grayCalendaDisableText !important;
-                        background-color: $grayCalendaDisableBg !important;
+                        color: $tertiary !important;
+                        background-color: $light - 20%  !important;
                     }
                     thead {
                         td:last-child,
                         td:first-child {
-                            color: $orange;
+                            color: $danger;
                         }
                     }
                     .event-more {
-                        color: $gray;
-                        background-color: $grayCalenda;
+                        color: $tertiary;
+                        background-color: $gray + 5%;
                     }
                     .event {
                         position: relative;
                         width: 100%;
-                        border: 1px solid $borderGray;
+                        border: 1px solid $tertiary-emphasis;
                         background-color: $white;
                         border-radius: 5px;
                         font-size: 13px;
@@ -199,7 +200,7 @@
                     .todayCalenda {
                         width: 25px;
                         height: 25px;
-                        background-color: $blue;
+                        background-color: $infoDark;
                         border-radius: 50%;
                         position: relative;
                         color: $white;

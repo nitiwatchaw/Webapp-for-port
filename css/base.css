@@ -84,12 +84,14 @@
 }
 
 :root {
-    --backgroundSidebar: #032c7b;
+
+    --backgroundSidebar: #032c7b;   
     --lineSidebar: #4064a8;
     --iconOpen_CLoseSidebar: white;
     --textSidebar: #90abdf;
     --textSubmenuSidebar: #7092d2;
     --textfooter: #90abdf;
+    
     --iconSidebar: #6e9bf2;
     --borderMultiple: #032c7b;
     --borderUserSidebar: #012260;

@@ -8,13 +8,13 @@
 .nav-bar-wrap {
     @media (min-width: $breakpoint-large) {
         background-color: $white;
-        border-bottom: 2px solid $borderGray;
         position: fixed;
         z-index: 200;
     }
     @media (min-width: $breakpoint-extralarge) {
         padding-top: 0px;
         padding-bottom: 0px;
+        border-bottom: 2px solid $secondary;
     }
 }
 .left-side {
@@ -27,7 +27,7 @@
     position: fixed;
     z-index: 200;
     top: 0;
-    border-bottom: 1px solid $borderGray;
+    border-bottom: 1px solid $light;
 
     .icon-wrap {
         .dropdown {
@@ -115,17 +115,15 @@
                 position: relative;
                 i {
                     position: absolute;
-                    color: $dropdownBorderColor;
+                    color: $secondary;
                     top: 52%;
                     left: 26px;
                     transform: translate(-50%, -50%);
-                    @media (min-width: $breakpoint-extralarge) {
-                        font-size: 13px;
-                    }
+                    @include fontAdjustforExtralarge();
                 }
                 input {
                     border-radius: 12px;
-                    border: 1px solid $dropdownBorderColor;
+                    border: 1px solid $secondary;
                     padding: 11px 11px 11px 40px;
                     background-color: $white;
                     @media (min-width: $breakpoint-tablet) {
@@ -140,10 +138,8 @@
                     outline: none;
                 }
                 input::placeholder {
-                    color: $grayLight;
-                    @media (min-width: $breakpoint-extralarge) {
-                        font-size: 13px;
-                    }
+                    color: $secondary;
+                    @include fontAdjustforExtralarge();
                 }
                 @media (min-width: $breakpoint-tablet) {
                     width: 100%;
@@ -191,7 +187,7 @@
     @media (min-width: $breakpoint-extralarge) {
         justify-content: space-between;
         height: 80px;
-        background-color: $backgroundGray;
+        background-color: $light;
         padding: 0px 25px !important;
     }
 }
@@ -239,13 +235,11 @@
     p {
         margin: 0px;
         font-size: 18px;
-        color: $grayDark;
+        color: $tertiary-emphasis;
         @media (min-width: $breakpoint-large) {
             font-size: 15px;
         }
-        @media (min-width: $breakpoint-extralarge) {
-            font-size: 13px;
-        }
+        @include fontAdjustforExtralarge();
     }
     .wrap {
         display: flex;
@@ -259,8 +253,8 @@
                 font-size: 16px;
             }
             @media (min-width: $breakpoint-extralarge) {
-                font-size: 13px;
-            }
+                font-size: 14px !important;
+             }
         }
 
         .line-wrap {
@@ -271,7 +265,7 @@
                 width: 20px;
                 height: 3px;
                 border-radius: 35px;
-                background-color: $dropdownBorderColor;
+                background-color: $secondary;
                 @media (min-width: $breakpoint-extralarge) {
                     width: 16px;
                 }
@@ -281,7 +275,7 @@
                 height: 3px;
                 border-radius: 35px;
                 align-self: flex-end;
-                background-color: $dropdownBorderColor;
+                background-color: $secondary;
                 @media (min-width: $breakpoint-extralarge) {
                     width: 10px;
                 }

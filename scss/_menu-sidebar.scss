@@ -1,7 +1,7 @@
 /* * side bar */
 .menu-cover {
     width: 300px;
-    background-color: var(--backgroundSidebar);
+    background-color: $primary;
     position: fixed;
     padding: 0px !important;
     z-index: 200;
@@ -10,18 +10,7 @@
     display: none;
     transition-duration: 0.5s;
     box-shadow: $boxShadow;
-    border: 1px solid $borderGray;
-    width: 300px;
-    background-color: var(--backgroundSidebar);
-    position: fixed;
-    padding: 0px !important;
-    z-index: 200;
-    top: 0px;
-    left: -600px;
-    display: none;
-    transition-duration: 0.5s;
-    border: 1px solid $borderGray;
-
+    border: 1px solid $secondary;
     .side-content {
         overflow: auto;
         height: calc(100vh - 91px);
@@ -37,21 +26,21 @@
                 position: relative;
                 z-index: 20;
                 h4 {
-                    border: 1px dashed var(--lineSidebar);
+                    border: 1px dashed $secondary;
                     text-align: center;
                     font-size: 16px;
-                    color: var(--lineSidebar);
+                    color: $secondary;
                     margin: 0px;
                     padding: 5px;
                     border-radius: 6px;
                     width: 100px;
                     z-index: 20;
-                    background-color: var(--backgroundSidebar);
+                    background-color: $primary;
                 }
             }
             .line {
                 width: 100%;
-                border-top: 1px dashed var(--lineSidebar);
+                border-top: 1px dashed $secondary;
                 position: absolute;
                 height: 1px;
                 top: 47%;
@@ -68,13 +57,13 @@
                     .cover-icon,
                     .cover-icon-2 {
                         i {
-                            color: $modal-backdrop;
+                            color: $secondary;
                             font-size: 18px;
                             @include AbsoluteCenter();
                         }
                         .wrap {
                             i {
-                                color: var(--iconSidebar);
+                                color: $secondary;
                             }
                         }
                     }
@@ -92,44 +81,44 @@
                             gap: 10px;
 
                             i {
-                                color: var(--iconSidebar);
+                                color: $secondary;
                             }
                         }
                     }
                     a:hover {
-                        background-color: var(--backgroundSidebarHover);
+                        background-color: $dark;
                         border-radius: 6px;
                         p {
-                            color: var(--textSidebarHover);
+                            color: $white;
                         }
                     }
                     .active-link {
-                        background-color: var(--backgroundSidebarFocus);
+                        background-color: $dark;
                         border-radius: 6px;
                         color: $white;
                         .wrap {
                             p {
-                                color: var(--textSidebarFocus);
+                                color: $white;
                             }
                             i {
-                                color: var(--iconSidebar);
+                                color: $secondary;
                             }
                         }
                         p {
                             border-radius: 13px;
-                            color: var(--textSidebarHover);
+                            color: $white;
                         }
                     }
                     .wrap {
                         p {
-                            color: var(--textSidebar);
+                            color: $secondary;
                             font-weight: bold;
                             letter-spacing: 1px;
                         }
                     }
                     .cover-icon,
                     .cover-icon-2 {
-                        background-color: $modal-backdrop;
+                        background-color: $secondary;
                         position: relative;
                         border-radius: 6px;
                         padding: 5px;
@@ -147,7 +136,7 @@
                         justify-content: space-between;
                         .wrap {
                             i {
-                                color: $modal-backdrop;
+                                color: $secondary;
                             }
                             p {
                                 color: $white;
@@ -163,18 +152,21 @@
                             }
                         }
                     }
+                    a:hover,
+                    .active-link {
+                        border-radius: 10px !important;
+                    }
                 }
                 .Dashboard-btn:first-child {
                     border-radius: 10px;
                     margin-bottom: 15px;
-
-                    background: $colorRadient;
+                    background: $primaryRadient;
                 }
                 .multiple {
-                    border: 1px solid var(--borderMultiple);
+                    border: 1px solid $primary;
                     .sub-menu {
                         position: relative;
-                        background-color: var(--backgroundSubmenuSidebarFocus);
+                        background-color: $dark;
                         border-radius: 0px 0px 6px 6px;
                         display: none;
                         li {
@@ -187,7 +179,7 @@
                                 width: 100%;
                                 justify-content: space-between;
                                 position: relative;
-                                color: var(--textSubmenuSidebar);
+                                color: $secondary;
                                 font-weight: bold;
                             }
                             a:before {
@@ -197,15 +189,16 @@
                                 font-size: 20px;
                             }
                             a:hover {
-                                color: var(--textSubmenuHover);
+                                color: $white;
+                                background-color: unset;
                             }
                             a:hover:before,
                             .active-link-sub:before {
-                                color: var(--textSubmenuBeforeHover);
+                                color: $info;
                             }
                             .active-link-sub {
                                 background-color: unset;
-                                color: var(--textSubmenuHover);
+                                color: $white;
                             }
                         }
                         li:last-child {
@@ -214,22 +207,22 @@
                     }
                     .link-open-submenu {
                         .active-link {
-                            border-bottom: 1px solid var(--borderUserSidebar);
-                            background-color: var(--backgroundMainSidebarFocus) !important;
+                            border-bottom: 1px solid $primary;
+                            background-color: $dark !important;
                             .cover-icon-2 {
-                                background-color: var(--backgroundiconSubmenuFocus);
+                                background-color: $primary;
                             }
                         }
                         .cover-icon-2 {
-                            background-color: var(--backgroundiconSubmenu);
+                            background-color: $primary;
                         }
                     }
                     .active-link-user {
                         border-radius: 6px 6px 0px 0px !important;
-                        background-color: var(--backgroundMainSidebarFocus) !important;
-                        border-bottom: 1px solid var(--borderMultiple);
+                        background-color: $dark !important;
+                        border-bottom: 1px solid $primary;
                         p {
-                            color: var(--textUserActive) !important;
+                            color: $white !important;
                         }
                     }
                 }
@@ -238,7 +231,7 @@
         .footer-menu {
             padding: 20px;
             .bg-ul {
-                background-color: var(--backgroundFooterSidebar);
+                background-color: $dark;
                 border-radius: 13px;
                 li {
                     a {
@@ -248,13 +241,13 @@
                         align-items: center;
                         i,
                         p {
-                            color: var(--iconSidebar);
+                            color: $secondary;
                         }
                     }
                     a:hover {
                         i,
                         p {
-                            color: var(--textSidebarHover);
+                            color: $white;
                         }
                     }
                 }
@@ -263,7 +256,7 @@
         .copyright {
             display: flex;
             justify-content: center;
-            color: var(--textfooter);
+            color: $secondary;
             font-size: 16px;
             padding: 0px 20px 20px 20px;
         }
@@ -279,14 +272,14 @@
 .menu-cover-mini {
     display: none;
     width: 85px;
-    background-color: var(--backgroundSidebar);
+    background-color: $primary;
     position: fixed;
     padding: 0px !important;
     margin-top: 80px;
     top: 0px;
     z-index: 40;
     transition-duration: 0.3s;
-    border: 1px solid $borderGray;
+    border: 1px solid $secondary;
 
     .side-content {
         overflow: auto;
@@ -302,16 +295,16 @@
                 position: relative;
                 z-index: 20;
                 h4 {
-                    border: 1px dashed var(--lineSidebar);
+                    border: 1px dashed $secondary;
                     text-align: center;
                     font-size: 16px;
-                    color: var(--lineSidebar);
+                    color: $secondary;
                     margin: 0px;
                     padding: 5px;
                     border-radius: 6px;
                     width: 100px;
                     z-index: 20;
-                    background-color: var(--backgroundSidebar);
+                    background-color: $primary;
                     @media (min-width: $breakpoint-extralarge) {
                         font-size: 12px;
                         padding: 4px;
@@ -329,7 +322,7 @@
             }
             .line {
                 width: 100%;
-                border-top: 1px dashed var(--lineSidebar);
+                border-top: 1px dashed $secondary;
                 position: absolute;
                 height: 1px;
                 top: 47%;
@@ -337,10 +330,11 @@
                 transform: translate(-50%, -50%);
             }
             i {
-                color: var(--iconOpen_CLoseSidebar);
+                color: $white;
                 font-size: 18px;
                 width: 18px;
                 height: 18px;
+               
                 @include AbsoluteCenter();
                 @media (min-width: $breakpoint-extralarge) {
                     font-size: 15px;
@@ -357,16 +351,14 @@
                     .cover-icon,
                     .cover-icon-2 {
                         i {
-                            color: $modal-backdrop;
+                            color: $secondary;
                             font-size: 18px;
                             @include AbsoluteCenter();
-                            @media (min-width: $breakpoint-extralarge) {
-                                font-size: 13px;
-                            }
+                            @include fontAdjustforExtralarge();
                         }
                         .wrap {
                             i {
-                                color: var(--iconSidebar);
+                                color: $secondary;
                             }
                             @media (min-width: $breakpoint-tablet) {
                                 gap: 17px;
@@ -383,14 +375,14 @@
                         padding: 15px;
                         align-items: center;
                         width: 100%;
-                        justify-content: space-between;
+                        justify-content: center;
                         .wrap {
                             display: flex;
                             align-items: center;
                             gap: 10px;
 
                             i {
-                                color: var(--iconSidebar);
+                                color: $secondary;
                             }
                         }
                         @media (min-width: $breakpoint-extralarge) {
@@ -399,32 +391,32 @@
                         }
                     }
                     a:hover {
-                        background-color: var(--backgroundSidebarHover);
+                        background-color: $primary - 30%;
                         border-radius: 6px;
                         p {
-                            color: var(--textSidebarHover);
+                            color: $white;
                         }
                     }
                     .active-link {
-                        background-color: var(--backgroundSidebarFocus);
+                        background-color: $active - 100% !important;
                         border-radius: 6px;
                         color: $white;
                         .wrap {
                             p {
-                                color: var(--textSidebarFocus);
+                                color: $white;
                             }
                             i {
-                                color: var(--iconSidebar);
+                                color: $secondary;
                             }
                         }
                         p {
                             border-radius: 13px;
-                            color: var(--textSidebarHover);
+                            color: $white;
                         }
                     }
                     .wrap {
                         p {
-                            color: var(--textSidebar);
+                            color: $secondary;
                             font-weight: bold;
                             letter-spacing: 1px;
                         }
@@ -438,7 +430,7 @@
                     }
                     .cover-icon,
                     .cover-icon-2 {
-                        background-color: $modal-backdrop;
+                        background-color: $secondary;
                         position: relative;
                         border-radius: 6px;
                         padding: 5px;
@@ -456,7 +448,7 @@
                         justify-content: space-between;
                         .wrap {
                             i {
-                                color: $modal-backdrop;
+                                color: $secondary;
                             }
                             p {
                                 color: $white;
@@ -472,9 +464,7 @@
                                 color: $white;
                                 font-size: 18px;
                                 @include AbsoluteCenter();
-                                @media (min-width: $breakpoint-extralarge) {
-                                    font-size: 13px;
-                                }
+                                @include fontAdjustforExtralarge();
                             }
                         }
                         @media (min-width: $breakpoint-tablet) {
@@ -485,18 +475,22 @@
                             border-radius: 6px;
                         }
                     }
+                    a:hover,
+                    .active-link {
+                        border-radius: 10px !important;
+                    }
                 }
                 .Dashboard-btn:first-child {
                     border-radius: 10px;
                     margin-bottom: 15px;
 
-                    background: $colorRadient;
+                    background: $primaryRadient;
                 }
                 .multiple {
-                    border: 1px solid var(--borderMultiple);
+                    border: 1px solid $primary;
                     .sub-menu {
                         position: relative;
-                        background-color: var(--backgroundSubmenuSidebarFocus);
+                        background-color: $dark;
                         border-radius: 0px 0px 6px 6px;
                         display: none;
                         li {
@@ -509,11 +503,9 @@
                                 width: 100%;
                                 justify-content: space-between;
                                 position: relative;
-                                color: var(--textSubmenuSidebar);
+                                color: $secondary;
                                 font-weight: bold;
-                                @media (min-width: $breakpoint-extralarge) {
-                                    font-size: 13px;
-                                }
+                                @include fontAdjustforExtralarge();
                             }
                             a:before {
                                 content: "•";
@@ -522,15 +514,16 @@
                                 font-size: 20px;
                             }
                             a:hover {
-                                color: var(--textSubmenuHover);
+                                color: $white;
+                                background-color: unset;
                             }
                             a:hover:before,
                             .active-link-sub:before {
-                                color: var(--textSubmenuBeforeHover);
+                                color: $info;
                             }
                             .active-link-sub {
                                 background-color: unset;
-                                color: var(--textSubmenuHover);
+                                color: $white;
                             }
                             @media (min-width: $breakpoint-extralarge) {
                                 padding: 0px 43px;
@@ -550,22 +543,22 @@
                     }
                     .link-open-submenu {
                         .active-link {
-                            border-bottom: 1px solid var(--borderUserSidebar);
-                            background-color: var(--backgroundMainSidebarFocus) !important;
+                            border-bottom: 1px solid $primary;
+                            background-color: $dark !important;
                             .cover-icon-2 {
-                                background-color: var(--backgroundiconSubmenuFocus);
+                                background-color: $primary;
                             }
                         }
                         .cover-icon-2 {
-                            background-color: var(--backgroundiconSubmenu);
+                            background-color: $primary;
                         }
                     }
                     .active-link-user {
                         border-radius: 6px 6px 0px 0px !important;
-                        background-color: var(--backgroundMainSidebarFocus) !important;
-                        border-bottom: 1px solid var(--borderMultiple);
+                        background-color: $dark !important;
+                        border-bottom: 1px solid $primary;
                         p {
-                            color: var(--textUserActive) !important;
+                            color: $white !important;
                         }
                     }
                 }
@@ -574,7 +567,7 @@
         .footer-menu {
             padding: 20px;
             .bg-ul {
-                background-color: var(--backgroundFooterSidebar);
+                background-color: $dark;
                 border-radius: 13px;
                 li {
                     a {
@@ -584,10 +577,8 @@
                         align-items: center;
                         i,
                         p {
-                            color: var(--iconSidebar);
-                            @media (min-width: $breakpoint-extralarge) {
-                                font-size: 13px;
-                            }
+                            color: $secondary;
+                            @include fontAdjustforExtralarge();
                         }
                         @media (min-width: $breakpoint-tablet) {
                             padding: 10px 15px;
@@ -603,7 +594,7 @@
                     a:hover {
                         i,
                         p {
-                            color: var(--textSidebarHover);
+                            color: $white;
                         }
                     }
                 }
@@ -612,7 +603,7 @@
         .copyright {
             display: flex;
             justify-content: center;
-            color: var(--textfooter);
+            color: $secondary;
             font-size: 16px;
             padding: 0px 20px 20px 20px;
             @media (min-width: $breakpoint-extralarge) {

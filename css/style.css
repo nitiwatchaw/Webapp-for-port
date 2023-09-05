@@ -302,7 +302,7 @@ body {
           font-family: Ubuntu-bold; }
           @media (min-width: 1200px) {
             .content-all-section .Dashboard-page .General-number-cover .cover-detail .text-wrap p:first-child {
-              font-size: 14px; } }
+              font-size: 14px !important; } }
         .content-all-section .Dashboard-page .General-number-cover .cover-detail .text-wrap p:last-child {
           font-size: 16px;
           align-self: flex-start;
@@ -347,7 +347,7 @@ body {
           color: #92a6c6; }
           @media (min-width: 1200px) {
             .content-all-section .Dashboard-page .DocsType-cover .wrpa-title .wrap-text p {
-              font-size: 14px; } }
+              font-size: 14px !important; } }
     @media (min-width: 768px) {
       .content-all-section .Dashboard-page .DocsType-cover {
         background-color: #eef0f5; } }
@@ -357,18 +357,28 @@ body {
   .content-all-section .Dashboard-page .RecentAction-cover {
     padding-top: 30px;
     padding-bottom: 30px;
-    border: 1px solid #dce4f4;
-    border-top: 0px; }
+    border: 1px solid #dce4f4; }
     .content-all-section .Dashboard-page .RecentAction-cover .wrpa-title {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      .content-all-section .Dashboard-page .RecentAction-cover .wrpa-title .wrap-text p {
-        font-size: 18px;
-        color: #92a6c6; }
-        @media (min-width: 1200px) {
-          .content-all-section .Dashboard-page .RecentAction-cover .wrpa-title .wrap-text p {
-            font-size: 14px; } }
+      .content-all-section .Dashboard-page .RecentAction-cover .wrpa-title .wrap-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 5px; }
+        .content-all-section .Dashboard-page .RecentAction-cover .wrpa-title .wrap-text p {
+          font-size: 18px;
+          color: #92a6c6; }
+          @media (min-width: 1200px) {
+            .content-all-section .Dashboard-page .RecentAction-cover .wrpa-title .wrap-text p {
+              font-size: 14px !important; } }
+    @media (min-width: 768px) {
+      .content-all-section .Dashboard-page .RecentAction-cover {
+        background-color: #eef0f5; } }
+    @media (min-width: 1200px) {
+      .content-all-section .Dashboard-page .RecentAction-cover {
+        background-color: #fff; } }
     .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover {
       display: flex;
       padding: 17px 14px;
@@ -428,7 +438,7 @@ body {
               letter-spacing: 0.3px; }
               @media (min-width: 1200px) {
                 .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .title {
-                  font-size: 14px; } }
+                  font-size: 14px !important; } }
             .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:first-child,
             .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card .wrap-section .text-wrap .detail-wrap p:last-child {
               font-size: 18px !important;
@@ -465,12 +475,6 @@ body {
         @media (min-width: 1200px) {
           .content-all-section .Dashboard-page .RecentAction-cover .RecentAction-button-cover .RecentAction-card {
             flex-direction: row; } }
-    @media (min-width: 768px) {
-      .content-all-section .Dashboard-page .RecentAction-cover {
-        background-color: #eef0f5; } }
-    @media (min-width: 1200px) {
-      .content-all-section .Dashboard-page .RecentAction-cover {
-        background-color: #fff; } }
   @media (min-width: 768px) {
     .content-all-section .Dashboard-page {
       margin-top: 67px;
@@ -558,7 +562,7 @@ body {
             color: #000; }
             @media (min-width: 1200px) {
               .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-star p {
-                font-size: 14px; } }
+                font-size: 14px !important; } }
         .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin {
           display: flex;
           justify-content: center;
@@ -587,7 +591,7 @@ body {
             color: #000; }
             @media (min-width: 1200px) {
               .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-admin p {
-                font-size: 14px; } }
+                font-size: 14px !important; } }
         .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user {
           display: flex;
           justify-content: center;
@@ -617,7 +621,7 @@ body {
             color: #000; }
             @media (min-width: 1200px) {
               .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .tag-user p {
-                font-size: 14px; } }
+                font-size: 14px !important; } }
         .content-all-section .Browse-Companies .wrapperBox-company .box-company .box-top .option-cover {
           border: 1px solid #fff;
           position: absolute;

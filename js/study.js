@@ -131,17 +131,19 @@ function OpenMenuSidefromSidemini() {
 
     btnOpen.classList.toggle('cannotClick')
     for (let i = 0; i < titlesidebarmini.length; i++) {
+
         titlesidebarmini[i].classList.toggle('show');
     }
+
+
     btnMini.classList.toggle('btn-mini-Left')
-
-
     menuMini.classList.toggle('menu-cover-mini-width-extend')
 
 
     for (let i = 0; i < btnSubmenuMini.length; i++) {
         btnSubmenuMini[i].classList.toggle('show');
     }
+
     for (let i = 0; i < iconMenuMini.length; i++) {
         iconMenuMini[i].classList.toggle('side-menu-list-space-between');
     }
@@ -149,6 +151,11 @@ function OpenMenuSidefromSidemini() {
     for (let i = 0; i < textMenuMini.length; i++) {
         textMenuMini[i].classList.toggle('text-side-mini-show');
     }
+
+
+
+
+
 
     linkToOpenMini.classList.toggle('border-bottom-0')
 
@@ -212,17 +219,10 @@ const OpensubMenuMini = document.querySelector('.multiple-mini')
 const linkToOpenMini = document.querySelector('.link-open-submenu-mini')
 const switchColorMini = document.querySelector('.switchColorTablet')
 
-
 function openSubmenuMini() {
     document.onclick = function (e) {
         if (linkToOpenMini.contains(e.target)) { //click inside
-
-
-
             contentSection.classList.add('content-all-section-movement')
-
-
-
             e.preventDefault(); // protect scroll up after click
             btnMini.classList.add('btn-mini-Left')
             for (let i = 0; i < titlesidebarmini.length; i++) {
@@ -250,6 +250,75 @@ function openSubmenuMini() {
             linkToOpenMini.classList.remove('border-bottom-0')
 
         }
+
+        const mediaQuery = window.matchMedia('(min-width: 1599px)')
+        const mediaQueryMobile = window.matchMedia('(max-width: 768px)')
+        if (mediaQuery.matches) {
+
+            if (menuMini.classList.contains('menu-cover-mini-width-extend')) {
+                modalCreate.style.marginLeft = "11.5%"
+                modalDelete.style.marginLeft = "11.5%"
+                modalEventContent.style.left = "56%"
+                new Swiper('.swiper', {
+                    slidesPerView: 4,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+
+                        550: {
+                            slidesPerView: 5,
+
+                        },
+                        650: {
+                            slidesPerView: 6,
+
+                        },
+                        764: {
+                            slidesPerView: 7,
+
+                        },
+
+                        999: {
+                            slidesPerView: 9,
+
+                        },
+                        1200: {
+                            slidesPerView: 9,
+
+                        },
+                        1400: {
+                            slidesPerView: 10,
+
+                        },
+                        1500: {
+                            slidesPerView: 11,
+
+                        },
+                        1700: {
+                            slidesPerView: 12,
+
+                        },
+                        1900: {
+                            slidesPerView: 13,
+
+                        },
+
+                    }
+                });
+            }
+            else if (mediaQueryMobile.matches) {
+                slider()
+            }
+            else {
+                slider()
+                modalCreate.style.marginLeft = "95px"
+                modalDelete.style.marginLeft = "95px"
+                modalEventContent.style.left = "50%"
+            }
+        }
+
 
     }
     function mobilesize(x) {
@@ -322,6 +391,8 @@ function openSubmenuMini() {
     var x = window.matchMedia("(max-width: 1599px)")
     mobilesize(x) // Call listener function at run time
     x.addListener(mobilesize) // Attach listener function on state changes
+
+
 
 
 }
@@ -497,9 +568,8 @@ slider() // Call listener function at run time
 const modalCreate = document.getElementById('modal-create')
 const modalDelete = document.getElementById('modal-delete')
 const modalEventContent = document.querySelector('.event-modal-popup-content')
+
 function changeSlide() {
-
-
     const mediaQuery = window.matchMedia('(min-width: 1599px)')
     const mediaQueryMobile = window.matchMedia('(max-width: 768px)')
     if (mediaQuery.matches) {
@@ -568,9 +638,8 @@ function changeSlide() {
         }
     }
 
-
-
 }
+
 
 
 //text minimize
@@ -645,6 +714,7 @@ navLinkUser.forEach((navLinkUser) => {
 
 
         if (navLinkUser.classList.contains('active-link-user')) {
+
             subMenuMini.classList.add('show');
             submenu.classList.add('show');
 

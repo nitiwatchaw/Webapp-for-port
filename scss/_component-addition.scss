@@ -1,18 +1,21 @@
 // dot
 .dot {
-    font-size: 1px;
+    font-size: 10px;
     border-radius: 50%;
+    @media (min-width: $breakpoint-extralarge) {
+        font-size: 5px;
+    }
 }
 
 // line break
 .line-break {
-    border-bottom: 1px solid $grayLight;
+    border-bottom: 1px solid $gray;
     position: relative;
     .line-break-blue {
         height: 4px;
         width: 44px;
         border-radius: 35px;
-        background-color: $blue;
+        background-color: $infoDark;
         position: absolute;
         bottom: -2px;
         left: 0;
@@ -25,29 +28,25 @@
         a,
         a::before {
             font-size: 16px;
-            color: var(--breadcrumbcolor);
+            color: $tertiary;
             i {
-                color: var(--breadcrumbcolor);
+                color: $tertiary;
             }
 
-            @media (min-width: $breakpoint-extralarge) {
-                font-size: 13px;
-            }
+            @include fontAdjustforExtralarge();
         }
     }
     .active {
-        color: var(--breadcrumbcolor_Active);
+        color:$primary;
         font-size: 16px;
         margin: 0px;
         font-family: $font-bold;
         i {
-            color: var(--breadcrumbcolor_Active) !important;
+            color: $primary !important;
             font-size: 16px;
             margin: 0px;
             font-family: $font-bold;
-            @media (min-width: $breakpoint-extralarge) {
-                font-size: 13px;
-            }
+            @include fontAdjustforExtralarge();
         }
         @media (min-width: $breakpoint-extralarge) {
             font-size: 13px;

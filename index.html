@@ -18,13 +18,13 @@
 
 </head>
 
-<body>
+<body class="light">
     <header>
         <div class="container-fluid ">
             <!-- profile header -->
             <div class="row ">
                 <div class="col-12 nav-bar-wrap">
-                    <div class="row align-items-center ">
+                    <div class="row align-items-center">
                         <div class="col-12  left-side col-lg-6 col-xl-2">
                             <!-- menu btn -->
                             <button class="btn-menu" onclick="OpenMenuSide() "><i class="fa-solid fa-bars"></i></button>
@@ -530,9 +530,9 @@
                                         <i class="fa-solid fa-gauge-high"></i>
                                         <p>Dashboard</p>
                                     </div>
-                                    <div class="cover-icon ">
+                                    <!-- <div class="cover-icon ">
                                         <i class="fa-solid fa-chevron-down"></i>
-                                    </div>
+                                    </div> -->
                                 </a>
                             </li>
                             <li class="multiple">
@@ -676,15 +676,15 @@
                                             <i class="fa-solid fa-gauge-high"></i>
                                             <p class="text-side-mini">Dashboard</p>
                                         </div>
-                                        <div class="cover-icon btn-submenu-mini">
+                                        <!-- <div class="cover-icon btn-submenu-mini">
                                             <i class="fa-solid fa-chevron-down"></i>
-                                        </div>
+                                        </div> -->
                                     </a>
                                 </li>
-                                <li class="multiple multiple-mini">
+                                <li class="multiple multiple-mini" >
                                     <a href="#javascript:void(0)"
                                         class="link-open-submenu link-open-submenu-mini icon-menu-mini navLink-user"
-                                        onclick="openSubmenuMini()">
+                                        onclick="openSubmenuMini() , changeSlide() ">
                                         <div class="wrap">
                                             <i class="fa-regular fa-user"></i>
                                             <p class="text-side-mini">User</p>
@@ -820,7 +820,7 @@
                                             <!-- alert -->
                                             <div class="row ">
                                                 <div class="col-12">
-                                                    <div class="alert alert-primary alert-adjust" role="alert">
+                                                    <div class="alert  alert-adjust" role="alert">
                                                         <div class="row align-items-center">
                                                             <div class="col-12 alert-content">
                                                                 <div id="liveAlertPlaceholder"></div>
@@ -853,7 +853,7 @@
                                             </div>
 
                                             <!--Dashboard -->
-                                            <div class="row mt-5 mt-xl-1">
+                                            <div class="row mt-5 ">
                                                 <!-- to make border-bottom -->
                                                 <div class="col-12 ">
                                                     <div class="line-break">
@@ -886,7 +886,7 @@
                                                 </div>
                                             </div>
                                             <!-- Overview -->
-                                            <div class="row mt-5 mt-lg-4">
+                                            <div class="row mt-5">
                                                 <div class="col">
                                                     <!-- title -->
                                                     <div class="row">
@@ -1809,7 +1809,7 @@
                                                                         <a href="#" class="wrap-title ">
                                                                             <div class="wrapDot-text">
                                                                                 <i
-                                                                                    class="fa-solid fa-circle dot blue"></i>
+                                                                                    class="fa-solid fa-circle dot green"></i>
                                                                                 <p>Completed</p>
                                                                             </div>
                                                                             <i class="fa-solid fa-angle-right"></i>
@@ -2387,7 +2387,7 @@
                             <div class="row ">
                                 <div class="col">
                                     <!-- Browse Companies Title -->
-                                    <div class="row mt-4">
+                                    <div class="row mt-5">
                                         <!-- to make border-bottom -->
                                         <div class="col-12 ">
                                             <div class="line-break">

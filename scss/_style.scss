@@ -1,10 +1,11 @@
-@import "_variable.scss";
-@import "_mixin.scss";
+@import "variable.scss";
+@import "mixin.scss";
 
 body {
     font-family: "Ubuntu";
     position: relative;
     scroll-behavior: smooth;
+    
 }
 
 //over all
@@ -13,6 +14,7 @@ body {
     .Dashboard-page {
         margin-top: 72px;
         padding-top: 15px;
+
         .title-dashboard {
             h1 {
                 font-family: $font-bold;
@@ -20,7 +22,7 @@ body {
         }
         .Overview-bg {
             padding: 20px 10px;
-            background-color: $blueLight;
+            background-color: $secondary + 30%;
             position: relative;
             margin-bottom: 20px;
             .wrap {
@@ -28,7 +30,7 @@ body {
                 align-items: center;
                 .title-mounth {
                     font-size: 18px;
-                    color: $grayDark;
+                    color: $primary;
                     padding-left: 5px;
                     @media (min-width: $breakpoint-tablet) {
                         font-size: 24px;
@@ -47,7 +49,7 @@ body {
             }
         }
         .box-scroll-bar {
-            background-color: $blueBg;
+            background-color: $secondary;
             overflow: auto;
             height: 100%;
             padding-top: 25px;
@@ -76,10 +78,10 @@ body {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        border-bottom: 2px solid $grayLight;
+                        border-bottom: 2px solid $secondary;
                         padding-bottom: 4px;
                         > i {
-                            color: $gray;
+                            color: $tertiary;
                         }
                         .wrapDot-text {
                             display: flex;
@@ -91,13 +93,13 @@ body {
                             }
                             p {
                                 font-family: $font-bold;
-                                color: #233a67;
+                                color: $primary;
                             }
                         }
                     }
                     .borderDoc {
                         margin-top: 20px;
-                        border: 2px dashed $grayLight;
+                        border: 2px dashed $secondary;
                         border-radius: 14px;
                         padding: 8px;
                         display: flex;
@@ -107,7 +109,7 @@ body {
                         gap: 13px;
                         color: black;
                         .icon-cover {
-                            background-color: $grayLight;
+                            background-color: $secondary + 30%;
                             position: relative;
                             width: 50px;
                             height: 50px;
@@ -116,7 +118,7 @@ body {
                                 position: absolute;
                                 @include AbsoluteCenter;
                                 font-size: 16px;
-                                color: $grayDark;
+                                color: $primary;
                             }
                         }
                         .text-wrap {
@@ -145,15 +147,15 @@ body {
                                 display: flex;
                                 align-items: center;
                                 gap: 6px;
-                                border-bottom: 1px solid $borderGray;
+                                border-bottom: 1px solid $secondary;
                                 p,
                                 i {
-                                    color: $gray;
+                                    color: $tertiary;
                                 }
                             }
                             > p {
                                 font-size: 16px;
-                                color: $grayDark;
+                                color: $primary;
                                 font-family: $font-bold;
                             }
                         }
@@ -174,7 +176,7 @@ body {
             align-items: center;
             gap: 10px;
             i {
-                color: $gray;
+                color: $tertiary;
             }
         }
         .General-number-cover {
@@ -191,14 +193,14 @@ body {
                 width: 80%;
                 gap: 17px;
                 .cover-icon {
-                    border: 1px solid $borderGray;
+                    border: 1px solid $light;
                     border-radius: 7px;
                     width: 46px;
                     height: 46px;
                     background-color: $white;
                     position: relative;
                     i {
-                        color: $grayDark;
+                        color: $primary;
                         font-size: 16px;
                         position: absolute;
                         @include AbsoluteCenter;
@@ -210,12 +212,10 @@ body {
                     flex-direction: column;
                     p:first-child {
                         font-size: 18px;
-                        color: $grayDark;
+                        color: $tertiary;
                         align-self: flex-start;
                         font-family: $font-bold;
-                        @media (min-width: $breakpoint-extralarge) {
-                            font-size: 14px;
-                        }
+                        @include fontAdjustforExtralarge();
                     }
                     p:last-child {
                         font-size: 16px;
@@ -228,7 +228,7 @@ body {
                 }
             }
             i {
-                color: $gray;
+                color: $tertiary;
             }
         }
 
@@ -237,7 +237,7 @@ body {
                 height: 400px;
                 overflow: auto;
                 display: none;
-                border: 3px solid $borderGray;
+                border: 3px solid $secondary + 20%;
                 transform: translate(0px, -500px);
                 transition-duration: 0.2s;
             }
@@ -254,61 +254,19 @@ body {
         }
 
         .DocsType-cover {
-            padding-top: 30px;
-            padding-bottom: 30px;
-            border: 1px solid $borderGray;
-            .wrpa-title {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .wrap-text {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    gap: 5px;
-                    p {
-                        font-size: 18px;
-                        color: $gray;
-                        @media (min-width: $breakpoint-extralarge) {
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-            @media (min-width: $breakpoint-tablet) {
-                background-color: $grayCalendaDisableBg;
-            }
-            @media (min-width: $breakpoint-extralarge) {
-                background-color: $white;
-            }
+            @include section-cover();
         }
 
         .RecentAction-cover {
-            padding-top: 30px;
-            padding-bottom: 30px;
-            border: 1px solid $borderGray;
-            border-top: 0px;
-            .wrpa-title {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .wrap-text {
-                    p {
-                        font-size: 18px;
-                        color: $gray;
-                        @media (min-width: $breakpoint-extralarge) {
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
+            @include section-cover();
+
             .RecentAction-button-cover {
                 display: flex;
                 padding: 17px 14px;
                 flex-direction: column;
                 border-color: rgb(216, 228, 244);
                 border-radius: 14px;
-                border: 1px solid $borderGray;
+                border: 1px solid $tertiary;
                 width: 100%;
                 background-color: $white;
 
@@ -323,7 +281,7 @@ body {
                         align-items: center;
                         gap: 20px;
                         .box-img {
-                            background-color: $grayLight;
+                            background-color: $tertiary-emphasis;
                             border-radius: 13px;
                             padding: 5px;
                             .img-cover {
@@ -363,22 +321,18 @@ body {
                                 font-size: 16px;
                                 font-weight: bold;
                                 letter-spacing: 0.3px;
-                                @media (min-width: $breakpoint-extralarge) {
-                                    font-size: 14px;
-                                }
+                                @include fontAdjustforExtralarge();
                             }
                             .detail-wrap {
                                 p:first-child,
                                 p:last-child {
                                     font-size: 18px !important;
-                                    color: $gray;
-                                    @media (min-width: $breakpoint-extralarge) {
-                                        font-size: 14px !important;
-                                    }
+                                    color: $tertiary;
+                                    @include fontAdjustforExtralarge();
                                 }
                                 .by,
                                 .price {
-                                    color: $grayDark;
+                                    color: $tertiary;
                                     font-weight: bold;
                                 }
                             }
@@ -396,7 +350,7 @@ body {
                         margin-top: 3px;
                         .dot {
                             border-radius: 50%;
-                            border: 2px solid $borderGray;
+                            border: 2px solid $light;
                         }
                         p {
                             background-color: unset !important;
@@ -412,12 +366,6 @@ body {
                         flex-direction: row;
                     }
                 }
-            }
-            @media (min-width: $breakpoint-tablet) {
-                background-color: $grayCalendaDisableBg;
-            }
-            @media (min-width: $breakpoint-extralarge) {
-                background-color: $white;
             }
         }
 
@@ -453,7 +401,7 @@ body {
             align-items: center;
             gap: 10px;
             i {
-                color: $gray;
+                color: $tertiary;
             }
         }
 
@@ -467,7 +415,7 @@ body {
             .box-company {
                 width: 340px;
                 height: 280px;
-                border: 2px solid $borderGray;
+                border: 2px solid $secondary;
                 border-radius: 25px;
                 background-color: $white;
                 margin: 30px 0px 0px 0px;
@@ -481,10 +429,11 @@ body {
                     width: 100%;
                     height: 175px;
                     border-radius: 25px;
+                    border-bottom: 1px solid $gray;
                     position: relative;
                     box-shadow:
-                        $borderGray 0px 10px 36px 0px,
-                        $borderGray 0px 0px 0px 1px;
+                        $light 0px 10px 36px 0px,
+                        $light 0px 0px 0px 1px;
                     img {
                         width: 70px;
                         position: absolute;
@@ -502,9 +451,7 @@ body {
                             font-size: 18px;
                             font-family: $font-bold;
                             color: $black;
-                            @media (min-width: $breakpoint-extralarge) {
-                                font-size: 14px;
-                            }
+                            @include fontAdjustforExtralarge();
                         }
                     }
                     .tag-admin {
@@ -519,15 +466,13 @@ body {
                             font-size: 18px;
                             font-family: $font-bold;
                             color: $black;
-                            @media (min-width: $breakpoint-extralarge) {
-                                font-size: 14px;
-                            }
+                            @include fontAdjustforExtralarge();
                         }
                     }
                     .tag-user {
                         @include tagCompanyUser();
                         i {
-                            color: $borderGray;
+                            color: $tertiary;
                             @media (min-width: $breakpoint-extralarge) {
                                 font-size: 10px;
                             }
@@ -536,9 +481,7 @@ body {
                             font-size: 18px;
                             font-family: $font-bold;
                             color: $black;
-                            @media (min-width: $breakpoint-extralarge) {
-                                font-size: 14px;
-                            }
+                            @include fontAdjustforExtralarge();
                         }
                     }
                     .option-cover {
@@ -555,14 +498,14 @@ body {
                             padding: 0px 6px;
                         }
                         i {
-                            color: $gray;
+                            color: $tertiary;
                             @media (min-width: $breakpoint-extralarge) {
                                 font-size: 12px;
                             }
                         }
                     }
                     .option-cover:hover {
-                        border: 1px solid $gray;
+                        border: 1px solid $tertiary;
                     }
                 }
                 .text-wrap {
@@ -575,13 +518,13 @@ body {
                     }
                     p:last-child {
                         font-family: $font-bold;
-                        color: $gray;
+                        color: $tertiary;
                     }
                 }
                 .active-btn {
                     display: flex;
                     border-radius: 35px;
-                    border: 1px solid $borderGray;
+                    border: 1px solid $tertiary-emphasis;
                     padding: 3px 6px;
                     align-items: center;
                     position: absolute;
@@ -594,7 +537,7 @@ body {
                     display: none;
                     .correct-cover {
                         position: relative;
-                        background-color: $green;
+                        background-color: $success;
                         border-radius: 50%;
                         width: 18px;
                         height: 18px;
@@ -608,23 +551,22 @@ body {
                             font-family: $font-bold;
                         }
                     }
-                  
                 }
                 @media (min-width: $breakpoint-extralarge) {
                     width: 300px;
                 }
             }
             .box-company:hover {
-                border-color: $green;
+                border-color: $success;
             }
             .box-company:focus {
-                border-color: $green;
+                border-color: $success;
                 .active-btn {
                     display: flex !important;
                 }
             }
             .active {
-                border-color: $green;
+                border-color: $success;
                 .active-btn {
                     display: flex !important;
                 }

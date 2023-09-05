@@ -8,7 +8,7 @@
         margin: 0;
         border: 0px;
         .modal-content {
-            background-color: $grayBlue;
+            background-color: $light;
             padding: 13px;
             border-radius: 20px;
             border: 0px;
@@ -36,7 +36,7 @@
                     background-image: unset;
                     i {
                         font-size: 18px;
-                        color: $modalColorGray;
+                        color: $secondary;
                         @media (min-width: $breakpoint-extralarge) {
                             font-size: 11px !important;
                         }
@@ -61,7 +61,7 @@
                     border-radius: 20px;
                     width: 300px;
                     height: 265px;
-                    border: 2px solid $borderGray;
+                    border: 2px solid $secondary;
                     display: flex;
                     justify-content: space-between;
                     flex-direction: column;
@@ -93,12 +93,12 @@
                             }
                         }
                         .cover-text {
-                            background-color: $grayLight;
+                            background-color: $secondary + 50%;
                             border-radius: 8px;
                             width: 60%;
                             align-self: center;
                             padding: 5px;
-                            color: $grayDark;
+                            color: $tertiary-emphasis;
                             @media (min-width: $breakpoint-extralarge) {
                                 font-size: 10px;
                             }
@@ -110,7 +110,7 @@
                     }
                 }
                 .box-template:hover {
-                    border: 2px solid $blue;
+                    border: 2px solid $primary;
                 }
                 @media (min-width: $breakpoint-extralarge) {
                     column-gap: 30px;
@@ -122,11 +122,9 @@
                 border: 0px;
                 button {
                     font-family: $font-bold;
-                    color: $grayDark;
+                    color: $secondary;
                     width: 100%;
-                    @media (min-width: $breakpoint-extralarge) {
-                        font-size: 13px;
-                    }
+                    @include fontAdjustforExtralarge();
                 }
             }
         }
@@ -149,7 +147,7 @@
         border: 0px;
         @include AbsoluteCenter();
         .modal-content {
-            background-color: $grayBlue;
+            background-color: $light;
             padding: 13px;
             border-radius: 20px;
             border: 0px;
@@ -180,7 +178,7 @@
                     background-image: unset;
                     i {
                         font-size: 18px;
-                        color: $modalColorGray;
+                        color: $secondary;
                         @media (min-width: $breakpoint-extralarge) {
                             font-size: 11px !important;
                         }
@@ -201,7 +199,7 @@
                 flex-wrap: wrap;
                 .warning-text {
                     padding: 22px;
-                    background-color: $pinkLight;
+                    background-color: $danger + 140%;
                     font-size: 18px;
                     border-radius: 13px;
                     font-family: $font-bold;
@@ -251,12 +249,12 @@
                         border-radius: 8px;
                     }
                     .export-btn {
-                        background-color: $blue-btn;
-                        box-shadow: $blue-btn $shadow-btn;
+                        background-color: $primary;
+                        box-shadow: $primaryShadow;
                     }
                     .delete-btn {
-                        background-color: $pink-btn;
-                        box-shadow: $pink-btn $shadow-btn;
+                        background-color: $danger;
+                        box-shadow: $dangershadow;
                     }
                     i {
                         color: $white;
@@ -283,11 +281,9 @@
                 border: 0px;
                 button {
                     font-family: $font-bold;
-                    color: $grayDark;
+                    color: $tertiary;
                     width: 100%;
-                    @media (min-width: $breakpoint-extralarge) {
-                        font-size: 13px;
-                    }
+                    @include fontAdjustforExtralarge();
                 }
             }
         }
@@ -299,7 +295,7 @@
     }
 }
 .modal-backdrop {
-    background-color: $modal-backdrop;
+    background-color: $secondary;
     opacity: 0.9 !important;
     z-index: 50 !important;
 }
@@ -335,7 +331,7 @@
         gap: 10px;
         font-family: $font-bold;
         button {
-            background-color: $blue;
+            background-color: $infoDark;
             color: $white;
             border-radius: 13px;
             height: 40px;
