@@ -646,8 +646,6 @@ function changeSlide() {
 const textMinimize = document.querySelectorAll(".minimize-text")
 
 function changename() {
-
-
     if (!nameminimize.matches) { // If media query matches
         for (let i = 0; i < textMinimize.length; i++) {
             textMinimize[i].innerHTML = "+";
@@ -662,10 +660,9 @@ function changename() {
     }
 
 
-
 }
 
-var nameminimize = window.matchMedia("(min-width: 500px)")
+var nameminimize = window.matchMedia("(min-width:500px)")
 nameminimize.addListener(changename) // Attach listener function on state changes
 
 
@@ -738,19 +735,35 @@ navlinkElsSub.forEach(navlinkElsub => {
 })
 
 
-function checkAll(x) {
-    var chekboxM = document.querySelector('.colorChange-Mobile')
-    var chekboxT = document.querySelector('.colorChange-Tablet')
 
-    if (x.checked == true) {
-        chekboxM.checked = true;
-        chekboxT.checked = true;
-    }
-    else {
-        chekboxM.checked = false;
-        chekboxT.checked = false;
-    }
+
+//store theme item
+const colorThemes = document.querySelectorAll('[name="theme"]')
+colorThemes.forEach((themeOption) => {
+ 
+    themeOption.addEventListener('click', () => {
+        storeTheme(themeOption.id)
+    });
+});
+const storeTheme = function (e) {
+    localStorage.setItem("theme", e)
 }
+const setTheme = function () {
+    const activeTheme = localStorage.getItem("theme");
+    colorThemes.forEach((themeOption) => {
+        if (themeOption.id === activeTheme) {
+            themeOption.checked = true;
+        }
+    });
+    // fall back for no support
+    document.documentElement.className = theme;
+}
+
+document.onload = setTheme();
+
+
+
+
 
 
 var initialViewportWidth = window.innerWidth || document.documentElement.clientWidth;

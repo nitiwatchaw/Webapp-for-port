@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="light">
+<body>
     <header>
         <div class="container-fluid ">
             <!-- profile header -->
@@ -412,7 +412,16 @@
                                                     <p>Upgrade Plan</p>
                                                 </a>
                                             </li>
+                                            <li>
+                                                <form action="">
+                                                    <input type="radio" checked name="theme" id="blue-theme">
+                                                    <input type="radio" name="theme" id="red-theme">
+                                                    <input type="radio" name="theme" id="purple-theme">
+                                                    <input type="radio" name="theme" id="black-theme">
+                                                    <input type="radio" name="theme" id="pink-theme">
+                                                </form>
 
+                                            </li>
                                         </ul>
                                     </div>
 
@@ -495,14 +504,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!-- change colour btn -->
-                            <div class="toggle-switch switchColorMobile">
-                                <label class="switch-label">
-                                    <input type="checkbox" class="checkbox colorChange-Mobile"
-                                        onchange='checkAll(this);'>
-                                    <span class="slider"></span>
-                                </label>
-                            </div>
+                     
 
 
                         </div>
@@ -681,7 +683,7 @@
                                         </div> -->
                                     </a>
                                 </li>
-                                <li class="multiple multiple-mini" >
+                                <li class="multiple multiple-mini">
                                     <a href="#javascript:void(0)"
                                         class="link-open-submenu link-open-submenu-mini icon-menu-mini navLink-user"
                                         onclick="openSubmenuMini() , changeSlide() ">
@@ -796,19 +798,13 @@
                         <p class="copyright text-side-mini">©2021 AhadDocs Inc. All rights reserved.</p>
 
 
-                        <!-- change colour btn -->
-                        <div class="toggle-switch switchColorTablet">
-                            <label class="switch-label">
-                                <input type="checkbox" class="checkbox colorChange-Tablet " onchange='checkAll(this);'>
-                                <span class="slider"></span>
-                            </label>
-                        </div>
+                     
                     </div>
 
                 </div>
 
                 <!-- content all section -->
-                <div class="col-12  content-all-section bg-gray">
+                <div class="col-12  content-all-section ">
                     <div class="row ">
                         <!-- Dashboard Page  -->
                         <div class="col-12 Dashboard-page ">
@@ -816,7 +812,7 @@
                                 <div class="col ">
                                     <div class="row change-position">
                                         <!-- center Section -->
-                                        <div class="col-12 bg-gray all-section col-xl-8 col-xxl-9">
+                                        <div class="col-12  all-section col-xl-8 col-xxl-9">
                                             <!-- alert -->
                                             <div class="row ">
                                                 <div class="col-12">
@@ -903,7 +899,7 @@
                                                                 <div class="row align-items-center row-gap-3">
                                                                     <div class="col-12 col-md-4">
                                                                         <div class="wrap dot">
-                                                                            <i class="fa-solid fa-circle dot blue"></i>
+                                                                            <i class="fa-solid fa-circle dot"></i>
                                                                             <p class="title-mounth">October 2021</p>
                                                                         </div>
 
@@ -2383,7 +2379,7 @@
                         </div>
 
                         <!-- Browse Companies Page -->
-                        <div class="col-12 Browse-Companies bg-gray pt-3">
+                        <div class="col-12 Browse-Companies pt-3">
                             <div class="row ">
                                 <div class="col">
                                     <!-- Browse Companies Title -->

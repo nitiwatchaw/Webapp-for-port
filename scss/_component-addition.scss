@@ -15,7 +15,7 @@
         height: 4px;
         width: 44px;
         border-radius: 35px;
-        background-color: $infoDark;
+        background-color: var(--line-break ) ;
         position: absolute;
         bottom: -2px;
         left: 0;
@@ -37,12 +37,12 @@
         }
     }
     .active {
-        color:$primary;
+        color:var(--primary);
         font-size: 16px;
         margin: 0px;
         font-family: $font-bold;
         i {
-            color: $primary !important;
+            color: var(--primary) !important;
             font-size: 16px;
             margin: 0px;
             font-family: $font-bold;

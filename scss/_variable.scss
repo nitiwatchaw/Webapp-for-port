@@ -1,13 +1,63 @@
-@import "mixin.scss";
-
-//color variable
-
-
-
-$primary: rgb(7, 30, 184) ;
-
-$secondary: $primary + 130%;
-$infoDark: $primary + 100%;
+.blueTheme,
+:root:has(#blue-theme:checked) {
+    --primary: #0d0368;
+    --secondary: #d2cdf9;
+    --line-break: #90d0f8;
+    --infoDark: #8c7ff1;
+    --active: #2b19cb;
+    --dark: #0a024f;
+    --light:#f6f9ff;
+    --primaryRadient: linear-gradient(176deg, #5e4eeb 58%, #d2cdf9 100%);
+    --primaryShadow: #8c7ff1 0px 2px 11px 0px, #8c7ff1 0px 18px 36px -18px;
+}
+.redTheme,
+:root:has(#red-theme:checked) {
+    --primary: #680334;
+    --secondary: #f7c4dc;
+    --line-break: #f66aad;
+    --infoDark: #f77ab6;
+    --active: #b61563;
+    --dark: #4c0226;
+    --light:#f6f9ff;
+    --primaryRadient: linear-gradient(176deg, #e94795 58%, #f5add0 100%);
+    --primaryShadow: #ef71ae 0px 2px 11px 0px, #ef71ae 0px 18px 36px -18px;
+}
+.pinkTheme,
+:root:has(#pink-theme:checked) {
+    --primary: #680357;
+    --secondary: #f7c2ee;
+    --line-break: #f159d8;
+    --infoDark: #c01a6a;
+    --active: #680357;
+    --dark: #520344;
+    --light:#f6f9ff;
+    --primaryRadient: linear-gradient(176deg, #db3bc1 58%, #e68cd7 100%);
+    --primaryShadow: #df629e 0px 2px 11px 0px, #df629e 0px 18px 36px -18px;
+}
+.blackTheme,
+:root:has(#black-theme:checked) {
+    --primary: #1f1f1f;
+    --secondary: #dbdbdb;
+    --line-break: #585858;
+    --infoDark: #5a5a5a;
+    --active: #363636;
+    --dark: #434343;
+    --light:#f6f9ff;
+    --primaryRadient: linear-gradient(176deg, #9b9999 58%, #b1b0b0 100%);
+    --primaryShadow: #b1b1b1 0px 2px 11px 0px, #b1b1b1 0px 18px 36px -18px;
+}
+.purpleTheme,
+:root:has(#purple-theme:checked) {
+    --primary: #3b0368;
+    --secondary: #e2c3fc;
+    --line-break: #9a3ce7;
+    --infoDark: #6b16b1;
+    --active: #390c5e;
+    --dark: #2e0153;
+    --light:#f6f9ff;
+    --primaryRadient: linear-gradient(176deg, #984dd4 58%, #bea0d6 100%);
+    --primaryShadow: #8c41c9 0px 2px 11px 0px, #8c41c9 0px 18px 36px -18px;
+}
 
 $tertiary: #617c9c;
 $tertiary-emphasis: #92a6c6;
@@ -22,12 +72,6 @@ $white: #fff;
 $black: #000;
 $gray: #eef0f5;
 $purple: #5252c0;
-$active: $primary + 70%;
-$primaryRadient: linear-gradient(176deg, $primary + 80% 58%, $secondary 100%);
-
-$primaryShadow:
-    $infoDark 0px 2px 11px 0px,
-    $infoDark 0px 18px 36px -18px;
 
 $dangershadow:
     $danger 0px 2px 11px 0px,
@@ -81,7 +125,7 @@ $dotShadow:
 }
 
 .DocType-blue {
-    background-color: $infoDark + 240% !important;
+    background-color: blue + 240% !important;
 }
 
 .DocType-green {
@@ -96,9 +140,6 @@ $dotShadow:
     background-color: $success;
 }
 
-.btn-primary {
-    background-color: $primary;
-}
 .btn-green:hover {
     background-color: $success - 30%;
 }
@@ -116,93 +157,17 @@ $dotShadow:
     border-radius: 13px;
 }
 
-.bg-gray {
-    background-color: $light !important;
-}
 
 .green-pin {
     color: $success;
 }
 
 .blue-pin {
-    color: $infoDark;
+    color: blue;
 }
 
 .text-gray {
     color: $tertiary-emphasis;
-}
-
-:root:has(.colorChange-Mobile:checked),
-:root:has(.colorChange-Tablet:checked) {
-    --backgroundSidebar: white;
-    --lineSidebar: #99afc9;
-    --iconOpen_CLoseSidebar: black;
-    --textSidebar: black;
-    --textSubmenuSidebar: black;
-    --textfooter: #a2b7cf;
-
-    --iconSidebar: #a2b7cf;
-    --borderMultiple: #99afc9;
-    --borderUserSidebar: #99afc9;
-    --backgroundFooterSidebar: #f7faff;
-    --backgroundiconSubmenu: #f4f7fc;
-
-    --backgroundSidebarHover: transparent;
-    --textSidebarHover: #4090fc;
-    --textSubmenuHover: #4090fc;
-    --textSubmenuBeforeHover: #0193e3;
-
-    --backgroundSidebarFocus: transparent;
-    --backgroundSubmenuSidebarFocus: transparent;
-
-    --backgroundMainSidebarFocus: transparent;
-    --textSidebarFocus: #4090fc;
-    --textUserActive: #4090fc;
-    --backgroundiconSubmenuFocus: transparent;
-}
-:root {
-    // primary
-    --backgroundSidebar: #032c7b;
-    //secondary
-    --lineSidebar: #4064a8;
-    //white
-    --iconOpen_CLoseSidebar: white;
-    //secondary
-    --textSidebar: #90abdf;
-    //secondary
-    --textSubmenuSidebar: #7092d2;
-    //secondary
-    --textfooter: #90abdf;
-    // secondary
-    --iconSidebar: #6e9bf2;
-    // primary
-    --borderMultiple: #032c7b;
-    // primary
-    --borderUserSidebar: #012260;
-    // dark
-    --backgroundFooterSidebar: #173686;
-    // primary
-    --backgroundiconSubmenu: #082c7c;
-    // dark
-    --backgroundSidebarHover: #022567;
-    //white
-    --textSidebarHover: white;
-    //white
-    --textSubmenuHover: white;
-    //info
-    --textSubmenuBeforeHover: #0193e3;
-    // dark
-    --backgroundSidebarFocus: #022567;
-    // dark
-    --backgroundSubmenuSidebarFocus: #022567;
-    //dark
-    --backgroundMainSidebarFocus: #012260;
-    //white
-    --textSidebarFocus: white;
-    //white
-    --textUserActive: white;
-    // primary
-    --backgroundiconSubmenuFocus: #082c7c;
 }
 
 //media breakpoint

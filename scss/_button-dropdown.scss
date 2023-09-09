@@ -9,9 +9,9 @@ button {
         display: none;
     }
     .dropdown-menu {
-        background-color: $primary;
-        box-shadow: $primary 0px 25px 50px -12px;
-        padding: 10px 0px;
+        background-color: var(--primary);
+        box-shadow: var(--primary) 0px 25px 50px -12px;
+        padding: 10px 0px 20px 0px;
         border-radius: 13px;
         position: absolute;
         inset: unset !important;
@@ -36,7 +36,7 @@ button {
             }
         }
         i {
-            color: $secondary;
+            color: var(--secondary);
             padding: 0px;
             @media (min-width: $breakpoint-extralarge) {
                 font-size: 11px;
@@ -50,6 +50,51 @@ button {
                 font-size: 14px;
             }
         }
+        li:last-child {
+            padding: 0px 10px;
+
+            form {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 16px;
+                padding: 10px 14px;
+                background-color: var(--secondary);
+                border-radius: 9px;
+                input[type="radio"] {
+                    appearance: none;
+                    padding: 0px;
+                    margin: 0px;
+                    width: 20px;
+                    height: 20px;
+                    outline: 2px solid var(--radio-color);
+                    outline-offset: 2px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                input[type="radio"]:checked{
+                    background-color: var(--radio-color);
+                }
+               
+                input[type="radio"]#blue-theme {
+                    --radio-color: #0d0368;
+                }
+                input[type="radio"]#red-theme {
+                    --radio-color: #680334;
+                }
+                 input[type="radio"]#pink-theme {
+                    --radio-color: #680357;
+                }
+                input[type="radio"]#black-theme {
+                    --radio-color: #1f1f1f;
+                }
+                input[type="radio"]#purple-theme {
+                    --radio-color: #3b0368;
+                }
+            }
+        }
+
         @media (min-width: $breakpoint-extralarge) {
             top: 53px !important;
         }
@@ -61,7 +106,7 @@ button {
         height: 0px;
         border-left: 9px solid transparent;
         border-right: 9px solid transparent;
-        border-bottom: 9px solid $primary;
+        border-bottom: 9px solid var(--primary);
         top: -8px;
         right: 20.9px;
     }
@@ -102,7 +147,7 @@ button {
         height: 0px;
         border-left: 9px solid transparent;
         border-right: 9px solid transparent;
-        border-bottom: 9px solid $primary;
+        border-bottom: 9px solid var(--primary);
         top: -10px;
         right: 20.9px;
     }
@@ -119,7 +164,7 @@ button {
     }
     .dropdown-menu {
         border-radius: 14px;
-        border: 1px solid $primary;
+        border: 1px solid var(--primary);
         font-weight: bold;
         position: absolute;
         inset: 0px 0px auto auto;
@@ -190,7 +235,7 @@ button {
         height: 0px;
         border-left: 9px solid transparent;
         border-right: 9px solid transparent;
-        border-bottom: 9px solid $primary;
+        border-bottom: 9px solid var(--primary);
         top: -10px;
         left: 20px;
     }
@@ -207,15 +252,15 @@ button {
     }
     .dropdown-menu {
         border-radius: 14px;
-        border: 1px solid $primary;
+        border: 1px solid var(--primary);
         font-weight: bold;
         position: absolute;
         background-color: $white;
         inset: 0px 0px auto auto;
         margin: 0px;
         box-shadow:
-            $secondary 1px 1px 6px 1px,
-            $secondary 0px 18px 36px -18px;
+            var(--secondary) 1px 1px 6px 1px,
+            var(--secondary) 0px 18px 36px -18px;
         transform: translate3d(-9px, 62px, 0px) !important;
 
         a {
@@ -232,7 +277,7 @@ button {
     }
 
     .dropdown-menu {
-        background-color: $primary;
+        background-color: var(--primary);
         position: absolute;
         inset: 0px 0px auto auto;
         margin: 0px;
@@ -248,7 +293,7 @@ button {
         li {
             display: flex;
             justify-content: space-between;
-            border-bottom: 1px solid $primary;
+            border-bottom: 1px solid var(--primary);
 
             .wrapIcon-text {
                 display: flex;
@@ -277,7 +322,7 @@ button {
                 border-radius: 7px;
                 position: relative;
                 p {
-                    color: $infoDark;
+                    color: var(--infoDark);
                     @include AbsoluteCenter();
                     letter-spacing: 2px;
                     font-weight: bold;
@@ -295,7 +340,7 @@ button {
                 align-items: flex-start;
                 > p:last-child {
                     font-size: 18px;
-                    color: $secondary;
+                    color: var(--secondary);
                     @media (min-width: $breakpoint-extralarge) {
                         font-size: 12px;
                     }
@@ -360,7 +405,7 @@ button {
                 height: 4px;
                 left: 38%;
                 transform: translate(-50%, -50%);
-                background-color: $primary;
+                background-color: var(--primary);
             }
         }
         @media (min-width: $breakpoint-large) {
@@ -381,7 +426,7 @@ button {
         height: 0px;
         border-left: 9px solid transparent;
         border-right: 9px solid transparent;
-        border-bottom: 10px solid $primary;
+        border-bottom: 10px solid var(--primary);
         border-radius: 16px;
         @media (min-width: $breakpoint-large) {
             left: 28px;
@@ -423,7 +468,7 @@ button {
     display: flex;
     align-items: center;
     padding: 5px;
-    outline: 2px solid $secondary;
+    outline: 2px solid var(--secondary);
     border-radius: 5px;
     box-shadow: $boxShadow;
     align-self: center;
@@ -439,7 +484,7 @@ button {
     }
 }
 .switch-btn:focus {
-    outline: 2px solid $primary !important;
+    outline: 2px solid var(--primary) !important;
 }
 
 // mail
@@ -469,7 +514,7 @@ button {
                 align-items: center;
 
                 .main-img-cover {
-                    border: 2px solid $secondary;
+                    border: 2px solid var(--secondary);
                     border-radius: 50%;
                     width: 60px;
                     height: 60px;
@@ -502,7 +547,7 @@ button {
                 }
                 > i {
                     font-size: 16px;
-                    color: $secondary;
+                    color: var(--secondary);
                 }
 
                 .text-wrap {
@@ -519,7 +564,7 @@ button {
                         align-items: center;
 
                         p {
-                            color: $primary;
+                            color: var(--primary);
                             letter-spacing: 1px;
                             font-weight: bold;
                             @media (min-width: $breakpoint-extralarge) {
@@ -527,10 +572,10 @@ button {
                             }
                         }
                         .link-tag {
-                            color: $infoDark;
+                            color: var(--infoDark);
                         }
                         .time {
-                            color: $secondary;
+                            color: var(--secondary);
                         }
                     }
                 }
@@ -654,7 +699,7 @@ button {
         object-fit: cover;
         text-align: center;
         padding: 13px;
-        color: $primary;
+        color: var(--primary);
         i {
             @media (min-width: $breakpoint-extralarge) {
                 font-size: 14px;
@@ -672,7 +717,7 @@ button {
         right: 3px;
         top: 0;
         border-radius: 50%;
-        background-color: $infoDark;
+        background-color: var(--infoDark);
         outline: 2px solid $white;
         @media (min-width: $breakpoint-extralarge) {
             width: 8px;
@@ -693,7 +738,7 @@ button {
         align-items: center;
         gap: 6px;
         border-radius: 9px;
-        border: 2px solid $primary;
+        border: 2px solid var(--primary);
         padding: 12px 25px;
         justify-content: center;
         background-color: $white;
@@ -701,7 +746,7 @@ button {
         align-self: center;
         height: 46px;
         p {
-            color: $primary;
+            color: var(--primary);
             font-size: 18px;
             font-family: $font-bold;
             @media (min-width: $breakpoint-large) {
@@ -710,7 +755,7 @@ button {
         }
         i {
             font-size: 16px;
-            color: $secondary;
+            color: var(--secondary);
             @media (min-width: $breakpoint-large) {
                 font-size: 13px;
             }
@@ -726,7 +771,7 @@ button {
         }
     }
     .create-btn:hover {
-        background-color: $primary;
+        background-color: var(--primary);
         p {
             color: $white;
         }
@@ -739,18 +784,18 @@ button {
         border-radius: 8px;
         display: flex !important;
         justify-content: space-between;
-        background-color: $secondary + 70%;
+        background-color: var(--secondary);
         align-items: center;
         gap: 4px;
         padding: 8px;
         p {
             font-size: 18px;
-            color: $primary;
+            color: var(--primary);
             font-family: $font-bold;
             @include fontAdjustforExtralarge();
         }
         i {
-            color: $secondary;
+            color: var(--primary);
             @media (min-width: $breakpoint-extralarge) {
                 font-size: 10px;
             }
@@ -767,7 +812,7 @@ button {
     }
     .dropdown-menu {
         border-radius: 14px;
-        border: 2px solid $secondary;
+        border: 2px solid var(--secondary);
         z-index: 70;
         padding: 5px 30px;
         transform: unset !important;
@@ -795,7 +840,7 @@ button {
             }
         }
         i {
-            color: $secondary
+            color: var(--secondary);
         }
     }
     .dropdown-menu::before {
@@ -807,7 +852,7 @@ button {
         height: 0px;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
-        border-bottom: 10px solid $secondary;
+        border-bottom: 10px solid var(--secondary);
     }
     .dropdown-menu::after {
         position: absolute;
@@ -830,10 +875,10 @@ button {
     .switch-label {
         width: 56%;
         height: 30px;
-        background-color: $primary;
+        background-color: var(--primary);
         border-radius: 25px;
         cursor: pointer;
-        border: 3px solid $infoDark;
+        border: 3px solid var(--infoDark);
         @include AbsoluteCenter();
         .checkbox {
             position: absolute;
@@ -847,7 +892,7 @@ button {
                 -webkit-transform: translateX(50px);
                 -ms-transform: translateX(50px);
                 transform: translateX(26px);
-                background-color: $primary;
+                background-color: var(--primary);
                 -webkit-box-shadow: none;
                 box-shadow: none;
                 @media (min-width: $breakpoint-tablet) {
@@ -877,7 +922,7 @@ button {
             border-radius: 50%;
             -webkit-box-shadow: inset 12px -4px 0px 0px $light;
             box-shadow: inset 12px -4px 0px 0px $light;
-            background-color: $primary;
+            background-color: var(--primary);
             -webkit-transition: 0.3s;
             transition: 0.3s;
             @media (min-width: $breakpoint-extralarge) {
@@ -889,7 +934,7 @@ button {
         }
         @media (min-width: $breakpoint-extralarge) {
             height: 24px;
-            border: 1px solid $infoDark
+            border: 1px solid var(--infoDark);
         }
     }
     @media (min-width: $breakpoint-tablet) {
@@ -903,7 +948,7 @@ button {
     flex-direction: column;
     border-radius: 1rem;
     margin-top: 60px;
-    background-color: $secondary + 60%;
+    background-color: var(--secondary);
     .alert-content {
         display: flex;
         align-items: flex-start;
@@ -934,7 +979,7 @@ button {
                 height: 28px;
                 p {
                     color: $white;
-                   font-size: 20px;
+                    font-size: 20px;
                     @include AbsoluteCenter();
                     @media (min-width: $breakpoint-extralarge) {
                         font-size: 10px;
@@ -959,12 +1004,16 @@ button {
         .btn-bill {
             font-size: 16px;
             padding: 4px 10px;
-            box-shadow: $primary -1px 1px 6px 0px;
+            box-shadow: var(--primary) -1px 1px 6px 0px;
             border: 0px;
             color: $white;
+            background-color: var(--primary);
             @media (min-width: $breakpoint-extralarge) {
                 font-size: 12px;
             }
+        }
+        .btn-bill:hover {
+            background-color: var(--primary);
         }
         @media (min-width: $breakpoint-tablet) {
             flex-direction: row;
@@ -993,7 +1042,7 @@ button {
     align-items: center;
     i {
         font-size: 21px;
-        color: $secondary;
+        color: var(--secondary);
         @include mediaLargeNone();
         @media (min-width: $breakpoint-tablet) {
             font-size: 30px;
@@ -1004,7 +1053,7 @@ button {
 
 .btn-menu-side-mobile {
     border-radius: 5px 0px 0px 5px;
-    background-color: $primary;
+    background-color: var(--primary);
     width: 30px;
     height: 30px;
     border: 1px solid $info;
@@ -1025,7 +1074,7 @@ button {
 }
 
 .btn-menu-side {
-    background-color: $primary;
+    background-color: var(--primary);
     width: 30px;
     height: 30px;
     border-radius: 5px;
@@ -1045,7 +1094,7 @@ button {
         margin: 0px;
         border-radius: 35px;
         background-color: $light;
-        border: 1px solid $secondary;
+        border: 1px solid var(--secondary);
         gap: 2px;
         display: flex;
         justify-content: space-between;
@@ -1057,7 +1106,7 @@ button {
                 font-size: 16px;
                 padding: 4px 11px;
                 vertical-align: middle;
-                color: $primary;
+                color: var(--primary);
                 font-family: $font-bold;
                 @media (min-width: $breakpoint-tablet) {
                     padding: 7px 19px;
@@ -1069,10 +1118,10 @@ button {
             }
             a:hover,
             .active {
-                background-color: $active;
+                background-color: var(--active);
                 color: $white;
                 border-radius: 35px;
-                box-shadow: $infoDark 0px 1px 14px -2px;
+                box-shadow: var(--infoDark) 0px 1px 14px -2px;
             }
         }
         @media (min-width: $breakpoint-tablet) {
@@ -1194,7 +1243,7 @@ button {
     margin-top: 30px;
     gap: 5px;
     .join-com {
-        border: 2px solid $primary;
+        border: 2px solid var(--primary);
         background-color: $white;
         border-radius: 8px;
         display: flex;
@@ -1203,12 +1252,12 @@ button {
         gap: 6px;
 
         i {
-            color: $secondary;
+            color: var(--secondary);
             font-size: 16px;
             @include fontAdjustforExtralarge();
         }
         p {
-            color: $primary;
+            color: var(--primary);
             font-family: $font-bold;
             @media (min-width: $breakpoint-extralarge) {
                 font-size: 14px;
@@ -1225,11 +1274,11 @@ button {
         align-items: center;
         gap: 8px;
         padding: 10px 10px;
-        box-shadow: $primaryShadow;
-        background: $primary;
-        
+        box-shadow: $boxShadow;
+        background: var(--primary);
+
         i {
-            color: $secondary;
+            color: var(--secondary);
             font-size: 16px;
             @include fontAdjustforExtralarge();
         }
@@ -1258,7 +1307,7 @@ button {
         position: fixed;
         justify-content: center;
         position: relative;
-        background-color: $secondary;
+        background-color: var(--secondary);
         z-index: 10;
         button {
             width: 100%;

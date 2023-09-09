@@ -1,3 +1,4 @@
+
 .logo {
     width: 150px;
     @media (min-width: $breakpoint-extralarge) {
@@ -14,7 +15,7 @@
     @media (min-width: $breakpoint-extralarge) {
         padding-top: 0px;
         padding-bottom: 0px;
-        border-bottom: 2px solid $secondary;
+        border-bottom: 2px solid var(--secondary);
     }
 }
 .left-side {
@@ -115,7 +116,7 @@
                 position: relative;
                 i {
                     position: absolute;
-                    color: $secondary;
+                    color: var(--secondary);
                     top: 52%;
                     left: 26px;
                     transform: translate(-50%, -50%);
@@ -123,7 +124,7 @@
                 }
                 input {
                     border-radius: 12px;
-                    border: 1px solid $secondary;
+                    border: 1px solid var(--secondary);
                     padding: 11px 11px 11px 40px;
                     background-color: $white;
                     @media (min-width: $breakpoint-tablet) {
@@ -138,7 +139,7 @@
                     outline: none;
                 }
                 input::placeholder {
-                    color: $secondary;
+                    color: var(--secondary);
                     @include fontAdjustforExtralarge();
                 }
                 @media (min-width: $breakpoint-tablet) {
@@ -265,7 +266,7 @@
                 width: 20px;
                 height: 3px;
                 border-radius: 35px;
-                background-color: $secondary;
+                background-color: var(--secondary);
                 @media (min-width: $breakpoint-extralarge) {
                     width: 16px;
                 }
@@ -275,7 +276,7 @@
                 height: 3px;
                 border-radius: 35px;
                 align-self: flex-end;
-                background-color: $secondary;
+                background-color: var(--secondary);
                 @media (min-width: $breakpoint-extralarge) {
                     width: 10px;
                 }

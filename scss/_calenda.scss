@@ -8,17 +8,17 @@
         flex-direction: column;
         justify-content: space-between;
         row-gap: 20px;
-        border-top: 1px solid $secondary;
-        border-bottom: 1px solid $secondary;
+        border-top: 1px solid var(--secondary);
+        border-bottom: 1px solid var(--secondary);
         background-color: $white;
         padding: 25px 0px;
         > button {
             width: 123px;
             height: 55px;
             font-size: 20px;
-            color: $primary;
+            color: var(--primary);
             border-radius: 12px;
-            border: 1px solid $secondary;
+            border: 1px solid var(--secondary);
         }
         .calenda-title-wrap {
             display: flex;
@@ -37,7 +37,7 @@
             align-items: center;
         }
         .mounth {
-            border: 1px solid $secondary;
+            border: 1px solid var(--secondary);
             width: 123px;
             height: 55px;
             border-radius: 12px 0px 0px 12px;
@@ -48,7 +48,7 @@
             }
         }
         .week {
-            border: 1px solid $secondary;
+            border: 1px solid var(--secondary);
             width: 123px;
             height: 55px;
             border-radius: 0px 12px 12px 0px;
@@ -61,7 +61,7 @@
         .active,
         .mounth:hover,
         .week:hover {
-            background-color: $secondary;
+            background-color: var(--secondary);
         }
         @media (min-width: $breakpoint-tablet) {
             flex-direction: row;
@@ -105,7 +105,7 @@
         }
         .table-title {
             .bg-head {
-                background-color: $secondary;
+                background-color: var(--secondary);
             }
 
             .table-head {
@@ -126,7 +126,7 @@
                 position: relative;
                 width: 100%;
                 border-top: 0.5px solid $white !important;
-                background-color: $gray + 5%  ;
+                background-color: $gray + 5%;
 
                 td:first-child,
                 td:last-child {
@@ -152,7 +152,7 @@
                     --bs-table-bg: none;
                     .notCurrentMonth {
                         color: $tertiary !important;
-                        background-color: $light - 20%  !important;
+                        background-color: $light - 20% !important;
                     }
                     thead {
                         td:last-child,
@@ -184,7 +184,6 @@
                             line-height: 24px;
                             @media (min-width: $breakpoint-extralarge) {
                                 font-size: 16px;
-                    
                             }
                         }
                         i {
@@ -200,7 +199,7 @@
                     .todayCalenda {
                         width: 25px;
                         height: 25px;
-                        background-color: $infoDark;
+                        background-color: var(--infoDark);
                         border-radius: 50%;
                         position: relative;
                         color: $white;

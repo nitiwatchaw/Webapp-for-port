@@ -1,7 +1,7 @@
 /* * side bar */
 .menu-cover {
     width: 300px;
-    background-color: $primary;
+    background-color: var(--primary);
     position: fixed;
     padding: 0px !important;
     z-index: 200;
@@ -10,7 +10,7 @@
     display: none;
     transition-duration: 0.5s;
     box-shadow: $boxShadow;
-    border: 1px solid $secondary;
+    border: 1px solid var(--secondary);
     .side-content {
         overflow: auto;
         height: calc(100vh - 91px);
@@ -26,21 +26,21 @@
                 position: relative;
                 z-index: 20;
                 h4 {
-                    border: 1px dashed $secondary;
+                    border: 1px dashed var(--secondary);
                     text-align: center;
                     font-size: 16px;
-                    color: $secondary;
+                    color: var(--secondary);
                     margin: 0px;
                     padding: 5px;
                     border-radius: 6px;
                     width: 100px;
                     z-index: 20;
-                    background-color: $primary;
+                    background-color: var(--primary);
                 }
             }
             .line {
                 width: 100%;
-                border-top: 1px dashed $secondary;
+                border-top: 1px dashed var(--secondary);
                 position: absolute;
                 height: 1px;
                 top: 47%;
@@ -57,13 +57,13 @@
                     .cover-icon,
                     .cover-icon-2 {
                         i {
-                            color: $secondary;
+                            color: var(--secondary);
                             font-size: 18px;
                             @include AbsoluteCenter();
                         }
                         .wrap {
                             i {
-                                color: $secondary;
+                                color: var(--secondary);
                             }
                         }
                     }
@@ -81,19 +81,19 @@
                             gap: 10px;
 
                             i {
-                                color: $secondary;
+                                color: var(--secondary);
                             }
                         }
                     }
                     a:hover {
-                        background-color: $dark;
+                        background-color: var(--dark) ;
                         border-radius: 6px;
                         p {
                             color: $white;
                         }
                     }
                     .active-link {
-                        background-color: $dark;
+                        background-color: var(--dark) ;
                         border-radius: 6px;
                         color: $white;
                         .wrap {
@@ -101,7 +101,7 @@
                                 color: $white;
                             }
                             i {
-                                color: $secondary;
+                                color: var(--secondary);
                             }
                         }
                         p {
@@ -111,14 +111,14 @@
                     }
                     .wrap {
                         p {
-                            color: $secondary;
+                            color: var(--secondary);
                             font-weight: bold;
                             letter-spacing: 1px;
                         }
                     }
                     .cover-icon,
                     .cover-icon-2 {
-                        background-color: $secondary;
+                        background-color: var(--secondary);
                         position: relative;
                         border-radius: 6px;
                         padding: 5px;
@@ -136,7 +136,7 @@
                         justify-content: space-between;
                         .wrap {
                             i {
-                                color: $secondary;
+                                color: var(--secondary);
                             }
                             p {
                                 color: $white;
@@ -155,15 +155,16 @@
                     a:hover,
                     .active-link {
                         border-radius: 10px !important;
+                        background-color: var(--primary) - 30%;
                     }
                 }
                 .Dashboard-btn:first-child {
                     border-radius: 10px;
                     margin-bottom: 15px;
-                    background: $primaryRadient;
+                    background: var(--primaryRadient);
                 }
                 .multiple {
-                    border: 1px solid $primary;
+                    border: 1px solid var(--primary);
                     .sub-menu {
                         position: relative;
                         background-color: $dark;
@@ -179,7 +180,7 @@
                                 width: 100%;
                                 justify-content: space-between;
                                 position: relative;
-                                color: $secondary;
+                                color: var(--secondary);
                                 font-weight: bold;
                             }
                             a:before {
@@ -207,20 +208,20 @@
                     }
                     .link-open-submenu {
                         .active-link {
-                            border-bottom: 1px solid $primary;
+                            border-bottom: 1px solid var(--primary);
                             background-color: $dark !important;
                             .cover-icon-2 {
-                                background-color: $primary;
+                                background-color: var(--primary);
                             }
                         }
                         .cover-icon-2 {
-                            background-color: $primary;
+                            background-color: var(--primary);
                         }
                     }
                     .active-link-user {
                         border-radius: 6px 6px 0px 0px !important;
                         background-color: $dark !important;
-                        border-bottom: 1px solid $primary;
+                        border-bottom: 1px solid var(--primary);
                         p {
                             color: $white !important;
                         }
@@ -241,7 +242,7 @@
                         align-items: center;
                         i,
                         p {
-                            color: $secondary;
+                            color: var(--secondary);
                         }
                     }
                     a:hover {
@@ -256,7 +257,7 @@
         .copyright {
             display: flex;
             justify-content: center;
-            color: $secondary;
+            color: var(--secondary);
             font-size: 16px;
             padding: 0px 20px 20px 20px;
         }
@@ -266,20 +267,22 @@
     }
     .side-content-mobile {
         display: block;
+        @include mediaTabletNone();
     }
 }
 
 .menu-cover-mini {
+    
     display: none;
     width: 85px;
-    background-color: $primary;
+    background-color: var(--primary);
     position: fixed;
     padding: 0px !important;
     margin-top: 80px;
     top: 0px;
     z-index: 40;
     transition-duration: 0.3s;
-    border: 1px solid $secondary;
+    border: 1px solid var(--secondary);
 
     .side-content {
         overflow: auto;
@@ -295,16 +298,16 @@
                 position: relative;
                 z-index: 20;
                 h4 {
-                    border: 1px dashed $secondary;
+                    border: 1px dashed var(--secondary);
                     text-align: center;
                     font-size: 16px;
-                    color: $secondary;
+                    color: var(--secondary);
                     margin: 0px;
                     padding: 5px;
                     border-radius: 6px;
                     width: 100px;
                     z-index: 20;
-                    background-color: $primary;
+                    background-color: var(--primary);
                     @media (min-width: $breakpoint-extralarge) {
                         font-size: 12px;
                         padding: 4px;
@@ -322,7 +325,7 @@
             }
             .line {
                 width: 100%;
-                border-top: 1px dashed $secondary;
+                border-top: 1px dashed var(--secondary);
                 position: absolute;
                 height: 1px;
                 top: 47%;
@@ -351,14 +354,14 @@
                     .cover-icon,
                     .cover-icon-2 {
                         i {
-                            color: $secondary;
+                            color: var(--secondary);
                             font-size: 18px;
                             @include AbsoluteCenter();
                             @include fontAdjustforExtralarge();
                         }
                         .wrap {
                             i {
-                                color: $secondary;
+                                color: var(--secondary);
                             }
                             @media (min-width: $breakpoint-tablet) {
                                 gap: 17px;
@@ -382,7 +385,7 @@
                             gap: 10px;
 
                             i {
-                                color: $secondary;
+                                color: var(--secondary);
                             }
                         }
                         @media (min-width: $breakpoint-extralarge) {
@@ -391,14 +394,14 @@
                         }
                     }
                     a:hover {
-                        background-color: $primary - 30%;
+                        background-color: var(--dark) ;
                         border-radius: 6px;
                         p {
                             color: $white;
                         }
                     }
                     .active-link {
-                        background-color: $active - 100% !important;
+                        background-color: var(--dark) !important;
                         border-radius: 6px;
                         color: $white;
                         .wrap {
@@ -406,7 +409,7 @@
                                 color: $white;
                             }
                             i {
-                                color: $secondary;
+                                color: var(--secondary);
                             }
                         }
                         p {
@@ -416,7 +419,7 @@
                     }
                     .wrap {
                         p {
-                            color: $secondary;
+                            color: var(--secondary);
                             font-weight: bold;
                             letter-spacing: 1px;
                         }
@@ -430,7 +433,7 @@
                     }
                     .cover-icon,
                     .cover-icon-2 {
-                        background-color: $secondary;
+                        background-color: var(--secondary);
                         position: relative;
                         border-radius: 6px;
                         padding: 5px;
@@ -448,7 +451,7 @@
                         justify-content: space-between;
                         .wrap {
                             i {
-                                color: $secondary;
+                                color: var(--secondary);
                             }
                             p {
                                 color: $white;
@@ -483,11 +486,10 @@
                 .Dashboard-btn:first-child {
                     border-radius: 10px;
                     margin-bottom: 15px;
-
-                    background: $primaryRadient;
+                    background: var(--primaryRadient);
                 }
                 .multiple {
-                    border: 1px solid $primary;
+                    border: 1px solid var(--primary);
                     .sub-menu {
                         position: relative;
                         background-color: $dark;
@@ -503,7 +505,7 @@
                                 width: 100%;
                                 justify-content: space-between;
                                 position: relative;
-                                color: $secondary;
+                                color: var(--secondary);
                                 font-weight: bold;
                                 @include fontAdjustforExtralarge();
                             }
@@ -543,20 +545,20 @@
                     }
                     .link-open-submenu {
                         .active-link {
-                            border-bottom: 1px solid $primary;
+                            border-bottom: 1px solid var(--primary);
                             background-color: $dark !important;
                             .cover-icon-2 {
-                                background-color: $primary;
+                                background-color: var(--primary);
                             }
                         }
                         .cover-icon-2 {
-                            background-color: $primary;
+                            background-color: var(--primary);
                         }
                     }
                     .active-link-user {
                         border-radius: 6px 6px 0px 0px !important;
                         background-color: $dark !important;
-                        border-bottom: 1px solid $primary;
+                        border-bottom: 1px solid var(--primary);
                         p {
                             color: $white !important;
                         }
@@ -577,7 +579,7 @@
                         align-items: center;
                         i,
                         p {
-                            color: $secondary;
+                            color: var(--secondary);
                             @include fontAdjustforExtralarge();
                         }
                         @media (min-width: $breakpoint-tablet) {
@@ -603,7 +605,7 @@
         .copyright {
             display: flex;
             justify-content: center;
-            color: $secondary;
+            color: var(--secondary);
             font-size: 16px;
             padding: 0px 20px 20px 20px;
             @media (min-width: $breakpoint-extralarge) {

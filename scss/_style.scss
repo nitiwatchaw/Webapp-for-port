@@ -1,11 +1,12 @@
 @import "variable.scss";
 @import "mixin.scss";
 
+
 body {
     font-family: "Ubuntu";
     position: relative;
     scroll-behavior: smooth;
-    
+ 
 }
 
 //over all
@@ -14,7 +15,7 @@ body {
     .Dashboard-page {
         margin-top: 72px;
         padding-top: 15px;
-
+            
         .title-dashboard {
             h1 {
                 font-family: $font-bold;
@@ -22,7 +23,7 @@ body {
         }
         .Overview-bg {
             padding: 20px 10px;
-            background-color: $secondary + 30%;
+            background-color: var(--secondary)  ;
             position: relative;
             margin-bottom: 20px;
             .wrap {
@@ -30,7 +31,7 @@ body {
                 align-items: center;
                 .title-mounth {
                     font-size: 18px;
-                    color: $primary;
+                    color:  var(--primary);
                     padding-left: 5px;
                     @media (min-width: $breakpoint-tablet) {
                         font-size: 24px;
@@ -38,6 +39,9 @@ body {
                     @media (min-width: $breakpoint-extralarge) {
                         font-size: 15px;
                     }
+                }
+                i{
+                    color: var(--active);
                 }
             }
             @media (min-width: $breakpoint-tablet) {
@@ -49,7 +53,7 @@ body {
             }
         }
         .box-scroll-bar {
-            background-color: $secondary;
+            background-color: var(--secondary);
             overflow: auto;
             height: 100%;
             padding-top: 25px;
@@ -78,7 +82,7 @@ body {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        border-bottom: 2px solid $secondary;
+                        border-bottom: 2px solid var(--secondary);
                         padding-bottom: 4px;
                         > i {
                             color: $tertiary;
@@ -93,13 +97,13 @@ body {
                             }
                             p {
                                 font-family: $font-bold;
-                                color: $primary;
+                                color: var(--primary);
                             }
                         }
                     }
                     .borderDoc {
                         margin-top: 20px;
-                        border: 2px dashed $secondary;
+                        border: 2px dashed var(--secondary);
                         border-radius: 14px;
                         padding: 8px;
                         display: flex;
@@ -109,7 +113,7 @@ body {
                         gap: 13px;
                         color: black;
                         .icon-cover {
-                            background-color: $secondary + 30%;
+                            background-color: var(--secondary) ;
                             position: relative;
                             width: 50px;
                             height: 50px;
@@ -118,7 +122,7 @@ body {
                                 position: absolute;
                                 @include AbsoluteCenter;
                                 font-size: 16px;
-                                color: $primary;
+                                color: var(--primary);
                             }
                         }
                         .text-wrap {
@@ -147,7 +151,7 @@ body {
                                 display: flex;
                                 align-items: center;
                                 gap: 6px;
-                                border-bottom: 1px solid $secondary;
+                                border-bottom: 1px solid var(--secondary);
                                 p,
                                 i {
                                     color: $tertiary;
@@ -155,7 +159,7 @@ body {
                             }
                             > p {
                                 font-size: 16px;
-                                color: $primary;
+                                color: var(--primary);
                                 font-family: $font-bold;
                             }
                         }
@@ -200,7 +204,7 @@ body {
                     background-color: $white;
                     position: relative;
                     i {
-                        color: $primary;
+                        color: var(--primary);
                         font-size: 16px;
                         position: absolute;
                         @include AbsoluteCenter;
@@ -237,7 +241,7 @@ body {
                 height: 400px;
                 overflow: auto;
                 display: none;
-                border: 3px solid $secondary + 20%;
+                border: 3px solid var(--secondary) ;
                 transform: translate(0px, -500px);
                 transition-duration: 0.2s;
             }
@@ -415,7 +419,7 @@ body {
             .box-company {
                 width: 340px;
                 height: 280px;
-                border: 2px solid $secondary;
+                border: 2px solid var(--secondary);
                 border-radius: 25px;
                 background-color: $white;
                 margin: 30px 0px 0px 0px;
@@ -577,5 +581,7 @@ body {
     @media (min-width: $breakpoint-tablet) {
         padding-left: 98px;
         transition-duration: 0.3s;
+        
     }
+    background-color: var(--light);
 }
