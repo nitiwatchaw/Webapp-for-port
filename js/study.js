@@ -13,7 +13,7 @@ function toOpen() {
     btnClosemenu.classList.toggle('cannotClick')
     document.onclick = function (e) {
         if (!rightSide.contains(e.target) && !btnOpen.contains(e.target) && !btnClose.contains(e.target)) {
-
+            modalSidebar.classList.remove("show")
             btnOpen.classList.remove("hide")
             btnClose.classList.add("hide")
 
@@ -23,6 +23,34 @@ function toOpen() {
                 rightSide.classList.remove('transform')
             }, 50)
             btnClosemenu.classList.remove('cannotClick')
+
+
+
+            //turn to mini bar
+            for (let i = 0; i < titlesidebarmini.length; i++) {
+                titlesidebarmini[i].classList.remove('show');
+            }
+            e.preventDefault();
+
+            btnOpen.classList.remove('cannotClick')
+            btnMini.classList.remove('btn-mini-Left')
+            menuMini.classList.remove('menu-cover-mini-width-extend')
+            for (let i = 0; i < btnSubmenuMini.length; i++) {
+                btnSubmenuMini[i].classList.remove('show');
+            }
+
+            for (let i = 0; i < textMenuMini.length; i++) {
+                textMenuMini[i].classList.remove('text-side-mini-show');
+            }
+            for (let i = 0; i < iconMenuMini.length; i++) {
+                iconMenuMini[i].classList.remove('side-menu-list-space-between');
+            }
+            contentSection.classList.remove('content-all-section-movement')
+            linkToOpenMini.classList.toggle('border-bottom-0')
+            btnSideOpen.classList.remove("hide")
+            btnSideClose.classList.add("hide")
+            modalSidebar.classList.remove("show")
+
         }
 
     }
@@ -127,18 +155,15 @@ const menuMini = document.querySelector('.menu-cover-mini')
 const contentSection = document.querySelector('.content-all-section')
 const myswiper = document.querySelector('.swiper-initialized')
 const mediaQuery = window.matchMedia('(min-width: 1599px)')
+const modalSidebar = document.querySelector('.modalSidebar')
 function OpenMenuSidefromSidemini() {
-
-    btnOpen.classList.toggle('cannotClick')
+    // btnOpen.classList.add('cannotClick')
     for (let i = 0; i < titlesidebarmini.length; i++) {
-
         titlesidebarmini[i].classList.toggle('show');
     }
-
-
     btnMini.classList.toggle('btn-mini-Left')
     menuMini.classList.toggle('menu-cover-mini-width-extend')
-
+    modalSidebar.classList.add("show")
 
     for (let i = 0; i < btnSubmenuMini.length; i++) {
         btnSubmenuMini[i].classList.toggle('show');
@@ -152,29 +177,22 @@ function OpenMenuSidefromSidemini() {
         textMenuMini[i].classList.toggle('text-side-mini-show');
     }
 
-
-
-
-
-
     linkToOpenMini.classList.toggle('border-bottom-0')
-
-
     contentSection.classList.toggle('content-all-section-movement')
 
 
     document.onclick = function clickOutsidemini() {
         function mobilesize(x) {
-            if (x.matches) { // If media query matches
+            if (x.matches) {
                 document.onclick = function (e) {
-                    if (!menuMini.contains(e.target)) {
+                    if (modalSidebar.contains(e.target)) {
                         for (let i = 0; i < titlesidebarmini.length; i++) {
                             titlesidebarmini[i].classList.remove('show');
                         }
-                        e.preventDefault(); // protect scroll up after click
+                        e.preventDefault();
 
-                        btnMini.classList.remove('btn-mini-Left')
                         btnOpen.classList.remove('cannotClick')
+                        btnMini.classList.remove('btn-mini-Left')
                         menuMini.classList.remove('menu-cover-mini-width-extend')
                         for (let i = 0; i < btnSubmenuMini.length; i++) {
                             btnSubmenuMini[i].classList.remove('show');
@@ -190,9 +208,9 @@ function OpenMenuSidefromSidemini() {
                         linkToOpenMini.classList.toggle('border-bottom-0')
                         btnSideOpen.classList.remove("hide")
                         btnSideClose.classList.add("hide")
-
+                        modalSidebar.classList.remove("show")
                     }
-
+                    return;
                 }
                 return;
             }
@@ -220,6 +238,8 @@ const linkToOpenMini = document.querySelector('.link-open-submenu-mini')
 const switchColorMini = document.querySelector('.switchColorTablet')
 
 function openSubmenuMini() {
+
+    modalSidebar.classList.add("show")
     document.onclick = function (e) {
         if (linkToOpenMini.contains(e.target)) { //click inside
             contentSection.classList.add('content-all-section-movement')
@@ -326,7 +346,7 @@ function openSubmenuMini() {
             document.onclick = function (e) {
                 if (linkToOpenMini.contains(e.target)) { //click inside
                     e.preventDefault(); // protect scroll up after click
-                    btnOpen.classList.add('cannotClick')
+                    // btnOpen.classList.add('cannotClick')
                     linkToOpenMini.classList.remove('border-bottom-0')
 
                     btnMini.classList.add('btn-mini-Left')
@@ -361,7 +381,7 @@ function openSubmenuMini() {
                         titlesidebarmini[i].classList.remove('show');
                     }
                     e.preventDefault(); // protect scroll up after click
-
+                    modalSidebar.classList.remove("show")
                     btnMini.classList.remove('btn-mini-Left')
                     btnOpen.classList.remove('cannotClick')
                     menuMini.classList.remove('menu-cover-mini-width-extend')
@@ -740,7 +760,7 @@ navlinkElsSub.forEach(navlinkElsub => {
 //store theme item
 const colorThemes = document.querySelectorAll('[name="theme"]')
 colorThemes.forEach((themeOption) => {
- 
+
     themeOption.addEventListener('click', () => {
         storeTheme(themeOption.id)
     });

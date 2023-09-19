@@ -26,9 +26,10 @@ button {
             justify-content: flex-start;
             gap: 10px;
         }
-        a:hover {
+        a:hover,
+        a:focus {
             color: $white;
-            background: unset;
+            background: var(--primary);
 
             p,
             i {
@@ -43,7 +44,7 @@ button {
             }
         }
         p {
-            color: $info;
+            color: var(--secondary);
             font-size: 18px;
             padding: 0px;
             @media (min-width: $breakpoint-extralarge) {
@@ -72,25 +73,27 @@ button {
                     outline-offset: 2px;
                     border-radius: 50%;
                     cursor: pointer;
-                }
-                input[type="radio"]:checked{
+                    z-index: 100;
                     background-color: var(--radio-color);
                 }
-               
+                input[type="radio"]:checked {
+                    background-color: var(--radio-color);
+                }
+
                 input[type="radio"]#blue-theme {
                     --radio-color: #0d0368;
                 }
-                input[type="radio"]#red-theme {
-                    --radio-color: #680334;
+                input[type="radio"]#blueYellow-theme {
+                    --radio-color: #22668d;
                 }
-                 input[type="radio"]#pink-theme {
-                    --radio-color: #680357;
+                input[type="radio"]#pink-theme {
+                    --radio-color: #ff5858;
                 }
                 input[type="radio"]#black-theme {
                     --radio-color: #1f1f1f;
                 }
-                input[type="radio"]#purple-theme {
-                    --radio-color: #3b0368;
+                input[type="radio"]#yellow-theme {
+                    --radio-color: #7d6e83;
                 }
             }
         }
@@ -717,7 +720,7 @@ button {
         right: 3px;
         top: 0;
         border-radius: 50%;
-        background-color: var(--infoDark);
+        background-color: $purple;
         outline: 2px solid $white;
         @media (min-width: $breakpoint-extralarge) {
             width: 8px;
@@ -780,6 +783,16 @@ button {
 
 #DocsType,
 #RecentAction {
+    .dropdown-menu {
+        background-color: $white;
+
+        li{
+            a:focus{
+                background-color: unset;
+                color: unset;
+            }
+        }
+    }
     button {
         border-radius: 8px;
         display: flex !important;

@@ -9,6 +9,10 @@ body {
  
 }
 
+button:focus ,button:hover {
+    outline: none !important;
+}
+
 //over all
 .content-all-section {
     //dashboard Page
@@ -173,6 +177,9 @@ body {
                     top: 5px;
                     left: 0;
                 }
+            }
+            &::-webkit-scrollbar{
+                display: none;
             }
         }
         .General-number {
@@ -384,7 +391,7 @@ body {
             }
         }
         @media (min-width: $breakpoint-large) {
-            margin-top: 68px;
+            margin-top: 66px;
         }
         @media (min-width: $breakpoint-extralarge) {
             margin-top: 65px;
