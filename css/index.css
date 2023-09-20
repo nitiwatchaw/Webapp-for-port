@@ -29,7 +29,7 @@
   --secondary: #ffc8c8;
   --line-break: #ff7d7d;
   --infoDark: #ff6b6b;
-  --active: #ffa3a3;
+  --active: #f95555;
   --dark: #963232;
   --light:#f6f9ff;
   --primaryRadient: linear-gradient(-224deg, #f68080 58%, #ffc8c8 154%);
@@ -1062,13 +1062,15 @@ button {
       #setting .dropdown-menu li:last-child form input[type="radio"]#blue-theme {
         --radio-color: #0d0368; }
       #setting .dropdown-menu li:last-child form input[type="radio"]#blueYellow-theme {
-        --radio-color: #22668d; }
+        --radio-color: #22668d;
+        background: linear-gradient(90deg, #22668d, #22668d 49%, white 49%, white 51%, #ffa600 51%); }
       #setting .dropdown-menu li:last-child form input[type="radio"]#pink-theme {
         --radio-color: #ff5858; }
       #setting .dropdown-menu li:last-child form input[type="radio"]#black-theme {
         --radio-color: #1f1f1f; }
       #setting .dropdown-menu li:last-child form input[type="radio"]#yellow-theme {
-        --radio-color: #7d6e83; }
+        --radio-color: #7d6e83;
+        background: linear-gradient(90deg, #481c54, #481c54 49%, white 49%, white 51%, #f87e1a 51%); }
   @media (min-width: 1200px) {
     #setting .dropdown-menu {
       top: 53px !important; } }

@@ -82,9 +82,11 @@ button {
 
                 input[type="radio"]#blue-theme {
                     --radio-color: #0d0368;
+                    
                 }
                 input[type="radio"]#blueYellow-theme {
                     --radio-color: #22668d;
+                    background: linear-gradient(90deg, #22668d, #22668d 49%, white 49%, white 51%, #ffa600 51%);
                 }
                 input[type="radio"]#pink-theme {
                     --radio-color: #ff5858;
@@ -94,6 +96,7 @@ button {
                 }
                 input[type="radio"]#yellow-theme {
                     --radio-color: #7d6e83;
+                    background: linear-gradient(90deg, #481c54, #481c54 49%, white 49%, white 51%, #f87e1a 51%);
                 }
             }
         }
@@ -786,8 +789,8 @@ button {
     .dropdown-menu {
         background-color: $white;
 
-        li{
-            a:focus{
+        li {
+            a:focus {
                 background-color: unset;
                 color: unset;
             }
