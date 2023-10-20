@@ -605,7 +605,6 @@ function changeSlide() {
                     prevEl: '.swiper-button-prev',
                 },
                 breakpoints: {
-
                     550: {
                         slidesPerView: 5,
 
