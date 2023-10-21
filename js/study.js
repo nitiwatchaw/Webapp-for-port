@@ -17,14 +17,11 @@ function toOpen() {
             btnOpen.classList.remove("hide")
             btnClose.classList.add("hide")
 
-            rightSide.classList.toggle('transform')
+
             setTimeout(function () {
-                rightSide.classList.add('none')
                 rightSide.classList.remove('transform')
             }, 50)
             btnClosemenu.classList.remove('cannotClick')
-
-
 
             //turn to mini bar
             for (let i = 0; i < titlesidebarmini.length; i++) {
@@ -647,7 +644,7 @@ function changeSlide() {
             });
         }
         else if (mediaQueryMobile.matches) {
-            slider()
+            slider();
         }
         else {
             slider()
@@ -659,6 +656,22 @@ function changeSlide() {
 
 }
 
+const MobileScreen = window.matchMedia('(max-width: 998px)')
+MobileScreen.addListener(resetModal);
+function resetModal(e) {
+
+    if (e.matches) {
+
+        modalCreate.style.marginLeft = "0px"
+        modalDelete.style.marginLeft = "0px"
+    } else {
+        modalCreate.style.marginLeft = "95px"
+        modalDelete.style.marginLeft = "95px"
+    }
+
+}
+
+resetModal(MobileScreen)
 
 
 //text minimize
@@ -781,48 +794,3 @@ const setTheme = function () {
 document.onload = setTheme();
 
 
-
-
-
-
-var initialViewportWidth = window.innerWidth || document.documentElement.clientWidth;
-
-//  mobile viewport initial, any change refresh
-if (initialViewportWidth < 768) {
-    window.addEventListener('resize', function () {
-        newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
-        if (newViewportWidth > 768) {
-            location.reload();
-        }
-    });
-}
-
-// tablet mobile viewport initial, any change refresh
-else if (initialViewportWidth > 768 && initialViewportWidth < 992) {
-    window.addEventListener('resize', function () {
-        newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
-        if (newViewportWidth < 768 || newViewportWidth > 992) {
-            location.reload();
-        }
-    });
-}
-
-// laptop viewport initial, any change refresh
-else if (initialViewportWidth > 992 && initialViewportWidth < 1200) {
-    window.addEventListener('resize', function () {
-        newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
-        if (newViewportWidth < 992 || newViewportWidth > 1200) {
-            location.reload();
-        }
-    });
-}
-
-// desktop viewport initial, any change refresh
-else if (initialViewportWidth > 1200) {
-    window.addEventListener('resize', function () {
-        newViewportWidth = window.innerWidth || document.documentElement.clientWidth;
-        if (newViewportWidth < 1200) {
-            location.reload();
-        }
-    });
-}

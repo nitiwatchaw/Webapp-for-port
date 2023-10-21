@@ -32,6 +32,9 @@
     @media (min-width: $breakpoint-tablet) {
         transform: translate(0px, 196px) !important;
     }
+    @media (min-width: $breakpoint-large) {
+        transform: unset !important;
+    }
 }
 
 .reset-transform {

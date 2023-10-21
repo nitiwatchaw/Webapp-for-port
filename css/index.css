@@ -3166,6 +3166,9 @@ li {
   @media (min-width: 768px) {
     .transform {
       transform: translate(0px, 196px) !important; } }
+  @media (min-width: 992px) {
+    .transform {
+      transform: unset !important; } }
 
 .reset-transform {
   transform: translate(0px, 0px) !important; }
